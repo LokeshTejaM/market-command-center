@@ -1,0 +1,197 @@
+/* ============================================================
+   SECTOR ROTATION DASHBOARD — Scoped Styles
+   All selectors scoped under #view-sector
+   ============================================================ */
+
+/* ── Benchmark Bar ─────────────────────────────────────────── */
+#view-sector .benchmark-bar {
+    display: flex; gap: 10px; margin-bottom: 16px;
+    overflow-x: auto; padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+}
+#view-sector .benchmark-card {
+    flex-shrink: 0; padding: 10px 16px; min-width: 130px;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 8px; transition: border-color 0.2s;
+}
+#view-sector .benchmark-card:hover { border-color: var(--border-hover); }
+#view-sector .benchmark-ticker {
+    font-size: 12px; font-weight: 700; color: var(--text-primary);
+    letter-spacing: 0.3px;
+}
+#view-sector .benchmark-price {
+    font-size: 16px; font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-primary); margin: 2px 0;
+}
+#view-sector .benchmark-change {
+    font-size: 12px; font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+}
+#view-sector .benchmark-card.positive { border-bottom: 2px solid var(--green); }
+#view-sector .benchmark-card.negative { border-bottom: 2px solid var(--red); }
+#view-sector .positive { color: var(--green); }
+#view-sector .negative { color: var(--red); }
+
+/* ── Controls Bar ──────────────────────────────────────────── */
+#view-sector .controls-bar {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 16px; flex-wrap: wrap; gap: 12px;
+}
+#view-sector .filter-group { display: flex; gap: 4px; flex-wrap: wrap; }
+#view-sector .filter-btn {
+    padding: 6px 14px; border-radius: 6px; font-size: 12px;
+    font-weight: 500; border: 1px solid var(--border);
+    background: transparent; color: var(--text-muted);
+    cursor: pointer; transition: all 0.2s; font-family: inherit;
+}
+#view-sector .filter-btn:hover { color: var(--text-secondary); border-color: var(--border-hover); }
+#view-sector .filter-btn.active {
+    background: var(--accent-soft); color: var(--accent);
+    border-color: rgba(99,102,241,0.3);
+}
+
+#view-sector .sort-group {
+    display: flex; align-items: center; gap: 8px;
+}
+#view-sector .sort-label { font-size: 12px; color: var(--text-muted); }
+#view-sector .sort-select {
+    padding: 6px 10px; border-radius: 6px; font-size: 12px;
+    background: var(--bg-card); color: var(--text-primary);
+    border: 1px solid var(--border); font-family: inherit; cursor: pointer;
+}
+
+/* ── Signal Summary ────────────────────────────────────────── */
+#view-sector .signal-summary {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 10px; margin-bottom: 20px;
+}
+#view-sector .signal-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 14px 16px; transition: border-color 0.2s;
+}
+#view-sector .signal-card:hover { border-color: var(--border-hover); }
+#view-sector .signal-card-header {
+    font-size: 11px; font-weight: 500; color: var(--text-muted);
+    margin-bottom: 6px; display: flex; align-items: center; gap: 6px;
+}
+#view-sector .signal-card-value {
+    font-size: 22px; font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+}
+#view-sector .signal-card-detail {
+    font-size: 11px; color: var(--text-muted); margin-top: 4px;
+}
+
+/* ── Data Table ────────────────────────────────────────────── */
+#view-sector .table-container {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 10px; overflow: hidden; margin-bottom: 24px;
+}
+#view-sector .table-wrapper { overflow-x: auto; }
+#view-sector table { width: 100%; border-collapse: collapse; font-size: 13px; }
+#view-sector thead th {
+    padding: 10px 14px; text-align: left;
+    font-size: 11px; font-weight: 600;
+    color: var(--text-muted); text-transform: uppercase;
+    letter-spacing: 0.4px;
+    background: rgba(0,0,0,0.25);
+    border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; z-index: 2;
+    white-space: nowrap;
+}
+#view-sector tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; color: var(--text-secondary);
+    white-space: nowrap;
+}
+#view-sector tbody tr:hover { background: rgba(255,255,255,0.02); }
+#view-sector .col-rank { text-align: center; width: 40px; color: var(--text-muted); }
+#view-sector .ticker-text {
+    font-weight: 700; color: var(--text-primary); letter-spacing: 0.3px;
+}
+#view-sector .col-name {
+    font-family: 'Inter', sans-serif; color: var(--text-secondary);
+    max-width: 180px; overflow: hidden; text-overflow: ellipsis;
+}
+
+/* Category badges */
+#view-sector .category-badge {
+    font-size: 10px; padding: 2px 8px; border-radius: 4px;
+    font-weight: 500; font-family: 'Inter', sans-serif;
+    display: inline-block;
+}
+#view-sector .category-badge.indices     { background: var(--accent-soft); color: var(--accent); }
+#view-sector .category-badge.sectors     { background: rgba(16,185,129,0.12); color: var(--green); }
+#view-sector .category-badge.cap_sectors { background: rgba(6,182,212,0.12); color: var(--cyan); }
+#view-sector .category-badge.industry    { background: var(--amber-bg); color: var(--amber); }
+#view-sector .category-badge.leaders     { background: rgba(167,139,250,0.12); color: var(--purple); }
+
+/* Sparkline */
+#view-sector .sparkline-container {
+    display: flex; align-items: flex-end; gap: 1px; height: 26px;
+}
+#view-sector .sparkline-bar {
+    width: 4px; border-radius: 1px; min-height: 3px;
+}
+
+/* RS Strength cell */
+#view-sector .rs-sts-cell {
+    padding: 3px 10px; border-radius: 4px;
+    font-weight: 600; font-size: 12px;
+    display: inline-block; min-width: 50px; text-align: center;
+}
+#view-sector .rs-sts-cell.is-spy {
+    background: transparent; color: var(--text-muted); font-style: italic;
+}
+
+/* Signal badges */
+#view-sector .signal-badge {
+    font-size: 11px; padding: 3px 10px; border-radius: 20px;
+    font-weight: 500; font-family: 'Inter', sans-serif; white-space: nowrap;
+}
+#view-sector .signal-badge.hot     { background: rgba(16,185,129,0.15); color: var(--green); }
+#view-sector .signal-badge.warm    { background: rgba(34,211,238,0.12); color: var(--cyan-bright); }
+#view-sector .signal-badge.rising  { background: rgba(14,165,233,0.12); color: #0ea5e9; }
+#view-sector .signal-badge.neutral { background: rgba(255,255,255,0.05); color: var(--text-muted); }
+#view-sector .signal-badge.weak    { background: var(--amber-bg); color: var(--amber); }
+#view-sector .signal-badge.cold    { background: var(--red-bg); color: var(--red); }
+
+/* Skeleton loading */
+#view-sector .skeleton-row td { padding: 14px; }
+#view-sector .skeleton {
+    height: 14px; border-radius: 4px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.04) 25%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.04) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+/* Refresh button */
+#view-sector .refresh-btn {
+    padding: 6px; border-radius: 6px; border: 1px solid var(--border);
+    background: transparent; color: var(--text-muted); cursor: pointer;
+    transition: all 0.2s; display: flex; align-items: center;
+}
+#view-sector .refresh-btn:hover { color: var(--text-secondary); border-color: var(--border-hover); }
+#view-sector .refresh-btn.spinning svg { animation: spin 0.8s linear infinite; }
+
+/* Footer */
+#view-sector .dashboard-footer {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 0; border-top: 1px solid var(--border);
+    font-size: 11px; color: var(--text-muted); flex-wrap: wrap; gap: 8px;
+}
+#view-sector .dashboard-footer a { color: var(--accent); text-decoration: none; }
+#view-sector .dashboard-footer a:hover { text-decoration: underline; }
+#view-sector .footer-sep { margin: 0 6px; opacity: 0.4; }
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    #view-sector .signal-summary { grid-template-columns: repeat(2, 1fr); }
+    #view-sector .controls-bar { flex-direction: column; align-items: flex-start; }
+    #view-sector .benchmark-card { min-width: 110px; }
+    #view-sector .dashboard-footer { flex-direction: column; text-align: center; }
+}

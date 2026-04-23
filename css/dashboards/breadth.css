@@ -1,0 +1,215 @@
+/* ============================================================
+   BREADTH DASHBOARD — Scoped Styles
+   All selectors scoped under #view-breadth
+   ============================================================ */
+
+/* ── Sub-navigation (Dashboard / Data tabs) ────────────────── */
+#view-breadth .sub-nav {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 16px; flex-wrap: wrap; gap: 12px;
+}
+#view-breadth .sub-tabs { display: flex; gap: 4px; }
+#view-breadth .sub-tab {
+    padding: 7px 16px; border-radius: 6px; font-size: 12px;
+    font-weight: 600; border: 1px solid var(--border);
+    background: transparent; color: var(--text-muted);
+    cursor: pointer; transition: all 0.2s; font-family: inherit;
+}
+#view-breadth .sub-tab:hover { color: var(--text-secondary); border-color: var(--border-hover); }
+#view-breadth .sub-tab.active {
+    background: var(--accent-soft); color: var(--accent);
+    border-color: rgba(99,102,241,0.3);
+}
+
+#view-breadth .sub-controls { display: flex; align-items: center; gap: 12px; }
+#view-breadth .year-selector {
+    display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-secondary);
+}
+#view-breadth .year-selector select {
+    padding: 5px 10px; border-radius: 6px; font-size: 12px;
+    background: var(--bg-card); color: var(--text-primary);
+    border: 1px solid var(--border); font-family: 'JetBrains Mono', monospace;
+    cursor: pointer;
+}
+#view-breadth .live-indicator {
+    display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--green);
+}
+#view-breadth .live-dot {
+    width: 7px; height: 7px; border-radius: 50%; background: var(--green);
+    animation: pulse 2s infinite;
+}
+
+/* ── Sub-pages ─────────────────────────────────────────────── */
+#view-breadth .sub-page { display: none; }
+#view-breadth .sub-page.active { display: block; animation: viewFadeIn 0.25s ease; }
+
+/* ── Regime Banner ─────────────────────────────────────────── */
+#view-breadth .regime-banner {
+    padding: 20px 24px; border-radius: 12px; margin-bottom: 20px;
+    border: 1px solid var(--border);
+    background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+#view-breadth .regime-bull {
+    background: linear-gradient(135deg, rgba(16,185,129,0.08), rgba(6,182,212,0.05));
+    border-color: var(--green-border);
+}
+#view-breadth .regime-extreme-bull {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(16,185,129,0.05));
+    border-color: var(--amber-border);
+}
+#view-breadth .regime-caution {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.04));
+    border-color: var(--amber-border);
+}
+#view-breadth .regime-neutral {
+    background: linear-gradient(135deg, rgba(100,116,139,0.08), rgba(100,116,139,0.04));
+    border-color: rgba(100,116,139,0.2);
+}
+#view-breadth .regime-bear {
+    background: linear-gradient(135deg, rgba(239,68,68,0.08), rgba(245,158,11,0.04));
+    border-color: var(--red-border);
+}
+#view-breadth .regime-extreme-bear {
+    background: linear-gradient(135deg, rgba(239,68,68,0.12), rgba(239,68,68,0.06));
+    border-color: var(--red-border);
+}
+
+#view-breadth .regime-label {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.5px;
+    text-transform: uppercase; margin-bottom: 4px;
+}
+#view-breadth .regime-sub {
+    font-size: 11px; color: var(--text-muted); margin-bottom: 10px; display: block;
+}
+#view-breadth .regime-text {
+    font-size: 14px; color: var(--text-secondary); line-height: 1.65; max-width: 920px;
+}
+#view-breadth .regime-action {
+    display: inline-block; margin-top: 12px; padding: 8px 16px;
+    border-radius: 8px; font-size: 13px; font-weight: 600;
+}
+#view-breadth .action-buy    { background: var(--green-bg); color: var(--green); border: 1px solid var(--green-border); }
+#view-breadth .action-cash   { background: var(--red-bg);   color: var(--red);   border: 1px solid var(--red-border); }
+#view-breadth .action-selective { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber-border); }
+#view-breadth .action-trim   { background: var(--cyan-bg);  color: var(--cyan);  border: 1px solid rgba(6,182,212,0.3); }
+
+#view-breadth .regime-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+#view-breadth .regime-pill {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 4px 12px; border-radius: 20px; font-size: 11px;
+    font-weight: 500; color: var(--text-secondary);
+    background: rgba(255,255,255,0.04); border: 1px solid var(--border);
+}
+#view-breadth .pill-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+
+/* ── KPI Grid ──────────────────────────────────────────────── */
+#view-breadth .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+    gap: 12px; margin-bottom: 24px;
+}
+#view-breadth .kpi-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 16px; transition: all 0.2s;
+}
+#view-breadth .kpi-card:hover { border-color: var(--border-hover); background: var(--bg-card-hover); }
+#view-breadth .kpi-card.flash { animation: kpiFlash 0.6s ease; }
+@keyframes kpiFlash {
+    0% { box-shadow: 0 0 0 0 rgba(99,102,241,0.3); }
+    50% { box-shadow: 0 0 12px 2px rgba(99,102,241,0.15); }
+    100% { box-shadow: 0 0 0 0 transparent; }
+}
+#view-breadth .kpi-bullish  { border-left: 3px solid var(--green); }
+#view-breadth .kpi-bearish  { border-left: 3px solid var(--red); }
+#view-breadth .kpi-caution  { border-left: 3px solid var(--amber); }
+#view-breadth .kpi-neutral  { border-left: 3px solid var(--text-muted); }
+
+#view-breadth .kpi-label {
+    font-size: 11px; font-weight: 500; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 6px;
+}
+#view-breadth .kpi-value {
+    font-size: 24px; font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-primary); margin-bottom: 2px;
+}
+#view-breadth .kpi-sub { font-size: 10px; color: var(--text-muted); }
+#view-breadth .kpi-delta { font-size: 11px; font-family: 'JetBrains Mono', monospace; margin-top: 4px; }
+#view-breadth .delta-up   { color: var(--green); }
+#view-breadth .delta-down { color: var(--red); }
+#view-breadth .delta-flat { color: var(--text-muted); }
+
+/* ── Charts Grid ───────────────────────────────────────────── */
+#view-breadth .charts-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px;
+}
+#view-breadth .chart-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 10px; overflow: hidden;
+}
+#view-breadth .chart-wide { grid-column: 1 / -1; }
+#view-breadth .chart-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 18px; border-bottom: 1px solid var(--border);
+}
+#view-breadth .chart-header h3 { font-size: 13px; font-weight: 600; }
+#view-breadth .chart-badge {
+    font-size: 10px; font-weight: 600; padding: 3px 10px;
+    border-radius: 20px; background: var(--accent-soft); color: var(--accent);
+}
+#view-breadth .chart-container { position: relative; height: 280px; padding: 12px; }
+
+/* ── Data Reference Table ──────────────────────────────────── */
+#view-breadth .data-header { margin-bottom: 16px; }
+#view-breadth .data-header h2 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+#view-breadth .data-subtitle { font-size: 13px; color: var(--text-secondary); }
+
+#view-breadth .data-table-wrapper {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 10px; overflow: hidden; margin-bottom: 20px;
+}
+#view-breadth .table-scroll { overflow-x: auto; }
+#view-breadth table { width: 100%; border-collapse: collapse; font-size: 12px; white-space: nowrap; }
+#view-breadth thead th {
+    padding: 10px 12px; text-align: right; font-size: 10px; font-weight: 600;
+    color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.3px;
+    background: rgba(0,0,0,0.25); border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; z-index: 2;
+}
+#view-breadth thead th:first-child { text-align: left; }
+#view-breadth tbody td {
+    padding: 8px 12px; text-align: right;
+    border-bottom: 1px solid var(--border);
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    color: var(--text-secondary);
+}
+#view-breadth tbody td:first-child { text-align: left; color: var(--text-primary); font-weight: 500; }
+#view-breadth tbody tr:hover { background: rgba(255,255,255,0.02); }
+
+/* Cell coloring */
+#view-breadth .cell-strong-bull { color: var(--green-bright); background: rgba(16,185,129,0.08); }
+#view-breadth .cell-bull        { color: var(--green); }
+#view-breadth .cell-caution     { color: var(--amber); }
+#view-breadth .cell-bear        { color: var(--red); }
+#view-breadth .cell-strong-bear { color: var(--red-bright); background: rgba(239,68,68,0.08); }
+#view-breadth .cell-extreme     { color: #e879f9; background: rgba(232,121,249,0.08); }
+
+/* Color Legend */
+#view-breadth .data-legend { margin-top: 16px; }
+#view-breadth .data-legend h3 { font-size: 13px; font-weight: 600; margin-bottom: 10px; }
+#view-breadth .legend-items { display: flex; flex-wrap: wrap; gap: 16px; }
+#view-breadth .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-secondary); }
+#view-breadth .legend-color { width: 14px; height: 14px; border-radius: 3px; }
+#view-breadth .legend-color.bullish  { background: var(--green); }
+#view-breadth .legend-color.caution  { background: var(--amber); }
+#view-breadth .legend-color.bearish  { background: var(--red); }
+#view-breadth .legend-color.extreme  { background: #e879f9; }
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    #view-breadth .charts-grid { grid-template-columns: 1fr; }
+    #view-breadth .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    #view-breadth .chart-container { height: 220px; }
+    #view-breadth .sub-nav { flex-direction: column; align-items: flex-start; }
+}

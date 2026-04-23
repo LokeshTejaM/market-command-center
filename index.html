@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Command Center</title>
+  <meta name="description" content="Unified Market Dashboard — StockBee Breadth Monitor + Sector Rotation RS Tracker">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles: core first, then dashboard-specific -->
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/dashboards/breadth.css">
+  <link rel="stylesheet" href="css/dashboards/sector.css">
+</head>
+<body>
+
+  <!-- ═══════════ TOP NAVIGATION (static shell) ═══════════ -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <div class="brand">
+        <div class="brand-icon">M</div>
+        <div>
+          <div class="brand-name">Market Command Center</div>
+          <div class="brand-tag">Multi-Dashboard Platform</div>
+        </div>
+      </div>
+      <!-- Tabs injected dynamically by registry.js -->
+      <div class="nav-tabs" id="nav-tabs"></div>
+    </div>
+    <div class="nav-right">
+      <div class="status-pill">
+        <span class="status-dot" id="status-dot"></span>
+        <span id="status-text">Loading…</span>
+      </div>
+      <span class="nav-timestamp" id="nav-timestamp"></span>
+    </div>
+  </nav>
+
+  <!-- ═══════════ DASHBOARD VIEWPORT ═══════════ -->
+  <!-- Views injected dynamically by registry.js -->
+  <div id="dashboard-viewport"></div>
+
+  <!-- ═══════════ SCRIPTS ═══════════ -->
+  <!-- Chart.js (used by breadth dashboard) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.1.0/dist/chartjs-plugin-annotation.min.js"></script>
+
+  <!-- Core: shared utilities, then registry (auto-boots on DOMContentLoaded) -->
+  <script src="js/shared.js"></script>
+  <script src="js/registry.js"></script>
+
+  <!-- Dashboard plugins: each self-registers with DashboardRegistry -->
+  <script src="js/dashboards/breadth.js"></script>
+  <script src="js/dashboards/sector.js"></script>
+
+  <!--
+    Adding a new dashboard? Just add:
+      <link rel="stylesheet" href="css/dashboards/your-dashboard.css">
+      <script src="js/dashboards/your-dashboard.js"></script>
+    The registry handles the rest. No other files need to change.
+  -->
+</body>
+</html>
