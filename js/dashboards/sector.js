@@ -60,7 +60,9 @@ DashboardRegistry.register({
     // ─── HTML Template ───────────────────────────────────────
     _template() {
         return `
+            <div class="section-head"><h2>Benchmark Snapshot</h2><p>Broad index pulse and equal-weight leadership</p></div>
             <div class="benchmark-bar" id="s-benchmarks"></div>
+            <div class="section-head"><h2>Universe Controls</h2><p>Filter sectors, industries, and leaders</p></div>
             <div class="controls-bar">
                 <div class="filter-group" id="s-filters">
                     <button class="filter-btn active" data-filter="all">All</button>
@@ -81,7 +83,9 @@ DashboardRegistry.register({
                     </select>
                 </div>
             </div>
+            <div class="section-head"><h2>Signal Summary</h2><p>Quick read of relative strength conditions</p></div>
             <div class="signal-summary" id="s-signals"></div>
+            <div class="section-head"><h2>Relative Strength Table</h2><p>Ranked list with RS trend, percentile strength, and signal tags</p></div>
             <div class="table-container"><div class="table-wrapper">
                 <table><thead><tr>
                     <th class="col-rank">#</th><th>Ticker</th><th>Name</th><th>Category</th>

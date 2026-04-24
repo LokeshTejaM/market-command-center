@@ -72,12 +72,14 @@ DashboardRegistry.register({
             </div>
             <div id="b-error" class="error-banner hidden"><span>\u26a0</span><span id="b-error-msg">Error</span><button class="btn-retry" id="b-retry">Retry</button></div>
             <div class="sub-page active" id="b-dashboard-page">
+                <div class="section-head"><h2>Market Regime</h2><p>Current breadth posture and action bias</p></div>
                 <div class="regime-banner" id="b-regime">
                     <div class="regime-label" id="b-regime-label">LOADING</div>
                     <span class="regime-sub" id="b-regime-sub">Analyzing...</span>
                     <p class="regime-text" id="b-regime-text">Fetching data from StockBee Monitor...</p>
                     <div class="regime-pills" id="b-regime-pills"></div>
                 </div>
+                <div class="section-head"><h2>Key Metrics</h2><p>At-a-glance breadth diagnostics</p></div>
                 <div class="kpi-grid">
                     ${kpi('t2108', 'T2108', '% above 40d MA')}
                     ${kpi('r5', '5-Day Ratio', 'Up/Down momentum')}
@@ -88,6 +90,7 @@ DashboardRegistry.register({
                     ${kpi('qdn', 'Qtr Losers', 'Down 25%+ / quarter')}
                     ${kpi('sp', 'S&P 500', 'Index level')}
                 </div>
+                <div class="section-head"><h2>Trend Charts</h2><p>Daily momentum, structure, and risk zones</p></div>
                 <div class="charts-grid">
                     ${chartCard('updown', 'Stocks Up 4%+ vs Down 4%+ Daily', 'Primary Breadth', true)}
                     ${chartCard('ratio', '5-Day & 10-Day Ratio', 'Momentum Signal')}
@@ -99,6 +102,7 @@ DashboardRegistry.register({
                 </div>
             </div>
             <div class="sub-page" id="b-data-page">
+                <div class="section-head"><h2>Reference Data</h2><p>Raw breadth series used by the dashboard</p></div>
                 <div class="data-header"><h2>\ud83d\udccb Complete Breadth Data Reference</h2>
                     <p class="data-subtitle">Color-coded raw data \u2014 <span id="b-row-count">0</span> trading days</p>
                 </div>
@@ -334,27 +338,62 @@ DashboardRegistry.register({
     },
 
     // ─── Chart Factory ───────────────────────────────────────
-    _C: { // Colors shorthand
-        green: '#10b981', greenBg: 'rgba(16,185,129,0.18)', greenFill: 'rgba(16,185,129,0.12)',
-        red: '#ef4444', redBg: 'rgba(239,68,68,0.18)', redFill: 'rgba(239,68,68,0.12)',
-        cyan: '#22d3ee', cyanFill: 'rgba(34,211,238,0.14)',
-        purple: '#a78bfa', purpleFill: 'rgba(167,139,250,0.12)',
-        greenBright: '#34d399', redBright: '#f87171', amberBright: '#fbbf24',
-        grid: 'rgba(255,255,255,0.05)', tick: '#64748b', tooltip: 'rgba(15,23,42,0.95)',
+    _C: { // Colors shorthand (Walmart-aligned)
+        green: '#2a8703', greenBg: 'rgba(42,135,3,0.2)', greenFill: 'rgba(42,135,3,0.12)',
+        red: '#ea1100', redBg: 'rgba(234,17,0,0.18)', redFill: 'rgba(234,17,0,0.11)',
+        cyan: '#3f79ff', cyanFill: 'rgba(63,121,255,0.14)',
+        purple: '#7ea8ff', purpleFill: 'rgba(126,168,255,0.12)',
+        greenBright: '#49b41a', redBright: '#ff4a3e', amberBright: '#ffc220',
+        grid: 'rgba(238,243,251,0.06)', tick: '#8ca0bf', tooltip: 'rgba(11,18,32,0.97)',
     },
 
     _chartBase() {
         return {
-            responsive: true, maintainAspectRatio: false,
-            animation: { duration: 600 },
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: { duration: 520, easing: 'easeOutQuart' },
             interaction: { mode: 'index', intersect: false },
+            elements: {
+                line: { borderWidth: 2.25, tension: 0.28 },
+                point: { radius: 0, hoverRadius: 4 },
+                bar: { borderRadius: 4 },
+            },
             plugins: {
-                tooltip: { backgroundColor: this._C.tooltip, titleColor: '#e2e8f0', bodyColor: '#94a3b8', borderColor: 'rgba(255,255,255,0.1)', borderWidth: 1, cornerRadius: 8, padding: 12, displayColors: true, boxPadding: 4 },
-                legend: { labels: { color: '#94a3b8', usePointStyle: true, pointStyleWidth: 8, padding: 16, font: { size: 11, weight: '500' } } },
+                tooltip: {
+                    backgroundColor: this._C.tooltip,
+                    titleColor: '#eef3fb',
+                    bodyColor: '#c3d0e4',
+                    borderColor: 'rgba(238,243,251,0.14)',
+                    borderWidth: 1,
+                    cornerRadius: 10,
+                    padding: 10,
+                    displayColors: true,
+                    boxPadding: 5,
+                },
+                legend: {
+                    position: 'top',
+                    align: 'start',
+                    labels: {
+                        color: '#9fb0cb',
+                        usePointStyle: true,
+                        pointStyle: 'circle',
+                        pointStyleWidth: 8,
+                        padding: 14,
+                        font: { size: 11, weight: '600' },
+                    },
+                },
             },
             scales: {
-                x: { ticks: { color: this._C.tick, font: { size: 10 }, maxRotation: 45 }, grid: { color: this._C.grid }, border: { color: this._C.grid } },
-                y: { ticks: { color: this._C.tick, font: { size: 10 } }, grid: { color: this._C.grid }, border: { color: this._C.grid } },
+                x: {
+                    ticks: { color: this._C.tick, font: { size: 10 }, maxRotation: 0, autoSkip: true, autoSkipPadding: 12 },
+                    grid: { color: this._C.grid, drawTicks: false },
+                    border: { color: this._C.grid },
+                },
+                y: {
+                    ticks: { color: this._C.tick, font: { size: 10 }, maxTicksLimit: 6 },
+                    grid: { color: this._C.grid, drawTicks: false },
+                    border: { color: this._C.grid },
+                },
             },
         };
     },

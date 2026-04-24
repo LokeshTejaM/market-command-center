@@ -188,6 +188,77 @@
 #view-sector .dashboard-footer a:hover { text-decoration: underline; }
 #view-sector .footer-sep { margin: 0 6px; opacity: 0.4; }
 
+/* ── UI Refresh Overrides ──────────────────────────────────── */
+#view-sector .section-head { margin-top: 8px; }
+
+#view-sector .benchmark-card,
+#view-sector .signal-card,
+#view-sector .table-container {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+#view-sector .benchmark-card {
+    border-radius: 11px;
+    padding: 12px 16px;
+    min-width: 146px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+}
+#view-sector .benchmark-price { font-size: 17px; letter-spacing: -0.2px; }
+#view-sector .benchmark-card.positive { border-bottom: 3px solid var(--green); }
+#view-sector .benchmark-card.negative { border-bottom: 3px solid var(--red); }
+
+#view-sector .controls-bar {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px;
+}
+#view-sector .filter-btn {
+    border-radius: 9px;
+    padding: 7px 13px;
+    font-weight: 600;
+}
+#view-sector .filter-btn.active {
+    background: rgba(0,83,226,0.22);
+    border-color: rgba(0,83,226,0.45);
+    color: #d8e7ff;
+}
+#view-sector .sort-select {
+    border-radius: 9px;
+    padding: 7px 11px;
+}
+
+#view-sector .signal-summary { gap: 12px; }
+#view-sector .signal-card {
+    border-radius: 12px;
+    padding: 14px 15px;
+}
+#view-sector .signal-card-header { color: #95a7c5; }
+#view-sector .signal-card-value {
+    font-size: 24px;
+    letter-spacing: -0.35px;
+    color: #eff4fd;
+}
+
+#view-sector .table-container { border-radius: 12px; }
+#view-sector thead th {
+    background: rgba(0,0,0,0.34);
+    color: #a4b4cf;
+    padding: 11px 13px;
+}
+#view-sector tbody td { color: #bac7dd; }
+#view-sector tbody tr:nth-child(even) { background: rgba(255,255,255,0.015); }
+#view-sector tbody tr:hover { background: rgba(255,255,255,0.045); }
+#view-sector .ticker-text { color: #eaf1ff; }
+#view-sector .col-name { color: #c0cce1; }
+#view-sector .signal-badge,
+#view-sector .category-badge { border-radius: 999px; padding: 3px 10px; }
+
+#view-sector .dashboard-footer {
+    border-top-color: rgba(255,255,255,0.09);
+    padding-top: 18px;
+}
+
 /* ── Responsive ────────────────────────────────────────────── */
 @media (max-width: 768px) {
     #view-sector .signal-summary { grid-template-columns: repeat(2, 1fr); }
