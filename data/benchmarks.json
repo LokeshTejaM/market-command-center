@@ -5,57 +5,57 @@
       "ticker": "SPY",
       "name": "S&P 500",
       "category": "benchmark",
-      "price": 202.90762242340836,
-      "day_change_pct": -1.5915845841197873
+      "price": 776.3400268554688,
+      "day_change_pct": -0.19797115463531245
     },
     {
       "ticker": "RSP",
       "name": "S&P 500 Equal Weight",
       "category": "benchmark",
-      "price": 176.4627587007243,
-      "day_change_pct": 3.7457770032002013
+      "price": 222.77000427246094,
+      "day_change_pct": 0.017962800560922254
     },
     {
       "ticker": "QQQ",
       "name": "Nasdaq 100",
       "category": "benchmark",
-      "price": 355.63995613086786,
-      "day_change_pct": -2.166454248340699
+      "price": 731.0700073242188,
+      "day_change_pct": -0.13659895774928987
     },
     {
       "ticker": "QQQE",
       "name": "Nasdaq 100 Equal Weight",
       "category": "benchmark",
-      "price": 337.8763240723897,
-      "day_change_pct": -3.1494868053396408
+      "price": 124.62999725341797,
+      "day_change_pct": -0.04812349572009822
     },
     {
       "ticker": "IWM",
       "name": "Russell 2000",
       "category": "benchmark",
-      "price": 196.5768251209132,
-      "day_change_pct": 0.6265152348875924
+      "price": 305.0899963378906,
+      "day_change_pct": 0.5238867670150249
     },
     {
       "ticker": "DIA",
       "name": "Dow Jones",
       "category": "benchmark",
-      "price": 269.26046920976967,
-      "day_change_pct": 1.531108735211384
+      "price": 536.7999877929688,
+      "day_change_pct": -0.20635150991413775
     },
     {
       "ticker": "^VIX",
       "name": "VIX",
       "category": "volatility",
-      "price": 152.78909873359865,
-      "day_change_pct": -1.9451201528384088
+      "price": 14.25,
+      "day_change_pct": -2.5974033593193835
     },
     {
       "ticker": "^VIX3M",
       "name": "VIX3M",
       "category": "volatility",
-      "price": 138.83913981507968,
-      "day_change_pct": 0.11284144895722381
+      "price": null,
+      "day_change_pct": null
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "built_at": "2026-08-15T03:50:38.394516Z",
+  "built_at": "2026-08-15T04:37:40.328025Z",
   "as_of_date": "2026-08-14",
   "windows": [
     21,
@@ -10,12 +10,12 @@
   ],
   "trend_lookback_days": 21,
   "universe": {
-    "sp500_tickers": 55,
+    "sp500_tickers": 503,
     "dropped_stocks": [],
     "dropped_reference": []
   },
   "sources": {
-    "prices": "SAMPLE (synthetic data from gen_sample_data.py)",
+    "prices": "yfinance (Yahoo Finance)",
     "sp500_constituents": "Wikipedia"
   }
 }
