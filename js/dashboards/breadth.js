@@ -40,15 +40,15 @@ DashboardRegistry.register({
 
     // ─── HTML Template ───────────────────────────────────────
     _template() {
-        const chartCard = (id, title, badge, wide = false) =>
+        const chartCard = (id, title, badge, wide = false, info = '') =>
             `<div class="chart-card${wide ? ' chart-wide' : ''}">
-                <div class="chart-header"><h3>${title}</h3><span class="chart-badge">${badge}</span></div>
+                <div class="chart-header"><h3>${title}${info ? Shared.infoIcon(info) : ''}</h3><span class="chart-badge">${badge}</span></div>
                 <div class="chart-container"><canvas id="bc-${id}"></canvas></div>
             </div>`;
 
-        const kpi = (id, label, sub) =>
+        const kpi = (id, label, sub, info = '') =>
             `<div class="kpi-card" id="bkpi-${id}">
-                <div class="kpi-label">${label}</div>
+                <div class="kpi-label">${label}${info ? Shared.infoIcon(info) : ''}</div>
                 <div class="kpi-value" id="bkpi-${id}-val">\u2014</div>
                 <div class="kpi-sub">${sub}</div>
             </div>`;
@@ -74,33 +74,33 @@ DashboardRegistry.register({
             </div>
             <div id="b-error" class="error-banner hidden"><span>\u26a0</span><span id="b-error-msg">Error</span><button class="btn-retry" id="b-retry">Retry</button></div>
             <div class="sub-page active" id="b-dashboard-page">
-                <div class="section-head"><h2>Market Regime</h2><p>Current breadth posture and action bias</p></div>
+                <div class="section-head"><h2>Market Regime ${Shared.infoIcon('What: A single overall posture (RISK-ON / NEUTRAL / RISK-OFF) computed from T2108 + 5-day ratio + 10-day ratio + streaks. HOW TO READ: RISK-ON means momentum-buy setups are favored; RISK-OFF means cash/shorts favored. This is the master filter for the day \u2014 do not fight the regime.')}</h2><p>Current breadth posture and action bias</p></div>
                 <div class="regime-banner" id="b-regime">
                     <div class="regime-label" id="b-regime-label">LOADING</div>
                     <span class="regime-sub" id="b-regime-sub">Analyzing...</span>
                     <p class="regime-text" id="b-regime-text">Fetching data from StockBee Monitor...</p>
                     <div class="regime-pills" id="b-regime-pills"></div>
                 </div>
-                <div class="section-head"><h2>Key Metrics</h2><p>At-a-glance breadth diagnostics</p></div>
+                <div class="section-head"><h2>Key Metrics ${Shared.infoIcon('At-a-glance breadth diagnostics from StockBee Monitor (Pradeep Bonde). Each KPI has its own info icon explaining calculation and thresholds.')}</h2><p>At-a-glance breadth diagnostics</p></div>
                 <div class="kpi-grid">
-                    ${kpi('t2108', 'T2108', '% above 40d MA')}
-                    ${kpi('r5', '5-Day Ratio', 'Up/Down momentum')}
-                    ${kpi('r10', '10-Day Ratio', 'Trend confirmation')}
-                    ${kpi('up4', 'Up 4%+ Today', 'Momentum bursts')}
-                    ${kpi('dn4', 'Down 4%+ Today', 'Selling pressure')}
-                    ${kpi('qup', 'Qtr Leaders', 'Up 25%+ / quarter')}
-                    ${kpi('qdn', 'Qtr Losers', 'Down 25%+ / quarter')}
-                    ${kpi('sp', 'S&P 500', 'Index level')}
+                    ${kpi('t2108', 'T2108', '% above 40d MA', 'What: % of NYSE stocks trading above their 40-day moving average. HOW TO READ: >70 = market extended (careful with new longs). 30-70 = healthy trend. <30 = oversold, look for reversal setups. <20 = capitulation zone.')}
+                    ${kpi('r5', '5-Day Ratio', 'Up/Down momentum', 'What: 5-day cumulative ratio of stocks up 4%+ vs down 4%+. HOW TO READ: >1.5 = short-term momentum bull. <0.7 = short-term momentum bear. Confirms swing entries.')}
+                    ${kpi('r10', '10-Day Ratio', 'Trend confirmation', 'What: 10-day cumulative ratio of stocks up 4%+ vs down 4%+. HOW TO READ: Same as 5-day but slower. When 5d and 10d agree = strong trend. When they diverge = watch for reversal.')}
+                    ${kpi('up4', 'Up 4%+ Today', 'Momentum bursts', 'What: Number of NYSE stocks up 4%+ today on volume. HOW TO READ: >200 is a strong day, >500 signals a thrust off a bottom. Persistent low readings signal distribution.')}
+                    ${kpi('dn4', 'Down 4%+ Today', 'Selling pressure', 'What: Number of NYSE stocks down 4%+ today. HOW TO READ: >200 warns of distribution. >500 in one day is a washout \u2014 often marks short-term bottoms.')}
+                    ${kpi('qup', 'Qtr Leaders', 'Up 25%+ / quarter', 'What: Number of stocks up 25%+ over the last 63 trading days. HOW TO READ: Rising trend = broadening leadership (bull-market signature). Rollover from a peak often precedes market tops.')}
+                    ${kpi('qdn', 'Qtr Losers', 'Down 25%+ / quarter', 'What: Number of stocks down 25%+ over the last 63 trading days. HOW TO READ: Rising = broadening damage. When qdn > qup you\u2019re in a bear-tape.')}
+                    ${kpi('sp', 'S&P 500', 'Index level', 'What: S&P 500 close. HOW TO READ: The tape you are trading against. Compare its direction to Qtr Leaders vs Qtr Losers \u2014 divergences are early warnings.')}
                 </div>
-                <div class="section-head"><h2>Trend Charts</h2><p>Daily momentum, structure, and risk zones</p></div>
+                <div class="section-head"><h2>Trend Charts ${Shared.infoIcon('Historical breadth series. Each chart has its own info icon explaining what it plots and how to read it.')}</h2><p>Daily momentum, structure, and risk zones</p></div>
                 <div class="charts-grid">
-                    ${chartCard('updown', 'Stocks Up 4%+ vs Down 4%+ Daily', 'Primary Breadth', true)}
-                    ${chartCard('ratio', '5-Day & 10-Day Ratio', 'Momentum Signal')}
-                    ${chartCard('qtr', 'Quarterly Momentum (Up vs Down 25%)', 'Structural Health')}
-                    ${chartCard('t2108', 'T2108 \u2014 % Above 40-Day MA', 'Market Oscillator')}
-                    ${chartCard('sp500', 'S&P 500', 'Benchmark')}
-                    ${chartCard('monthly', 'Monthly Momentum (Up vs Down 25%/Month)', 'Secondary Breadth')}
-                    ${chartCard('streak', '34-Day Streaks (Up vs Down 13%)', 'Persistence')}
+                    ${chartCard('updown', 'Stocks Up 4%+ vs Down 4%+ Daily', 'Primary Breadth', true, 'What: Daily counts of stocks with 4%+ up-moves (green) and 4%+ down-moves (red). HOW TO READ: Green spikes >300 = thrust days (bullish). Red spikes >300 = distribution/washout. Green consistently > red = healthy trend; the crossover often marks trend changes.')}
+                    ${chartCard('ratio', '5-Day & 10-Day Ratio', 'Momentum Signal', false, 'What: Rolling ratios of up-4% vs down-4% counts. HOW TO READ: >1.5 = short-term bull, <0.7 = short-term bear. Green line (5d) leading blue (10d) higher = momentum ignition. Both crossing under 1.0 = risk-off flip.')}
+                    ${chartCard('qtr', 'Quarterly Momentum (Up vs Down 25%)', 'Structural Health', false, 'What: Count of stocks up 25%+ (green) vs down 25%+ (red) over the last 63 trading days. HOW TO READ: Structural leadership indicator. Rising green with falling red = bull-market signature. Rising red with falling green = bear-market signature.')}
+                    ${chartCard('t2108', 'T2108 \u2014 % Above 40-Day MA', 'Market Oscillator', false, 'What: % of NYSE stocks above their 40-day MA (oscillator, 0-100). HOW TO READ: Shaded overbought >70 and oversold <30 zones. Best long setups: T2108 turning UP from <30 with confirming up-4% burst. Watch <20 for capitulation buys, >80 for exhaustion.')}
+                    ${chartCard('sp500', 'S&P 500', 'Benchmark', false, 'What: SPX price. HOW TO READ: The benchmark. Compare direction to breadth panels above \u2014 when SPX makes new highs but Qtr Leaders / Up 4%+ do NOT, that is a bearish non-confirmation.')}
+                    ${chartCard('monthly', 'Monthly Momentum (Up vs Down 25%/Month)', 'Secondary Breadth', false, 'What: Count of stocks up 25%+ (green) vs down 25%+ (red) in the last ~21 trading days. HOW TO READ: Same idea as quarterly but faster. Green expansion signals fresh momentum thrusts; red expansion signals fresh damage.')}
+                    ${chartCard('streak', '34-Day Streaks (Up vs Down 13%)', 'Persistence', false, 'What: Count of stocks up 13%+ (or down 13%+) in a 34-trading-day window. HOW TO READ: Persistence indicator. Sustained high readings signal a durable trend; a collapsing green line while price rises is a warning of narrowing leadership.')}
                 </div>
             </div>
             <div class="sub-page" id="b-data-page">
