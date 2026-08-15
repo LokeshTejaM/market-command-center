@@ -37,6 +37,13 @@ DEFAULT_WINDOWS = [21, 63, 126, 252]
 # 21 days = ~1 month; long enough to smooth noise, short enough to see rotation.
 DEFAULT_TREND_LOOKBACK = 21
 
+# Jeff Sun (@jfsrev) RS_Strength window: 25 trading days (~ one calendar month).
+# See: xcancel.com/jfsrev/status/1806709652975141131
+JEFF_RS_WINDOW = 25
+
+# Realized-volatility window: 20 trading days is the standard risk-manager choice.
+VOL_WINDOW = 20
+
 
 def compute_returns(prices: pd.DataFrame, windows: Iterable[int] = DEFAULT_WINDOWS) -> dict[int, pd.Series]:
     """Compute trailing return over each window, per ticker, as-of the latest date.
@@ -103,6 +110,77 @@ def compute_rs_trend(rank_history: pd.DataFrame, lookback: int = DEFAULT_TREND_L
     return (today - past).rename(f"rs_trend_{lookback}d")
 
 
+def compute_jeff_rs_strength(
+    prices: pd.DataFrame,
+    benchmark: str = "SPY",
+    window: int = JEFF_RS_WINDOW,
+) -> pd.Series:
+    """Jeff Sun's RS_Strength %: percentile of TODAY's RS-ratio within
+    that ticker's OWN last-N-day RS-ratio series.
+
+    Recipe (verbatim from @jfsrev tweet threads):
+      1. For each date in the last 25 trading days, compute
+         ratio[t] = close_ticker[t] / close_SPY[t]
+      2. RS_Strength_% = percentile of ratio[today] within [ratio[t-24], ..., ratio[today]]
+
+    Interpretation:
+      * 100 => ticker is at its highest RS-vs-SPY of the last month
+         (strongest possible leadership signal on this ticker's own scale)
+      * 0   => ticker at its lowest -- worst relative weakness of the month
+
+    NOTE: This is DIFFERENT from cross-sectional rs_rank. RS_Strength is
+    self-referential (each ticker vs its own history); rs_rank is
+    cross-sectional (this ticker vs the whole universe). Both are useful.
+
+    Args:
+        prices: DataFrame indexed by date, columns = tickers (must include benchmark).
+        benchmark: symbol used as the RS denominator. Jeff uses SPY.
+        window: lookback in trading days.
+
+    Returns:
+        Series indexed by ticker, values = 0-100 (percentile). NaN for the
+        benchmark itself and any ticker without enough history.
+    """
+    if benchmark not in prices.columns:
+        return pd.Series(np.nan, index=prices.columns, name="rs_strength_pct")
+    if len(prices) < window:
+        return pd.Series(np.nan, index=prices.columns, name="rs_strength_pct")
+
+    tail = prices.tail(window)
+    bench = tail[benchmark]
+    # Avoid divide-by-zero for missing benchmark data.
+    if (bench == 0).any() or bench.isna().any():
+        bench = bench.replace(0, np.nan).ffill().bfill()
+
+    ratios = tail.div(bench, axis=0)                # shape: (window, n_tickers)
+    today = ratios.iloc[-1]
+    # Percentile of today's ratio within this ticker's own window.
+    ranks = ratios.rank(axis=0, method="average", pct=True, ascending=True).iloc[-1] * 100
+    # NaN out benchmark (its ratio is always 1.0 -- meaningself-signal).
+    ranks[benchmark] = np.nan
+    # NaN out any column with too few non-nulls to be meaningful.
+    counts = ratios.notna().sum(axis=0)
+    ranks = ranks.where(counts >= max(5, window // 2), np.nan)
+    return ranks.rename("rs_strength_pct")
+
+
+def compute_realized_vol(prices: pd.DataFrame, window: int = VOL_WINDOW) -> pd.Series:
+    """Annualized realized volatility from daily log returns.
+
+    A close-only proxy for ATR that momentum traders use for position
+    sizing. Multiply by price to get an approximate daily $ move.
+
+    Returns:
+        Series indexed by ticker, values = annualized vol in % (e.g. 35 = 35%).
+    """
+    if len(prices) < window + 1:
+        return pd.Series(np.nan, index=prices.columns, name="vol_20d")
+    log_ret = np.log(prices / prices.shift(1))
+    daily_vol = log_ret.tail(window).std(ddof=0)
+    annual_vol = daily_vol * np.sqrt(252) * 100
+    return annual_vol.rename("vol_20d")
+
+
 def build_rs_frame(
     prices: pd.DataFrame,
     windows: Iterable[int] = DEFAULT_WINDOWS,
@@ -134,6 +212,13 @@ def build_rs_frame(
         rets_hist = compute_returns_history(prices, w, tail_needed)
         rank_hist = compute_rank_history(rets_hist)
         frame[f"rs_trend_{w}d"] = compute_rs_trend(rank_hist, trend_lookback)
+
+    # 20-day realized volatility (annualized %). Position-sizing input.
+    frame["vol_20d"] = compute_realized_vol(prices)
+
+    # NOTE: Jeff Sun's RS_Strength % is NOT computed here because it needs
+    # the benchmark (SPY) alongside the stock universe. `build_rs_data.py`
+    # computes it separately from the full price frame and merges in.
 
     return frame
 

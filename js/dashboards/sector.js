@@ -121,14 +121,17 @@ DashboardRegistry.register({
                 <table>
                     <thead><tr>
                         <th class="col-rank">#</th>
+                        <th></th>
                         <th>Ticker</th>
                         <th>Name</th>
                         <th>Sector</th>
                         <th class="right">Price</th>
                         <th class="right">Day %</th>
-                        <th class="right">RS Rank</th>
-                        <th class="right">RS Trend</th>
-                        <th>Quadrant</th>
+                        <th class="right">RS Rank ${Shared.infoIcon('Cross-sectional percentile rank (1-99) of this stock\u2019s N-day return vs the whole S&P 500. IBD/Minervini/Bonde convention. HOW TO READ: >=80 = market leader, <=20 = laggard. Momentum entries: RS Rank >= 80 AND positive trend.')}</th>
+                        <th class="right">RS Trend ${Shared.infoIcon('Change in RS Rank over the last 21 trading days. Positive = rank climbing (accelerating leadership). Negative = rank falling (fading leadership). HOW TO READ: A leader with a rising trend is the highest-conviction long. A leader with a falling trend needs tighter stops.')}</th>
+                        <th class="right">RS Str% ${Shared.infoIcon('Jeff Sun\u2019s RS_Strength %: percentile of TODAY\u2019s ticker/SPY ratio within the last 25 trading days of that ratio (self-referential). Range 0-100. HOW TO READ: 90+ means this stock is at its own strongest RS-vs-SPY of the month = accelerating leadership; <20 means at its own weakest = RS breakdown. Complementary to cross-sectional RS Rank.')}</th>
+                        <th class="right">Vol 20d ${Shared.infoIcon('20-day annualized realized volatility (%). Position-sizing input. HOW TO READ: <25 = tame (larger size ok), 25-45 = normal, >45 = wild (halve position size, wider stops). Approximate 1-day $ move = price * vol / 16.')}</th>
+                        <th>Quadrant ${Shared.infoIcon('Derived from (RS Rank, RS Trend): Leading = strong & rising, Weakening = strong but falling, Improving = weak but rising, Lagging = weak & falling. Momentum longs live in Leading + Improving.')}</th>
                     </tr></thead>
                     <tbody id="s-tbody"></tbody>
                 </table>
@@ -373,6 +376,7 @@ DashboardRegistry.register({
         recs.sort(cmp);
 
         const tbody = document.getElementById('s-tbody');
+        const watchlist = Watchlist.get();
         tbody.innerHTML = recs.map((r, i) => {
             const rank = r[rank_col];
             const trend = r[trend_col];
@@ -380,8 +384,13 @@ DashboardRegistry.register({
             const trendCls = trend > 0 ? 'positive' : trend < 0 ? 'negative' : '';
             const quadrant = this._quadrantOf(rank, trend);
             const rankBg = this._rankColor(rank);
-            return `<tr>
+            const starred = watchlist.includes(r.ticker);
+            const rsStr = r.rs_strength_pct;
+            const vol = r.vol_20d;
+            const rsStrCls = rsStr == null ? '' : rsStr >= 80 ? 'positive' : rsStr <= 20 ? 'negative' : '';
+            return `<tr data-ticker="${r.ticker}">
                 <td class="col-rank">${i + 1}</td>
+                <td><button class="s-star ${starred ? 'starred' : ''}" data-ticker="${r.ticker}" title="${starred ? 'Remove from watchlist' : 'Add to watchlist'}" aria-label="${starred ? 'Remove from watchlist' : 'Add to watchlist'}">${starred ? '\u2605' : '\u2606'}</button></td>
                 <td><b class="ticker-text">${r.ticker}</b></td>
                 <td class="col-name">${this._escape(r.name || '')}</td>
                 <td><span class="s-sector-pill">${this._escape(r.sector || '\u2014')}</span></td>
@@ -389,9 +398,24 @@ DashboardRegistry.register({
                 <td class="right ${dayCls}">${Shared.formatChange(r.day_change_pct)}</td>
                 <td class="right"><span class="s-rank-cell" style="background:${rankBg}">${rank ?? '\u2014'}</span></td>
                 <td class="right ${trendCls}">${trend == null ? '\u2014' : (trend > 0 ? '+' : '') + Math.round(trend)}</td>
+                <td class="right ${rsStrCls}">${rsStr == null ? '\u2014' : Math.round(rsStr)}</td>
+                <td class="right">${vol == null ? '\u2014' : vol.toFixed(0) + '%'}</td>
                 <td><span class="s-quad-pill s-quad-${quadrant}">${quadrant}</span></td>
             </tr>`;
         }).join('');
+
+        // Wire star clicks
+        tbody.querySelectorAll('.s-star').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.stopPropagation();
+                const t = btn.dataset.ticker;
+                Watchlist.toggle(t);
+                const now = Watchlist.get().includes(t);
+                btn.classList.toggle('starred', now);
+                btn.textContent = now ? '\u2605' : '\u2606';
+                btn.title = now ? 'Remove from watchlist' : 'Add to watchlist';
+            });
+        });
     },
 
     _quadrantOf(rank, trend) {

@@ -32,6 +32,7 @@ from compute import (
     DEFAULT_WINDOWS,
     aggregate_by_sector,
     build_rs_frame,
+    compute_jeff_rs_strength,
     rrg_quadrant,
 )
 from etfs import (
@@ -255,6 +256,18 @@ def main() -> int:
     log.info("Stock universe for RS ranking: %d tickers", stock_prices.shape[1])
 
     stock_frame = build_rs_frame(stock_prices)
+
+    # Jeff Sun's RS_Strength % needs SPY alongside the stock universe.
+    # Add it as an extra column on the stock frame so the frontend can
+    # show both metrics side-by-side (see js/dashboards/sector.js).
+    if "SPY" in prices.columns:
+        stock_plus_spy = pd.concat([stock_prices, prices[["SPY"]]], axis=1)
+        rs_strength = compute_jeff_rs_strength(stock_plus_spy)
+        stock_frame["rs_strength_pct"] = rs_strength.reindex(stock_frame.index)
+        log.info("Computed Jeff Sun RS_Strength %% for %d stocks (25d self-percentile)",
+                 stock_frame["rs_strength_pct"].notna().sum())
+    else:
+        log.warning("SPY not in price frame; skipping Jeff Sun RS_Strength %%")
 
     # For ETFs (sector + benchmarks + vol + intermarket), we compute their
     # returns and then rank them against the STOCK universe distribution.

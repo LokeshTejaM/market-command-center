@@ -49,6 +49,64 @@ INTERMARKET = [
     ("USO", "Crude Oil",               "commodity"),
 ]
 
+# Industry-group ETFs -- Jeff Sun's preferred granularity for tracking rotation
+# between narrow themes (semis vs software, banks vs insurance, homebuilders
+# vs materials, etc). All Equal-Weight where available (Jeff's preference).
+# Categorized so we can group them in the UI.
+INDUSTRY_ETFS = [
+    # Technology sub-industries
+    ("XSD",  "Semiconductors (EW)",         "industry_tech"),
+    ("SMH",  "Semiconductors (CW)",         "industry_tech"),
+    ("IGV",  "Software",                    "industry_tech"),
+    ("CIBR", "Cybersecurity",               "industry_tech"),
+    ("FDN",  "Internet",                    "industry_tech"),
+    ("WCLD", "Cloud Computing",             "industry_tech"),
+    ("AIQ",  "AI & Big Data",               "industry_tech"),
+    ("ROBO", "Robotics & Automation",       "industry_tech"),
+    # Financials sub-industries
+    ("KRE",  "Regional Banks (EW)",         "industry_fin"),
+    ("KBE",  "Banks",                       "industry_fin"),
+    ("KIE",  "Insurance",                   "industry_fin"),
+    ("KCE",  "Capital Markets",             "industry_fin"),
+    ("IAI",  "Broker-Dealers",              "industry_fin"),
+    # Health Care sub-industries
+    ("XBI",  "Biotech (EW)",                "industry_hc"),
+    ("IBB",  "Biotech (CW)",                "industry_hc"),
+    ("IHI",  "Medical Devices",             "industry_hc"),
+    ("XPH",  "Pharma",                      "industry_hc"),
+    ("PPH",  "Pharma (VanEck)",             "industry_hc"),
+    # Consumer & Retail
+    ("XRT",  "Retail (EW)",                 "industry_cons"),
+    ("IBUY", "Online Retail",               "industry_cons"),
+    ("PEJ",  "Leisure & Entertainment",     "industry_cons"),
+    ("XHB",  "Homebuilders",                "industry_cons"),
+    ("ITB",  "Home Construction",           "industry_cons"),
+    ("JETS", "Airlines",                    "industry_cons"),
+    # Industrials & Infrastructure
+    ("ITA",  "Aerospace & Defense",         "industry_indus"),
+    ("PAVE", "US Infrastructure",           "industry_indus"),
+    ("XTN",  "Transportation",              "industry_indus"),
+    # Energy & Materials
+    ("XOP",  "Oil & Gas Exploration (EW)",  "industry_ener"),
+    ("OIH",  "Oil Services",                "industry_ener"),
+    ("XES",  "Oil Equipment & Services",    "industry_ener"),
+    ("URA",  "Uranium",                     "industry_ener"),
+    ("TAN",  "Solar",                       "industry_ener"),
+    ("ICLN", "Clean Energy",                "industry_ener"),
+    ("GDX",  "Gold Miners",                 "industry_ener"),
+    ("SIL",  "Silver Miners",               "industry_ener"),
+    ("XME",  "Metals & Mining",             "industry_ener"),
+    ("LIT",  "Lithium & Battery",           "industry_ener"),
+    ("COPX", "Copper Miners",               "industry_ener"),
+    # Real Estate
+    ("VNQ",  "US REITs",                    "industry_re"),
+    ("REZ",  "Residential REITs",           "industry_re"),
+    # Crypto-adjacent (thematic momentum plays)
+    ("IBIT", "Bitcoin ETF",                 "industry_crypto"),
+    ("WGMI", "Bitcoin Miners",              "industry_crypto"),
+    ("BLOK", "Blockchain",                  "industry_crypto"),
+]
+
 
 def all_sector_etfs():
     """Flattened list of (ticker, name, category) for every sector ETF."""
@@ -60,10 +118,11 @@ def all_sector_etfs():
 
 
 def all_reference_tickers():
-    """Every non-stock ticker we need to fetch: benchmarks + sectors + vol + intermarket."""
+    """Every non-stock ticker we need to fetch: benchmarks + sectors + industry + vol + intermarket."""
     return (
         BENCHMARKS
         + all_sector_etfs()
+        + INDUSTRY_ETFS
         + VOLATILITY
         + INTERMARKET
     )

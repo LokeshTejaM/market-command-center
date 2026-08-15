@@ -1,0 +1,67 @@
+/* Watchlist page styles */
+#view-watchlist .w-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: auto;
+}
+
+#view-watchlist .w-input {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    color: var(--text-primary, #f1f5f9);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    width: 160px;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+}
+
+#view-watchlist .w-input:focus {
+    outline: none;
+    border-color: rgba(59, 130, 246, 0.6);
+}
+
+#view-watchlist #w-count {
+    color: var(--text-secondary, #94a3b8);
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-left: 6px;
+}
+
+#view-watchlist .w-empty {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(15, 23, 42, 0.3);
+    border: 1px dashed rgba(148, 163, 184, 0.2);
+    border-radius: 10px;
+}
+
+#view-watchlist .w-empty h3 {
+    color: var(--text-secondary, #cbd5e1);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#view-watchlist .w-empty p {
+    color: var(--text-secondary, #94a3b8);
+    font-size: 14px;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+#view-watchlist .w-empty b {
+    color: #93c5fd;
+}
+
+#view-watchlist .w-row-missing td {
+    color: var(--text-secondary, #94a3b8);
+    font-style: italic;
+    background: rgba(148, 163, 184, 0.05);
+}
+
+#view-watchlist .w-missing-text {
+    font-size: 12px;
+}
