@@ -87,13 +87,17 @@ DashboardRegistry.register({
             <div id="s-error" class="s-error hidden"></div>
 
             <div class="section-head">
-                <h2>Sector Aggregates</h2>
+                <h2>Sector Aggregates ${Shared.infoIcon(
+                    'What: Each card is one of the 11 GICS sectors. The BIG number is the MEDIAN cross-sectional RS rank (1\u201399) of all S&P 500 stocks in that sector over the selected timeframe. Higher = more of that sector\u2019s stocks are leading the market. Delta shows how the median moved vs 21 days ago. Top 5 shows the leader tickers in that sector. HOW TO READ: A sector at 70+ with a positive delta is a strong bull thesis. A sector at 30- with a negative delta is where breakdowns and shorts live. Click any card to see every stock in that sector ranked.'
+                )}</h2>
                 <p>Median RS rank per GICS sector. Click a card to drill into its constituent leaders.</p>
             </div>
             <div class="s-sector-grid" id="s-sector-grid"></div>
 
             <div class="section-head">
-                <h2>Relative Rotation Graph</h2>
+                <h2>Relative Rotation Graph ${Shared.infoIcon(
+                    'What: Each dot is a sector ETF (e.g. XLK Technology). X-axis = its current cross-sectional RS rank (1\u201399). Y-axis = its RS trend (rank change over the last ~21 trading days). Quadrants: Leading (top-right) = strong & getting stronger, buy the leaders. Weakening (bottom-right) = still strong but momentum fading, tighten stops. Lagging (bottom-left) = weak & getting weaker, avoid. Improving (top-left) = weak but recovering, watchlist for entries. HOW TO READ: Momentum traders live in the top-right and short from the bottom-left. Sectors rotate clockwise over weeks/months. Click any dot to drill into that sector.'
+                )}</h2>
                 <p>Position tells you WHERE each sector is; quadrant tells you WHAT to do about it.</p>
             </div>
             <div class="s-rrg-wrapper">
@@ -107,7 +111,9 @@ DashboardRegistry.register({
             </div>
 
             <div class="section-head">
-                <h2>Full RS Table (S&amp;P 500 stocks)</h2>
+                <h2>Full RS Table (S&amp;P 500 stocks) ${Shared.infoIcon(
+                    'What: Every S&P 500 stock ranked by cross-sectional RS rank (1\u201399) over the selected timeframe. RS Rank = percentile of this stock\u2019s N-day return within the S&P 500 return distribution (IBD/Minervini/Bonde convention). RS Trend = today\u2019s rank minus rank from 21 trading days ago (positive = rank is climbing). Quadrant chip is derived from (rank, trend). HOW TO READ: Momentum traders scan for RS \u2265 80 AND positive trend AND recent volume expansion. Use the sector chips to slice the universe; click columnto sort.'
+                )}</h2>
                 <p>Every stock ranked cross-sectionally. Filter by sector to focus.</p>
             </div>
             <div class="s-filter-group" id="s-filter-group"></div>

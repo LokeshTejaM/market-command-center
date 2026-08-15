@@ -138,9 +138,26 @@ const Shared = (() => {
         return mins >= 570 && mins < 960; // 9:30 AM - 4:00 PM ET
     }
 
+    // ── Info tooltip helper ───────────────────────────────────
+    // Renders a small `\u24d8` icon whose title (native browser tooltip)
+    // explains how a chart is calculated and how to read it. Zero-dep,
+    // works with keyboard focus, and screen-readers announce the aria-label.
+    // Usage: `<h3>My Plot ${Shared.infoIcon('what this is + how to read it')}</h3>`
+    function infoIcon(text, opts = {}) {
+        const cls = opts.className || 'info-icon';
+        // Escape quotes so we do not blow up the attribute.
+        const safe = String(text)
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        return `<span class="${cls}" role="img" tabindex="0"`
+             + ` aria-label="${safe}" title="${safe}">\u24d8</span>`;
+    }
+
     return {
         numVal, fmt, formatPrice, formatChange, formatDate,
         $, $$, showToast, showLoading, hideLoading, isMarketOpen,
-        fetchJSON,
+        fetchJSON, infoIcon,
     };
 })();

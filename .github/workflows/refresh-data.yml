@@ -46,7 +46,9 @@ jobs:
 
       - name: Run pipeline (fetch EOD data + compute RS ranks + write JSON)
         working-directory: pipeline
-        run: uv run python build_rs_data.py
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: uv run python -u build_rs_data.py
 
       - name: Commit updated data/ if anything changed
         run: |

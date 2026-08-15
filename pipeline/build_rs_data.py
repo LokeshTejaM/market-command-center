@@ -322,4 +322,13 @@ def _interp_rank(universe: pd.Series, values: pd.Series) -> pd.Series:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    import faulthandler
+    import traceback
+    faulthandler.enable()
+    try:
+        sys.exit(main())
+    except Exception:
+        # Make sure the traceback lands in GitHub Actions log; a bare exit
+        # would only show 'Process completed with exit code 1' -- useless.
+        traceback.print_exc()
+        sys.exit(1)

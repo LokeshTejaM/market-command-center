@@ -78,7 +78,9 @@ DashboardRegistry.register({
             <div id="sd-error" class="s-error hidden"></div>
 
             <div class="section-head">
-                <h2>Constituent Mini-RRG</h2>
+                <h2>Constituent Mini-RRG ${Shared.infoIcon(
+                    'What: Each dot is a stock in this sector. X-axis = cross-sectional RS rank vs full S&P 500 (1\u201399). Y-axis = RS trend (rank change over ~21 trading days). Same 4 quadrants as the main RRG. HOW TO READ: Focus on the top-right cluster \u2014 those are the sector\u2019s current momentum leaders. Stocks moving from top-left \u2192 top-right are fresh breakouts to watchlist. Stocks in the bottom-right are late-stage extended.'
+                )}</h2>
                 <p>Each dot is a stock in this sector, positioned by its cross-sectional RS rank and 21d trend.</p>
             </div>
             <div class="s-rrg-wrapper">
@@ -92,7 +94,9 @@ DashboardRegistry.register({
             </div>
 
             <div class="section-head">
-                <h2>Constituent Leaderboard</h2>
+                <h2>Constituent Leaderboard ${Shared.infoIcon(
+                    'What: Every stock in this sector ranked by cross-sectional RS rank over the selected timeframe. This is the same math as the main RS table, filtered to this sector. HOW TO READ: The top 5-10 rows are the sector\u2019s current leaders \u2014 these are the tickers Jeff Sun / Qullamaggie / Minervini-style momentum traders would watchlist for range breakouts. Prefer names with (rank \u2265 80 AND positive trend). Avoid rank < 30 unless you\u2019re shorting.'
+                )}</h2>
                 <p>Ranked by cross-sectional RS in the selected timeframe.</p>
             </div>
             <div class="table-container"><div class="table-wrapper">

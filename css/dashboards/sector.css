@@ -377,3 +377,27 @@ td.negative, .negative { color: #f87171 !important; }
 .dashboard-footer .footer-sep { margin: 0 8px; opacity: 0.5; }
 .dashboard-footer a { color: #93c5fd; text-decoration: none; }
 .dashboard-footer a:hover { text-decoration: underline; }
+
+/* Info-icon tooltip -- native browser title, works everywhere, zero deps */
+.info-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    margin-left: 6px;
+    border-radius: 50%;
+    background: rgba(59, 130, 246, 0.15);
+    color: #93c5fd;
+    font-size: 12px;
+    cursor: help;
+    vertical-align: middle;
+    transition: background 0.15s, color 0.15s, transform 0.15s;
+    user-select: none;
+}
+.info-icon:hover, .info-icon:focus {
+    background: rgba(59, 130, 246, 0.35);
+    color: #ffffff;
+    transform: scale(1.15);
+    outline: none;
+}
