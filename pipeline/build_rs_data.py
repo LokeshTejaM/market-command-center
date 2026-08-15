@@ -102,14 +102,39 @@ def json_default(o):
     raise TypeError(f"Not JSON serializable: {type(o)}")
 
 
+def _sanitize(obj):
+    """Recursively replace non-finite floats (NaN/Inf) with None.
+
+    Without this, `json.dumps` emits `NaN` / `Infinity` literals which are
+    valid Python-JSON but INVALID per RFC 8259 -- every browser refuses
+    to parse them. This was a shipping bug (data/rs_ranks.json rendered
+    to a JS `Unexpected token 'N'` on load).
+
+    Applies to native Python floats; numpy floats are already handled by
+    `json_default`. We still call this because pandas' `.to_dict()` emits
+    native `float('nan')` for missing cells even from numeric columns.
+    """
+    if isinstance(obj, dict):
+        return {k: _sanitize(v) for k, v in obj.items()}
+    if isinstance(obj, (list, tuple)):
+        return [_sanitize(v) for v in obj]
+    if isinstance(obj, float):
+        return None if (obj != obj or obj == float("inf") or obj == float("-inf")) else obj
+    return obj
+
+
 def write_json(path: Path, payload: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, indent=2, default=json_default))
+    payload = _sanitize(payload)
+    # allow_nan=False makes json.dumps RAISE on any NaN/Inf that slipped
+    # through, so a future regression is loud instead of silent-corrupt JSON.
+    path.write_text(json.dumps(payload, indent=2, default=json_default, allow_nan=False))
     # Show path relative to repo root when possible, absolute otherwise.
     try:
         display = path.relative_to(REPO_ROOT)
     except ValueError:
         display = path
+    log.info("Wrote %s (%d bytes)", display, path.stat().st_size)
     log.info("Wrote %s (%d bytes)", display, path.stat().st_size)
 
 

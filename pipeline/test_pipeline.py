@@ -134,6 +134,34 @@ def test_end_to_end_json_shape(tmp_dir: Path):
     print(f"PASS: end-to-end JSON has correct shape (rs records: {rs_json['count']}, sectors: {len(sec_json['by_window']['63'])})")
 
 
+def test_no_nan_in_json_output(tmp: Path) -> None:
+    """Regression: pipeline must produce RFC-8259 compliant JSON (no NaN).
+
+    We forcibly inject NaN into a DataFrame and confirm write_json produces
+    a file that `json.loads` accepts. Browsers refuse to parse `NaN` literals
+    which was a shipping bug (data/rs_ranks.json unrenderable).
+    """
+    import json, math
+    from build_rs_data import write_json
+    payload = {
+        "records": [
+            {"ticker": "AAPL", "rs_rank": 87, "ret": 0.12},
+            {"ticker": "MSFT", "rs_rank": 82, "ret": float("nan")},
+            {"ticker": "NVDA", "rs_rank": None, "ret": math.inf},
+            {"ticker": "TSLA", "rs_rank": np.nan, "ret": -math.inf},
+        ],
+    }
+    out = tmp / "nan_regression.json"
+    write_json(out, payload)
+    raw = out.read_text()
+    assert "NaN" not in raw, f"NaN leaked into JSON: {raw}"
+    assert "Infinity" not in raw, f"Infinity leaked into JSON: {raw}"
+    parsed = json.loads(raw)  # must succeed
+    assert parsed["records"][1]["ret"] is None
+    assert parsed["records"][2]["ret"] is None
+    print("PASS: NaN/Inf sanitized to null in JSON output")
+
+
 def main() -> int:
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     test_compute_rs_ranks_are_cross_sectional()
@@ -144,6 +172,7 @@ def main() -> int:
     tmp = Path("/tmp/mcc-pipeline-test")
     tmp.mkdir(exist_ok=True)
     test_end_to_end_json_shape(tmp)
+    test_no_nan_in_json_output(tmp)
 
     print("\nAll pipeline tests PASSED.")
     return 0

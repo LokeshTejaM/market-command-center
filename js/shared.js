@@ -139,20 +139,23 @@ const Shared = (() => {
     }
 
     // ── Info tooltip helper ───────────────────────────────────
-    // Renders a small `\u24d8` icon whose title (native browser tooltip)
-    // explains how a chart is calculated and how to read it. Zero-dep,
-    // works with keyboard focus, and screen-readers announce the aria-label.
+    // Renders a small `\u24d8` icon whose custom CSS tooltip explains
+    // how a chart is calculated and how to read it. The tooltip shows
+    // instantly on hover/focus (no 1.5s native-title delay) and uses
+    // aria-label so screen readers still announce the text.
     // Usage: `<h3>My Plot ${Shared.infoIcon('what this is + how to read it')}</h3>`
     function infoIcon(text, opts = {}) {
         const cls = opts.className || 'info-icon';
-        // Escape quotes so we do not blow up the attribute.
         const safe = String(text)
             .replace(/&/g, '&amp;')
             .replace(/"/g, '&quot;')
             .replace(/</g, '&lt;')
             .replace(/>/g, '&gt;');
-        return `<span class="${cls}" role="img" tabindex="0"`
-             + ` aria-label="${safe}" title="${safe}">\u24d8</span>`;
+        // data-tip drives the CSS ::after tooltip; title is a fallback for
+        // browsers/OSes that strip our CSS (e.g. reader mode); aria-label
+        // is for accessibility. Belt + suspenders + suspenders.
+        return `<span class="${cls}" role="button" tabindex="0"`
+             + ` aria-label="${safe}" title="${safe}" data-tip="${safe}">\u24d8</span>`;
     }
 
     return {
