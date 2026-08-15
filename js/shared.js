@@ -35,6 +35,48 @@ const Shared = (() => {
         return `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
     }
 
+    // ── Robust fetch (timeout + retry + backoff) ──────────────
+    // Single source of truth for every HTTP call in the app.
+    // Ships with:
+    //   * AbortSignal.timeout so a stalled request cannot hang forever
+    //   * Retries with exponential backoff on 5xx / 429 / network errors
+    //   * Optional external AbortSignal so tab-switch can cancel in-flight work
+    async function fetchJSON(url, {
+        timeoutMs = 10000,
+        retries = 2,
+        backoffMs = 500,
+        parser = 'json',       // 'json' | 'text'
+        signal = null,         // external AbortSignal (e.g. from tab switch)
+        init = {},             // extra fetch init
+    } = {}) {
+        let lastErr = null;
+        for (let attempt = 0; attempt <= retries; attempt++) {
+            const controllers = [AbortSignal.timeout(timeoutMs)];
+            if (signal) controllers.push(signal);
+            const combined = AbortSignal.any ? AbortSignal.any(controllers) : controllers[0];
+            try {
+                const resp = await fetch(url, { ...init, signal: combined });
+                if (!resp.ok) {
+                    // Retry on 5xx and 429; give up on other 4xx.
+                    if (resp.status >= 500 || resp.status === 429) {
+                        lastErr = new Error(`HTTP ${resp.status}`);
+                    } else {
+                        throw new Error(`HTTP ${resp.status}`);
+                    }
+                } else {
+                    return parser === 'text' ? await resp.text() : await resp.json();
+                }
+            } catch (err) {
+                lastErr = err;
+                if (signal?.aborted) throw err;    // user-initiated cancel, do not retry
+            }
+            if (attempt < retries) {
+                await new Promise(r => setTimeout(r, backoffMs * Math.pow(2, attempt)));
+            }
+        }
+        throw lastErr || new Error('fetchJSON failed');
+    }
+
     // ── DOM helpers ───────────────────────────────────────────
     function $(selector, parent = document) {
         return parent.querySelector(selector);
@@ -99,5 +141,6 @@ const Shared = (() => {
     return {
         numVal, fmt, formatPrice, formatChange, formatDate,
         $, $$, showToast, showLoading, hideLoading, isMarketOpen,
+        fetchJSON,
     };
 })();

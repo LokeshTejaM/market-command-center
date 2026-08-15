@@ -2,3 +2,12 @@
 *.log
 node_modules/
 .env
+
+# Pipeline (Python)
+pipeline/.venv/
+pipeline/__pycache__/
+pipeline/**/__pycache__/
+pipeline/uv.lock
+
+# data/ is intentionally NOT ignored -- static JSON is the whole point,
+# it's committed on every GitHub Actions run and served by GitHub Pages.

@@ -1,0 +1,15 @@
+[project]
+name = "market-command-center-pipeline"
+version = "0.1.0"
+description = "Daily EOD data pipeline for the Market Command Center static dashboard"
+requires-python = ">=3.11"
+dependencies = [
+    "yfinance>=0.2.65",
+    "pandas>=2.2.0",
+    "numpy>=2.0.0",
+    "requests>=2.32.0",
+    "lxml>=5.0.0",  # for pandas.read_html (Wikipedia scrape)
+]
+
+[tool.uv]
+package = false

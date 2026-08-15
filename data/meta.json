@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "built_at": "2026-08-15T03:50:38.394516Z",
+  "as_of_date": "2026-08-14",
+  "windows": [
+    21,
+    63,
+    126,
+    252
+  ],
+  "trend_lookback_days": 21,
+  "universe": {
+    "sp500_tickers": 55,
+    "dropped_stocks": [],
+    "dropped_reference": []
+  },
+  "sources": {
+    "prices": "SAMPLE (synthetic data from gen_sample_data.py)",
+    "sp500_constituents": "Wikipedia"
+  }
+}

@@ -9,7 +9,7 @@ DashboardRegistry.register({
     icon: '📊',
     order: 1,
 
-    _state: { year: '2026', data: [], charts: {}, timer: null },
+    _state: { year: '2026', data: [], charts: {}, timer: null, abortController: null, get abortSignal() { return this.abortController?.signal ?? null; } },
 
     init(container) {
         container.innerHTML = this._template();
@@ -28,6 +28,8 @@ DashboardRegistry.register({
 
     deactivate() {
         if (this._state.timer) { clearInterval(this._state.timer); this._state.timer = null; }
+        // Cancel any in-flight fetch when user leaves this tab.
+        if (this._state.abortController) { this._state.abortController.abort(); this._state.abortController = null; }
     },
 
     destroy() {
@@ -142,8 +144,12 @@ DashboardRegistry.register({
         document.getElementById('b-retry').addEventListener('click', () => this._loadData(container));
     },
 
-    // ─── Data Layer ──────────────────────────────────────────
+    // ─── Data Layer ───────────────────────────────
     async _loadData(container) {
+        // Cancel any prior in-flight load and start a fresh AbortController.
+        if (this._state.abortController) this._state.abortController.abort();
+        this._state.abortController = new AbortController();
+
         Shared.showLoading(container, 'Fetching market breadth data...');
         const errEl = document.getElementById('b-error');
         errEl.classList.add('hidden');
@@ -158,6 +164,8 @@ DashboardRegistry.register({
             this._renderAllCharts(data);
             this._renderTable(data);
         } catch (err) {
+            // Aborted by user tab-switch is not an error worth surfacing.
+            if (err.name === 'AbortError' || this._state.abortController?.signal.aborted) return;
             errEl.classList.remove('hidden');
             document.getElementById('b-error-msg').textContent = `Unable to fetch data: ${err.message}`;
         } finally {
@@ -168,9 +176,7 @@ DashboardRegistry.register({
     async _fetchSheet(sheetName) {
         const SHEET_ID = '1O6OhS7ciA8zwfycBfGPbP2fWJnR0pn2UUvFZVDP9jpE';
         const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${encodeURIComponent(sheetName)}`;
-        const resp = await fetch(url);
-        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-        const text = await resp.text();
+        const text = await Shared.fetchJSON(url, { parser: 'text', signal: this._state.abortSignal });
         const match = text.match(/google\.visualization\.Query\.setResponse\((\{[\s\S]*\})\);?\s*$/);
         if (!match) throw new Error('Unexpected format');
         const json = JSON.parse(match[1]);

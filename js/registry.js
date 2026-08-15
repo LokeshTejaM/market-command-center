@@ -23,7 +23,7 @@ const DashboardRegistry = (() => {
         if (!tabsContainer) return;
         tabsContainer.innerHTML = '';
 
-        dashboards.forEach(d => {
+        dashboards.filter(d => !d.hiddenInNav).forEach(d => {
             const btn = document.createElement('button');
             btn.className = 'nav-tab';
             btn.dataset.view = d.id;
@@ -76,7 +76,14 @@ const DashboardRegistry = (() => {
         // Activate
         if (dashboard.activate) dashboard.activate();
         activeId = id;
-        window.location.hash = id;
+        // Preserve any query portion of the hash (e.g. ?sector=XLK).
+        const currentQuery = window.location.hash.includes('?')
+            ? window.location.hash.substring(window.location.hash.indexOf('?'))
+            : '';
+        const newHash = id + currentQuery;
+        if (window.location.hash.replace('#', '') !== newHash) {
+            window.location.hash = newHash;
+        }
     }
 
     function boot() {
@@ -85,10 +92,17 @@ const DashboardRegistry = (() => {
         updateMarketStatus();
         setInterval(updateMarketStatus, 60000);
 
-        // Route from hash or default to first
-        const hash = window.location.hash.replace('#', '');
-        const target = dashboards.find(d => d.id === hash) || dashboards[0];
+        // Hash format is either "id" or "id?query=params"; parse the id portion.
+        const raw = window.location.hash.replace('#', '');
+        const [hashId] = raw.split('?');
+        const target = dashboards.find(d => d.id === hashId) || dashboards.find(d => !d.hiddenInNav);
         if (target) switchTo(target.id);
+
+        // Deep-linkable hash changes (e.g. sector-detail?sector=XLK) should re-route.
+        window.addEventListener('hashchange', () => {
+            const [nextId] = window.location.hash.replace('#', '').split('?');
+            if (nextId && nextId !== activeId) switchTo(nextId);
+        });
     }
 
     function updateMarketStatus() {
