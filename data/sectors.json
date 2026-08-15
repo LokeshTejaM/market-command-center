@@ -22,10 +22,10 @@
         "n_constituents": 73,
         "top_5": [
           "ZBRA",
-          "SMCI",
           "WDAY",
-          "HPE",
-          "LITE"
+          "SMCI",
+          "LITE",
+          "STX"
         ]
       },
       {
@@ -47,8 +47,8 @@
         "rs_trend_median": -9.0,
         "n_constituents": 59,
         "top_5": [
-          "VEEV",
           "CRL",
+          "VEEV",
           "REGN",
           "BSX",
           "DXCM"
@@ -64,7 +64,7 @@
           "FOX",
           "CHTR",
           "T",
-          "VZ"
+          "PSKY"
         ]
       },
       {
@@ -75,8 +75,8 @@
         "top_5": [
           "LDOS",
           "HII",
-          "ALLE",
           "LMT",
+          "ALLE",
           "EMR"
         ]
       },
@@ -155,8 +155,8 @@
         "top_5": [
           "CRL",
           "TECH",
-          "BAX",
           "VEEV",
+          "BAX",
           "DXCM"
         ]
       },
@@ -180,10 +180,10 @@
         "n_constituents": 81,
         "top_5": [
           "AXON",
-          "UAL",
           "SWK",
+          "UAL",
           "PAYX",
-          "J"
+          "RTX"
         ]
       },
       {
@@ -192,9 +192,9 @@
         "rs_trend_median": 13.0,
         "n_constituents": 47,
         "top_5": [
+          "GPC",
           "EXPE",
           "BBY",
-          "GPC",
           "WSM",
           "ABNB"
         ]
@@ -231,10 +231,10 @@
         "rs_trend_median": -2.0,
         "n_constituents": 73,
         "top_5": [
-          "HPE",
           "DELL",
-          "PANW",
+          "HPE",
           "WDAY",
+          "PANW",
           "NTAP"
         ]
       },
@@ -299,8 +299,8 @@
         "n_constituents": 73,
         "top_5": [
           "MRVL",
-          "SNDK",
           "DELL",
+          "SNDK",
           "PANW",
           "HPE"
         ]
@@ -312,10 +312,10 @@
         "n_constituents": 76,
         "top_5": [
           "XYZ",
-          "PYPL",
           "STT",
-          "BNY",
-          "FDS"
+          "PYPL",
+          "FDS",
+          "BNY"
         ]
       },
       {
@@ -365,9 +365,9 @@
         "top_5": [
           "AXON",
           "URI",
-          "PAYX",
+          "FIX",
           "GEV",
-          "FIX"
+          "PAYX"
         ]
       },
       {
@@ -390,10 +390,10 @@
         "n_constituents": 31,
         "top_5": [
           "D",
-          "PNW",
           "ETR",
+          "AWK",
           "EVRG",
-          "AWK"
+          "PNW"
         ]
       },
       {
@@ -459,7 +459,7 @@
           "MU",
           "LITE",
           "SNDK",
-          "WDC",
+          "TER",
           "STX"
         ]
       },
@@ -469,8 +469,8 @@
         "rs_trend_median": 4.0,
         "n_constituents": 59,
         "top_5": [
-          "MRNA",
           "CNC",
+          "MRNA",
           "LLY",
           "CRL",
           "MRK"
@@ -491,7 +491,7 @@
       },
       {
         "sector": "Real Estate",
-        "rs_rank_median": 48.0,
+        "rs_rank_median": 49.0,
         "rs_trend_median": -1.0,
         "n_constituents": 31,
         "top_5": [
