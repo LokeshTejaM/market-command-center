@@ -95,7 +95,6 @@
 #view-calendar .cal-impact-medium { background: rgba(251, 191, 36, 0.2); color: #fcd34d; }
 #view-calendar .cal-impact-low {    background: rgba(148, 163, 184, 0.15); color: #cbd5e1; }
 
-#view-calendar .cal-imp-high { border-left:#ef4444; padding-left: 12px; }
 
 #view-calendar .cal-empty {
     padding: 40px;

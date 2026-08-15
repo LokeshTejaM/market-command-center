@@ -120,10 +120,39 @@
     50% { box-shadow: 0 0 12px 2px rgba(99,102,241,0.15); }
     100% { box-shadow: 0 0 0 0 transparent; }
 }
-#view-breadth .kpi-bullish  { border-left: 3px solid var(--green); }
-#view-breadth .kpi-bearish  { border-left: 3px solid var(--red); }
-#view-breadth .kpi-caution  { border-left: 3px solid var(--amber); }
-#view-breadth .kpi-neutral  { border-left: 3px solid var(--text-muted); }
+#view-breadth .kpi-bullish  {
+    border-color: rgba(16, 185, 129, 0.35);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), transparent 60%), var(--bg-card);
+}
+#view-breadth .kpi-bearish  {
+    border-color: rgba(239, 68, 68, 0.35);
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), transparent 60%), var(--bg-card);
+}
+#view-breadth .kpi-caution  {
+    border-color: rgba(251, 191, 36, 0.35);
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), transparent 60%), var(--bg-card);
+}
+#view-breadth .kpi-neutral  {
+    border-color: rgba(148, 163, 184, 0.28);
+}
+/* Leading colored pip on the label ─ unambiguous state signal that is
+   NOT a side-stripe (see impeccable design laws). */
+#view-breadth .kpi-bullish  .kpi-label::before,
+#view-breadth .kpi-bearish  .kpi-label::before,
+#view-breadth .kpi-caution  .kpi-label::before,
+#view-breadth .kpi-neutral  .kpi-label::before {
+    content: '';
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+    background: currentColor;
+    opacity: 0.8;
+}
+#view-breadth .kpi-bullish  .kpi-label { color: rgba(52, 211, 153, 0.9); }
+#view-breadth .kpi-bearish  .kpi-label { color: rgba(248, 113, 113, 0.9); }
+#view-breadth .kpi-caution  .kpi-label { color: rgba(251, 191, 36, 0.9); }
 
 #view-breadth .kpi-label {
     font-size: 11px; font-weight: 500; color: var(--text-muted);

@@ -338,10 +338,11 @@ a:focus-visible {
     .tab-icon { font-size: 14px; }
 }
 
-/* ── Info-icon tooltip (used on every dashboard) ─────────────
-   Small circular (i) that explains what a metric/chart is and
-   how to read it. Custom CSS tooltip shows instantly on hover
-   (no native title-attr delay) and works on touch (long-press).
+/* ── Info-icon tooltip (used on every dashboard) ─────────
+   The icon is a small circular (i) rendered inline in headings. The
+   tooltip itself is a SINGLE portal element appended to <body> and
+   positioned via JS on hover (see js/shared.js infoIcon block). This
+   escapes ancestor overflow: hidden which otherwise clips the tip.
    -------------------------------------------------------------- */
 .info-icon {
     display: inline-block;
@@ -369,53 +370,49 @@ a:focus-visible {
     transform: scale(1.15);
     outline: none;
     border-color: rgba(147, 197, 253, 0.6);
-    z-index: 100;
 }
-/* The tooltip itself -- rendered via ::after so we do not need JS. */
-.info-icon[data-tip]:hover::after,
-.info-icon[data-tip]:focus::after {
-    content: attr(data-tip);
-    position: absolute;
-    bottom: calc(100% + 10px);
-    left: 50%;
-    transform: translateX(-50%);
+
+/* The portal element itself ─ one per document, positioned via JS. */
+.info-tip-portal {
+    position: fixed;
+    top: 0; left: 0;
+    max-width: 380px;
+    padding: 12px 14px;
     background: #0b1120;
     color: #e5e7eb;
-    padding: 10px 14px;
+    border: 1px solid rgba(59, 130, 246, 0.5);
     border-radius: 8px;
-    border: 1px solid rgba(59, 130, 246, 0.4);
+    font-family: 'Inter', system-ui, sans-serif;
     font-size: 13px;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.55;
     letter-spacing: normal;
-    width: max-content;
-    max-width: 380px;
-    white-space: normal;
     text-align: left;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05);
-    z-index: 1000;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.04);
     pointer-events: none;
-    animation: info-tip-fade 0.15s ease-out;
+    z-index: 99999;
+    opacity: 0;
+    transform: translateY(2px);
+    transition: opacity 0.14s ease-out, transform 0.14s ease-out;
+    white-space: normal;
+    word-wrap: break-word;
 }
-/* Little arrow pointing down at the icon */
-.info-icon[data-tip]:hover::before,
-.info-icon[data-tip]:focus::before {
+.info-tip-portal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.info-tip-portal::after {
     content: '';
     position: absolute;
-    bottom: calc(100% + 4px);
-    left: 50%;
+    left: var(--arrow-x, 50%);
     transform: translateX(-50%);
     border: 6px solid transparent;
-    border-top-color: rgba(59, 130, 246, 0.4);
-    z-index: 1001;
-    pointer-events: none;
 }
-@keyframes info-tip-fade {
-    from { opacity: 0; transform: translate(-50%, 4px); }
-    to   { opacity: 1; transform: translate(-50%, 0); }
+.info-tip-portal[data-arrow="down"]::after {
+    top: 100%;
+    border-top-color: rgba(59, 130, 246, 0.6);
 }
-/* When icon is near the right edge, flip the tooltip left-anchored */
-.info-icon[data-tip-align="right"]:hover::after {
-    left: auto; right: 0;
-    transform: none;
+.info-tip-portal[data-arrow="up"]::after {
+    bottom: 100%;
+    border-bottom-color: rgba(59, 130, 246, 0.6);
 }

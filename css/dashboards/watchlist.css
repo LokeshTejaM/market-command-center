@@ -1,4 +1,7 @@
-/* Watchlist page styles */
+/* ============================================================
+   WATCHLIST DASHBOARD - polished styles
+   ============================================================ */
+
 #view-watchlist .w-actions {
     display: flex;
     gap: 8px;
@@ -10,58 +13,137 @@
     background: rgba(15, 23, 42, 0.6);
     border: 1px solid rgba(148, 163, 184, 0.25);
     color: var(--text-primary, #f1f5f9);
-    padding: 6px 12px;
-    border-radius: 6px;
+    padding: 8px 14px;
+    border-radius: 8px;
     font-size: 13px;
-    width: 160px;
+    width: 190px;
     font-family: 'JetBrains Mono', monospace;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: border-color 0.15s, background 0.15s;
 }
-
+#view-watchlist .w-input::placeholder {
+    text-transform: none;
+    letter-spacing: normal;
+    color: rgba(148, 163, 184, 0.5);
+}
 #view-watchlist .w-input:focus {
     outline: none;
-    border-color: rgba(59, 130, 246, 0.6);
+    border-color: rgba(59, 130, 246, 0.7);
+    background: rgba(15, 23, 42, 0.9);
+}
+
+#view-watchlist .w-add-btn {
+    background: rgba(59, 130, 246, 0.18);
+    border: 1px solid rgba(59, 130, 246, 0.5);
+    color: #93c5fd;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+    font-family: inherit;
+}
+#view-watchlist .w-add-btn:hover {
+    background: rgba(59, 130, 246, 0.35);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25);
+}
+#view-watchlist .w-add-btn:active {
+    transform: translateY(1px);
 }
 
 #view-watchlist #w-count {
     color: var(--text-secondary, #94a3b8);
     font-weight: 400;
-    font-size: 0.9em;
+    font-size: 0.85em;
     margin-left: 6px;
+    font-variant-numeric: tabular-nums;
 }
 
+/* ─ Empty state ─────────────────────────────────────────── */
 #view-watchlist .w-empty {
-    padding: 60px 20px;
+    padding: 72px 32px 80px;
     text-align: center;
-    background: rgba(15, 23, 42, 0.3);
-    border: 1px dashed rgba(148, 163, 184, 0.2);
-    border-radius: 10px;
+    background: linear-gradient(180deg,
+                rgba(15, 23, 42, 0.35) 0%,
+                rgba(15, 23, 42, 0.1) 100%);
+    border: 1px dashed rgba(148, 163, 184, 0.18);
+    border-radius: 14px;
+    margin-top: 8px;
 }
-
+#view-watchlist .w-empty-icon {
+    font-size: 44px;
+    color: rgba(251, 191, 36, 0.5);
+    line-height: 1;
+    margin-bottom: 16px;
+}
 #view-watchlist .w-empty h3 {
-    color: var(--text-secondary, #cbd5e1);
-    font-size: 18px;
-    margin-bottom: 8px;
+    color: var(--text-primary, #f1f5f9);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
 }
-
 #view-watchlist .w-empty p {
     color: var(--text-secondary, #94a3b8);
     font-size: 14px;
-    max-width: 500px;
-    margin: 0 auto;
-    line-height: 1.6;
+    max-width: 480px;
+    margin: 0 auto 8px;
+    line-height: 1.65;
 }
-
 #view-watchlist .w-empty b {
     color: #93c5fd;
+    font-weight: 600;
+}
+#view-watchlist .w-empty-hint {
+    font-size: 12px;
+    color: rgba(148, 163, 184, 0.6);
+    margin-top: 20px;
 }
 
+/* ─ Per-row delete button ───────────────────────── */
+#view-watchlist .w-actions-col {
+    width: 42px;
+    text-align: center;
+    padding: 4px !important;
+}
+#view-watchlist .w-delete {
+    background: transparent;
+    border: 1px solid transparent;
+    color: rgba(148, 163, 184, 0.55);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px 8px;
+    line-height: 1;
+    border-radius: 6px;
+    transition: background 0.14s, color 0.14s, border-color 0.14s, transform 0.1s;
+    font-family: inherit;
+}
+#view-watchlist .w-delete:hover {
+    background: rgba(239, 68, 68, 0.18);
+    color: #fca5a5;
+    border-color: rgba(239, 68, 68, 0.4);
+}
+#view-watchlist .w-delete:active {
+    transform: scale(0.92);
+}
+
+/* Row fade-out on delete click. */
+#view-watchlist .w-row-removing {
+    opacity: 0.3;
+    transition: opacity 0.14s ease-out;
+}
+
+/* ─ Missing-ticker row (added by hand, not in universe) ── */
 #view-watchlist .w-row-missing td {
     color: var(--text-secondary, #94a3b8);
     font-style: italic;
-    background: rgba(148, 163, 184, 0.05);
+    background: rgba(148, 163, 184, 0.04);
 }
-
 #view-watchlist .w-missing-text {
     font-size: 12px;
+    font-style: italic;
 }

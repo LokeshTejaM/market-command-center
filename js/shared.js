@@ -139,10 +139,12 @@ const Shared = (() => {
     }
 
     // ── Info tooltip helper ───────────────────────────────────
-    // Renders a small `\u24d8` icon whose custom CSS tooltip explains
-    // how a chart is calculated and how to read it. The tooltip shows
-    // instantly on hover/focus (no 1.5s native-title delay) and uses
-    // aria-label so screen readers still announce the text.
+    // Renders a small `\u24d8` icon. The actual tooltip element is
+    // PORTALED to <body> on hover so it escapes any ancestor with
+    // overflow: hidden (chart cards, table wrappers). This is the ONLY
+    // way to get a tooltip that visibly overlays neighboring cards —
+    // pure CSS ::after tooltips get clipped by parent overflow, and
+    // no amount of z-index can rescue them.
     // Usage: `<h3>My Plot ${Shared.infoIcon('what this is + how to read it')}</h3>`
     function infoIcon(text, opts = {}) {
         const cls = opts.className || 'info-icon';
@@ -151,11 +153,79 @@ const Shared = (() => {
             .replace(/"/g, '&quot;')
             .replace(/</g, '&lt;')
             .replace(/>/g, '&gt;');
-        // data-tip drives the CSS ::after tooltip; title is a fallback for
-        // browsers/OSes that strip our CSS (e.g. reader mode); aria-label
-        // is for accessibility. Belt + suspenders + suspenders.
         return `<span class="${cls}" role="button" tabindex="0"`
-             + ` aria-label="${safe}" title="${safe}" data-tip="${safe}">\u24d8</span>`;
+             + ` aria-label="${safe}" data-tip="${safe}">\u24d8</span>`;
+    }
+
+    // ── Global tooltip portal ──────────────────────────────
+    // Delegated listeners on <document>, so it works for icons rendered
+    // now AND for icons injected later by any dashboard.
+    let _tipEl = null;
+    function _ensureTipEl() {
+        if (_tipEl) return _tipEl;
+        _tipEl = document.createElement('div');
+        _tipEl.className = 'info-tip-portal';
+        _tipEl.setAttribute('role', 'tooltip');
+        document.body.appendChild(_tipEl);
+        return _tipEl;
+    }
+    function _showTip(iconEl) {
+        const tip = iconEl.getAttribute('data-tip');
+        if (!tip) return;
+        const el = _ensureTipEl();
+        el.textContent = tip;
+        el.classList.add('visible');
+        // Position: try above the icon; flip below if too close to top.
+        // Try centered; nudge horizontally if it would clip left/right edge.
+        const rect = iconEl.getBoundingClientRect();
+        el.style.left = '0'; el.style.top = '0';   // measure at 0,0 first
+        el.style.transform = 'none';
+        const tipRect = el.getBoundingClientRect();
+        const gap = 10;
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+
+        let top = rect.top - tipRect.height - gap;
+        let arrowDir = 'down';
+        if (top < 8) {
+            top = rect.bottom + gap;
+            arrowDir = 'up';
+        }
+        let left = rect.left + rect.width / 2 - tipRect.width / 2;
+        left = Math.max(8, Math.min(vw - tipRect.width - 8, left));
+
+        el.style.left = `${left}px`;
+        el.style.top = `${top}px`;
+        el.setAttribute('data-arrow', arrowDir);
+        // Arrow horizontal offset -- points at the icon center.
+        const arrowX = rect.left + rect.width / 2 - left;
+        el.style.setProperty('--arrow-x', `${arrowX}px`);
+    }
+    function _hideTip() {
+        if (_tipEl) _tipEl.classList.remove('visible');
+    }
+    // Wire once, using event delegation. Listen on mouseover so we
+    // catch descendants that bubble; filter to .info-icon targets.
+    if (typeof document !== 'undefined') {
+        document.addEventListener('mouseover', (e) => {
+            const icon = e.target.closest && e.target.closest('.info-icon');
+            if (icon) _showTip(icon);
+        });
+        document.addEventListener('mouseout', (e) => {
+            const icon = e.target.closest && e.target.closest('.info-icon');
+            if (icon) _hideTip();
+        });
+        document.addEventListener('focusin', (e) => {
+            const icon = e.target.closest && e.target.closest('.info-icon');
+            if (icon) _showTip(icon);
+        });
+        document.addEventListener('focusout', (e) => {
+            const icon = e.target.closest && e.target.closest('.info-icon');
+            if (icon) _hideTip();
+        });
+        // Hide on scroll or resize so it does not float in the wrong place.
+        window.addEventListener('scroll', _hideTip, true);
+        window.addEventListener('resize', _hideTip);
     }
 
     return {

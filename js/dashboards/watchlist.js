@@ -51,9 +51,8 @@ DashboardRegistry.register({
                     <button class="s-tf-btn" data-window="252">252d</button>
                 </div>
                 <div class="w-actions">
-                    <input type="text" id="w-input" placeholder="Add ticker (e.g. NVDA)" class="w-input" maxlength="10">
-                    <button id="w-add" class="s-refresh-btn">+ Add</button>
-                    <button id="w-clear" class="s-refresh-btn" title="Remove all tickers">Clear all</button>
+                    <input type="text" id="w-input" placeholder="Add ticker (e.g. NVDA)" class="w-input" maxlength="10" autocomplete="off" spellcheck="false">
+                    <button id="w-add" class="w-add-btn" title="Add ticker to watchlist">Add</button>
                 </div>
             </div>
 
@@ -67,7 +66,6 @@ DashboardRegistry.register({
             <div class="table-container" id="w-table-wrap"><div class="table-wrapper">
                 <table>
                     <thead><tr>
-                        <th></th>
                         <th>Ticker</th>
                         <th>Name</th>
                         <th>Sector</th>
@@ -78,15 +76,17 @@ DashboardRegistry.register({
                         <th class="right">RS Str%</th>
                         <th class="right">Vol 20d</th>
                         <th>Quadrant</th>
+                        <th class="w-actions-col"></th>
                     </tr></thead>
                     <tbody id="w-tbody"></tbody>
                 </table>
             </div></div>
 
             <div class="w-empty hidden" id="w-empty">
-                <h3>No tickers yet</h3>
-                <p>Head to the <b>Sector Rotation</b> page and click the star (\u2606) next to any ticker to add it here.
-                Or type a symbol above and hit <b>Add</b>.</p>
+                <div class="w-empty-icon">\u2605</div>
+                <h3>Your watchlist is empty</h3>
+                <p>Star a ticker on the <b>Sector Rotation</b> page, or type a symbol above and press Enter to add it here.</p>
+                <p class="w-empty-hint">Tickers you add live in your browser only. Nothing leaves this device.</p>
             </div>
         `;
     },
@@ -102,12 +102,6 @@ DashboardRegistry.register({
         });
         container.querySelector('#w-add').addEventListener('click', () => this._doAdd());
         container.querySelector('#w-input').addEventListener('keydown', e => { if (e.key === 'Enter') this._doAdd(); });
-        container.querySelector('#w-clear').addEventListener('click', () => {
-            if (Watchlist.get().length === 0) return;
-            if (confirm('Remove ALL tickers from your watchlist? This cannot be undone.')) {
-                Watchlist.clear();
-            }
-        });
     },
 
     _doAdd() {
@@ -168,12 +162,11 @@ DashboardRegistry.register({
         tbody.innerHTML = watched.map(ticker => {
             const r = byTicker.get(ticker);
             if (!r) {
-                // Ticker exists in watchlist but not in the S&P 500 data (e.g. added by hand).
+                // Ticker exists in watchlist but not in the S&P 500 data.
                 return `<tr class="w-row-missing" data-ticker="${ticker}">
-                    <td><button class="s-star starred" data-ticker="${ticker}" aria-label="Remove">\u2605</button></td>
                     <td><b>${ticker}</b></td>
-                    <td colspan="8" class="w-missing-text">Not in S&P 500 universe \u2014 no data available. (Pipeline only tracks S&P 500 constituents right now.)</td>
-                    <td></td>
+                    <td colspan="9" class="w-missing-text">Not in S&P 500 universe. Pipeline only tracks S&P 500 constituents right now.</td>
+                    <td class="w-actions-col"><button class="w-delete" data-ticker="${ticker}" aria-label="Remove ${ticker} from watchlist" title="Remove from watchlist">\u2715</button></td>
                 </tr>`;
             }
             const rank = r[rank_col];
@@ -184,7 +177,6 @@ DashboardRegistry.register({
             const rsStr = r.rs_strength_pct;
             const rsStrCls = rsStr == null ? '' : rsStr >= 80 ? 'positive' : rsStr <= 20 ? 'negative' : '';
             return `<tr data-ticker="${r.ticker}">
-                <td><button class="s-star starred" data-ticker="${r.ticker}" aria-label="Remove from watchlist">\u2605</button></td>
                 <td><b class="ticker-text">${r.ticker}</b></td>
                 <td class="col-name">${this._esc(r.name || '')}</td>
                 <td><span class="s-sector-pill">${this._esc(r.sector || '\u2014')}</span></td>
@@ -195,12 +187,17 @@ DashboardRegistry.register({
                 <td class="right ${rsStrCls}">${rsStr == null ? '\u2014' : Math.round(rsStr)}</td>
                 <td class="right">${r.vol_20d == null ? '\u2014' : r.vol_20d.toFixed(0) + '%'}</td>
                 <td><span class="s-quad-pill s-quad-${quadrant}">${quadrant}</span></td>
+                <td class="w-actions-col"><button class="w-delete" data-ticker="${r.ticker}" aria-label="Remove ${r.ticker} from watchlist" title="Remove from watchlist">\u2715</button></td>
             </tr>`;
         }).join('');
 
-        tbody.querySelectorAll('.s-star').forEach(btn => {
+        tbody.querySelectorAll('.w-delete').forEach(btn => {
             btn.addEventListener('click', () => {
-                Watchlist.remove(btn.dataset.ticker);
+                const t = btn.dataset.ticker;
+                // Little visual affordance: fade the row before removal.
+                const row = btn.closest('tr');
+                if (row) row.classList.add('w-row-removing');
+                setTimeout(() => Watchlist.remove(t), 140);
             });
         });
     },
