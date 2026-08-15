@@ -80,7 +80,8 @@ DashboardRegistry.register({
                 </div>
                 <div class="s-toolbar-group s-toolbar-right">
                     <span class="s-updated" id="s-updated">Loading\u2026</span>
-                    <button class="s-refresh-btn" id="s-refresh">\u21BB Refresh</button>
+                    <button class="s-refresh-btn" id="s-refresh" title="Reload the latest data/*.json (fast, uses last pipeline output)">\u21BB Refresh</button>
+                    <a class="s-refresh-btn s-refresh-link" href="https://github.com/LokeshTejaM/market-command-center/actions/workflows/refresh-data.yml" target="_blank" rel="noopener" title="Trigger a full data pipeline run in GitHub Actions (opens in new tab; click Run workflow)">\u21BB Run full pipeline \u2197</a>
                 </div>
             </div>
 

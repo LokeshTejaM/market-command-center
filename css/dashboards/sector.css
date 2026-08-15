@@ -392,3 +392,9 @@ td.negative, .negative { color: #f87171 !important; }
 }
 .s-star:hover { color: #fbbf24; transform: scale(1.2); }
 .s-star.starred { color: #fbbf24; }
+.s-refresh-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
