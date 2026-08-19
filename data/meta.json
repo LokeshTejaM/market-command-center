@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "built_at": "2026-08-18T11:31:25.623945Z",
-  "as_of_date": "2026-08-18",
+  "built_at": "2026-08-19T11:31:14.717230Z",
+  "as_of_date": "2026-08-19",
   "windows": [
     21,
     63,
@@ -12,7 +12,9 @@
   "universe": {
     "sp500_tickers": 503,
     "dropped_stocks": [],
-    "dropped_reference": []
+    "dropped_reference": [
+      "XLY"
+    ]
   },
   "sources": {
     "prices": "yfinance (Yahoo Finance)",
