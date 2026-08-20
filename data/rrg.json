@@ -19,6 +19,14 @@
         "quadrant": "unknown"
       },
       {
+        "ticker": "XLY",
+        "sector": "Consumer Discretionary",
+        "variant": "CW",
+        "rs_rank": null,
+        "rs_trend": null,
+        "quadrant": "unknown"
+      },
+      {
         "ticker": "RSPD",
         "sector": "Consumer Discretionary",
         "variant": "EW",
@@ -184,6 +192,14 @@
         "ticker": "RSPT",
         "sector": "Information Technology",
         "variant": "EW",
+        "rs_rank": null,
+        "rs_trend": null,
+        "quadrant": "unknown"
+      },
+      {
+        "ticker": "XLY",
+        "sector": "Consumer Discretionary",
+        "variant": "CW",
         "rs_rank": null,
         "rs_trend": null,
         "quadrant": "unknown"
@@ -359,6 +375,14 @@
         "quadrant": "unknown"
       },
       {
+        "ticker": "XLY",
+        "sector": "Consumer Discretionary",
+        "variant": "CW",
+        "rs_rank": null,
+        "rs_trend": null,
+        "quadrant": "unknown"
+      },
+      {
         "ticker": "RSPD",
         "sector": "Consumer Discretionary",
         "variant": "EW",
@@ -524,6 +548,14 @@
         "ticker": "RSPT",
         "sector": "Information Technology",
         "variant": "EW",
+        "rs_rank": null,
+        "rs_trend": null,
+        "quadrant": "unknown"
+      },
+      {
+        "ticker": "XLY",
+        "sector": "Consumer Discretionary",
+        "variant": "CW",
         "rs_rank": null,
         "rs_trend": null,
         "quadrant": "unknown"

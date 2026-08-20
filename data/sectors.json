@@ -8,11 +8,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
+          "TTWO",
+          "FOXA",
           "ECHO",
-          "OMC",
-          "GOOG",
-          "NWSA",
-          "GOOGL"
+          "TTD",
+          "VZ"
         ]
       },
       {
@@ -21,11 +21,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "HLT",
-          "DECK",
+          "ORLY",
           "BBY",
-          "LVS",
-          "YUM"
+          "EXPE",
+          "RCL",
+          "BKNG"
         ]
       },
       {
@@ -34,11 +34,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "KDP",
-          "COST",
-          "BF-B",
-          "MNST",
-          "CHD"
+          "HRL",
+          "CASY",
+          "KVUE",
+          "TAP",
+          "PM"
         ]
       },
       {
@@ -49,9 +49,9 @@
         "top_5": [
           "BKR",
           "COP",
-          "WMB",
           "EQT",
-          "SLB"
+          "EOG",
+          "HAL"
         ]
       },
       {
@@ -60,11 +60,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "HBAN",
-          "BEN",
-          "PGR",
-          "SYF",
-          "MCO"
+          "COIN",
+          "SCHW",
+          "CB",
+          "BNY",
+          "TRV"
         ]
       },
       {
@@ -73,11 +73,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "PODD",
-          "RMD",
-          "LH",
-          "CAH",
-          "DXCM"
+          "VEEV",
+          "JNJ",
+          "ABT",
+          "INCY",
+          "MRK"
         ]
       },
       {
@@ -86,11 +86,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NSC",
-          "CAT",
-          "PH",
-          "UPS",
-          "PWR"
+          "IEX",
+          "HWM",
+          "GWW",
+          "UNP",
+          "ETN"
         ]
       },
       {
@@ -99,11 +99,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "ROP",
-          "CSCO",
-          "IBM",
-          "WDC",
-          "NVDA"
+          "NVDA",
+          "GDDY",
+          "KLAC",
+          "CTSH",
+          "SNPS"
         ]
       },
       {
@@ -112,11 +112,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "DOW",
-          "APD",
-          "PPG",
-          "SHW",
-          "IFF"
+          "NEM",
+          "MOS",
+          "MLM",
+          "BALL",
+          "APD"
         ]
       },
       {
@@ -125,11 +125,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "INVH",
-          "EQIX",
-          "AMT",
-          "MAA",
-          "SBAC"
+          "CBRE",
+          "WELL",
+          "PLD",
+          "DLR",
+          "DOC"
         ]
       },
       {
@@ -138,11 +138,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "AES",
-          "D",
-          "SRE",
-          "PPL",
-          "EIX"
+          "SO",
+          "XEL",
+          "NI",
+          "DTE",
+          "VST"
         ]
       }
     ],
@@ -153,11 +153,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
+          "TTWO",
+          "FOXA",
           "ECHO",
-          "OMC",
-          "GOOG",
-          "NWSA",
-          "GOOGL"
+          "TTD",
+          "VZ"
         ]
       },
       {
@@ -166,11 +166,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "HLT",
-          "DECK",
+          "ORLY",
           "BBY",
-          "LVS",
-          "YUM"
+          "EXPE",
+          "RCL",
+          "BKNG"
         ]
       },
       {
@@ -179,11 +179,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "KDP",
-          "COST",
-          "BF-B",
-          "MNST",
-          "CHD"
+          "HRL",
+          "CASY",
+          "KVUE",
+          "TAP",
+          "PM"
         ]
       },
       {
@@ -194,9 +194,9 @@
         "top_5": [
           "BKR",
           "COP",
-          "WMB",
           "EQT",
-          "SLB"
+          "EOG",
+          "HAL"
         ]
       },
       {
@@ -205,11 +205,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "HBAN",
-          "BEN",
-          "PGR",
-          "SYF",
-          "MCO"
+          "COIN",
+          "SCHW",
+          "CB",
+          "BNY",
+          "TRV"
         ]
       },
       {
@@ -218,11 +218,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "PODD",
-          "RMD",
-          "LH",
-          "CAH",
-          "DXCM"
+          "VEEV",
+          "JNJ",
+          "ABT",
+          "INCY",
+          "MRK"
         ]
       },
       {
@@ -231,11 +231,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NSC",
-          "CAT",
-          "PH",
-          "UPS",
-          "PWR"
+          "IEX",
+          "HWM",
+          "GWW",
+          "UNP",
+          "ETN"
         ]
       },
       {
@@ -244,11 +244,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "ROP",
-          "CSCO",
-          "IBM",
-          "WDC",
-          "NVDA"
+          "NVDA",
+          "GDDY",
+          "KLAC",
+          "CTSH",
+          "SNPS"
         ]
       },
       {
@@ -257,11 +257,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "DOW",
-          "APD",
-          "PPG",
-          "SHW",
-          "IFF"
+          "NEM",
+          "MOS",
+          "MLM",
+          "BALL",
+          "APD"
         ]
       },
       {
@@ -270,11 +270,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "INVH",
-          "EQIX",
-          "AMT",
-          "MAA",
-          "SBAC"
+          "CBRE",
+          "WELL",
+          "PLD",
+          "DLR",
+          "DOC"
         ]
       },
       {
@@ -283,11 +283,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "AES",
-          "D",
-          "SRE",
-          "PPL",
-          "EIX"
+          "SO",
+          "XEL",
+          "NI",
+          "DTE",
+          "VST"
         ]
       }
     ],
@@ -298,11 +298,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
+          "TTWO",
+          "FOXA",
           "ECHO",
-          "OMC",
-          "GOOG",
-          "NWSA",
-          "GOOGL"
+          "TTD",
+          "VZ"
         ]
       },
       {
@@ -311,11 +311,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "HLT",
-          "DECK",
+          "ORLY",
           "BBY",
-          "LVS",
-          "YUM"
+          "EXPE",
+          "RCL",
+          "BKNG"
         ]
       },
       {
@@ -324,11 +324,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "KDP",
-          "COST",
-          "BF-B",
-          "MNST",
-          "CHD"
+          "HRL",
+          "CASY",
+          "KVUE",
+          "TAP",
+          "PM"
         ]
       },
       {
@@ -339,9 +339,9 @@
         "top_5": [
           "BKR",
           "COP",
-          "WMB",
           "EQT",
-          "SLB"
+          "EOG",
+          "HAL"
         ]
       },
       {
@@ -350,11 +350,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "HBAN",
-          "BEN",
-          "PGR",
-          "SYF",
-          "MCO"
+          "COIN",
+          "SCHW",
+          "CB",
+          "BNY",
+          "TRV"
         ]
       },
       {
@@ -363,11 +363,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "PODD",
-          "RMD",
-          "LH",
-          "CAH",
-          "DXCM"
+          "VEEV",
+          "JNJ",
+          "ABT",
+          "INCY",
+          "MRK"
         ]
       },
       {
@@ -376,11 +376,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NSC",
-          "CAT",
-          "PH",
-          "UPS",
-          "PWR"
+          "IEX",
+          "HWM",
+          "GWW",
+          "UNP",
+          "ETN"
         ]
       },
       {
@@ -389,11 +389,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "ROP",
-          "CSCO",
-          "IBM",
-          "WDC",
-          "NVDA"
+          "NVDA",
+          "GDDY",
+          "KLAC",
+          "CTSH",
+          "SNPS"
         ]
       },
       {
@@ -402,11 +402,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "DOW",
-          "APD",
-          "PPG",
-          "SHW",
-          "IFF"
+          "NEM",
+          "MOS",
+          "MLM",
+          "BALL",
+          "APD"
         ]
       },
       {
@@ -415,11 +415,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "INVH",
-          "EQIX",
-          "AMT",
-          "MAA",
-          "SBAC"
+          "CBRE",
+          "WELL",
+          "PLD",
+          "DLR",
+          "DOC"
         ]
       },
       {
@@ -428,11 +428,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "AES",
-          "D",
-          "SRE",
-          "PPL",
-          "EIX"
+          "SO",
+          "XEL",
+          "NI",
+          "DTE",
+          "VST"
         ]
       }
     ],
@@ -443,11 +443,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
+          "TTWO",
+          "FOXA",
           "ECHO",
-          "OMC",
-          "GOOG",
-          "NWSA",
-          "GOOGL"
+          "TTD",
+          "VZ"
         ]
       },
       {
@@ -456,11 +456,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "HLT",
-          "DECK",
+          "ORLY",
           "BBY",
-          "LVS",
-          "YUM"
+          "EXPE",
+          "RCL",
+          "BKNG"
         ]
       },
       {
@@ -469,11 +469,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "KDP",
-          "COST",
-          "BF-B",
-          "MNST",
-          "CHD"
+          "HRL",
+          "CASY",
+          "KVUE",
+          "TAP",
+          "PM"
         ]
       },
       {
@@ -484,9 +484,9 @@
         "top_5": [
           "BKR",
           "COP",
-          "WMB",
           "EQT",
-          "SLB"
+          "EOG",
+          "HAL"
         ]
       },
       {
@@ -495,11 +495,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "HBAN",
-          "BEN",
-          "PGR",
-          "SYF",
-          "MCO"
+          "COIN",
+          "SCHW",
+          "CB",
+          "BNY",
+          "TRV"
         ]
       },
       {
@@ -508,11 +508,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "PODD",
-          "RMD",
-          "LH",
-          "CAH",
-          "DXCM"
+          "VEEV",
+          "JNJ",
+          "ABT",
+          "INCY",
+          "MRK"
         ]
       },
       {
@@ -521,11 +521,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NSC",
-          "CAT",
-          "PH",
-          "UPS",
-          "PWR"
+          "IEX",
+          "HWM",
+          "GWW",
+          "UNP",
+          "ETN"
         ]
       },
       {
@@ -534,11 +534,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "ROP",
-          "CSCO",
-          "IBM",
-          "WDC",
-          "NVDA"
+          "NVDA",
+          "GDDY",
+          "KLAC",
+          "CTSH",
+          "SNPS"
         ]
       },
       {
@@ -547,11 +547,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "DOW",
-          "APD",
-          "PPG",
-          "SHW",
-          "IFF"
+          "NEM",
+          "MOS",
+          "MLM",
+          "BALL",
+          "APD"
         ]
       },
       {
@@ -560,11 +560,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "INVH",
-          "EQIX",
-          "AMT",
-          "MAA",
-          "SBAC"
+          "CBRE",
+          "WELL",
+          "PLD",
+          "DLR",
+          "DOC"
         ]
       },
       {
@@ -573,11 +573,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "AES",
-          "D",
-          "SRE",
-          "PPL",
-          "EIX"
+          "SO",
+          "XEL",
+          "NI",
+          "DTE",
+          "VST"
         ]
       }
     ]
