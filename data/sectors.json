@@ -8,11 +8,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "TTWO",
-          "FOXA",
+          "T",
+          "CHTR",
+          "APP",
           "ECHO",
-          "TTD",
-          "VZ"
+          "NFLX"
         ]
       },
       {
@@ -21,11 +21,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "ORLY",
-          "BBY",
-          "EXPE",
-          "RCL",
-          "BKNG"
+          "MGM",
+          "SBUX",
+          "AZO",
+          "TPR",
+          "ULTA"
         ]
       },
       {
@@ -34,11 +34,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "HRL",
-          "CASY",
-          "KVUE",
-          "TAP",
-          "PM"
+          "DG",
+          "MDLZ",
+          "STZ",
+          "MKC",
+          "BG"
         ]
       },
       {
@@ -47,11 +47,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "BKR",
-          "COP",
-          "EQT",
-          "EOG",
-          "HAL"
+          "VLO",
+          "XOM",
+          "TPL",
+          "TRGP",
+          "BKR"
         ]
       },
       {
@@ -60,11 +60,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "COIN",
-          "SCHW",
           "CB",
-          "BNY",
-          "TRV"
+          "HOOD",
+          "CINF",
+          "CBOE",
+          "CFG"
         ]
       },
       {
@@ -73,11 +73,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "VEEV",
-          "JNJ",
-          "ABT",
-          "INCY",
-          "MRK"
+          "MRNA",
+          "IQV",
+          "PFE",
+          "MDT",
+          "AMGN"
         ]
       },
       {
@@ -86,11 +86,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "IEX",
-          "HWM",
-          "GWW",
-          "UNP",
-          "ETN"
+          "FDXF",
+          "WM",
+          "JCI",
+          "VLTO",
+          "CARR"
         ]
       },
       {
@@ -99,11 +99,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NVDA",
-          "GDDY",
-          "KLAC",
-          "CTSH",
-          "SNPS"
+          "TRMB",
+          "TXN",
+          "SNPS",
+          "STX",
+          "NTAP"
         ]
       },
       {
@@ -112,11 +112,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NEM",
-          "MOS",
-          "MLM",
+          "LYB",
+          "SHW",
+          "PPG",
           "BALL",
-          "APD"
+          "ECL"
         ]
       },
       {
@@ -125,11 +125,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "CBRE",
-          "WELL",
-          "PLD",
-          "DLR",
-          "DOC"
+          "FRT",
+          "INVH",
+          "PSA",
+          "O",
+          "BXP"
         ]
       },
       {
@@ -138,11 +138,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "SO",
-          "XEL",
-          "NI",
-          "DTE",
-          "VST"
+          "FE",
+          "PCG",
+          "CMS",
+          "VST",
+          "CNP"
         ]
       }
     ],
@@ -153,11 +153,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "TTWO",
-          "FOXA",
+          "T",
+          "CHTR",
+          "APP",
           "ECHO",
-          "TTD",
-          "VZ"
+          "NFLX"
         ]
       },
       {
@@ -166,11 +166,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "ORLY",
-          "BBY",
-          "EXPE",
-          "RCL",
-          "BKNG"
+          "MGM",
+          "SBUX",
+          "AZO",
+          "TPR",
+          "ULTA"
         ]
       },
       {
@@ -179,11 +179,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "HRL",
-          "CASY",
-          "KVUE",
-          "TAP",
-          "PM"
+          "DG",
+          "MDLZ",
+          "STZ",
+          "MKC",
+          "BG"
         ]
       },
       {
@@ -192,11 +192,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "BKR",
-          "COP",
-          "EQT",
-          "EOG",
-          "HAL"
+          "VLO",
+          "XOM",
+          "TPL",
+          "TRGP",
+          "BKR"
         ]
       },
       {
@@ -205,11 +205,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "COIN",
-          "SCHW",
           "CB",
-          "BNY",
-          "TRV"
+          "HOOD",
+          "CINF",
+          "CBOE",
+          "CFG"
         ]
       },
       {
@@ -218,11 +218,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "VEEV",
-          "JNJ",
-          "ABT",
-          "INCY",
-          "MRK"
+          "MRNA",
+          "IQV",
+          "PFE",
+          "MDT",
+          "AMGN"
         ]
       },
       {
@@ -231,11 +231,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "IEX",
-          "HWM",
-          "GWW",
-          "UNP",
-          "ETN"
+          "FDXF",
+          "WM",
+          "JCI",
+          "VLTO",
+          "CARR"
         ]
       },
       {
@@ -244,11 +244,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NVDA",
-          "GDDY",
-          "KLAC",
-          "CTSH",
-          "SNPS"
+          "TRMB",
+          "TXN",
+          "SNPS",
+          "STX",
+          "NTAP"
         ]
       },
       {
@@ -257,11 +257,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NEM",
-          "MOS",
-          "MLM",
+          "LYB",
+          "SHW",
+          "PPG",
           "BALL",
-          "APD"
+          "ECL"
         ]
       },
       {
@@ -270,11 +270,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "CBRE",
-          "WELL",
-          "PLD",
-          "DLR",
-          "DOC"
+          "FRT",
+          "INVH",
+          "PSA",
+          "O",
+          "BXP"
         ]
       },
       {
@@ -283,11 +283,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "SO",
-          "XEL",
-          "NI",
-          "DTE",
-          "VST"
+          "FE",
+          "PCG",
+          "CMS",
+          "VST",
+          "CNP"
         ]
       }
     ],
@@ -298,11 +298,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "TTWO",
-          "FOXA",
+          "T",
+          "CHTR",
+          "APP",
           "ECHO",
-          "TTD",
-          "VZ"
+          "NFLX"
         ]
       },
       {
@@ -311,11 +311,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "ORLY",
-          "BBY",
-          "EXPE",
-          "RCL",
-          "BKNG"
+          "MGM",
+          "SBUX",
+          "AZO",
+          "TPR",
+          "ULTA"
         ]
       },
       {
@@ -324,11 +324,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "HRL",
-          "CASY",
-          "KVUE",
-          "TAP",
-          "PM"
+          "DG",
+          "MDLZ",
+          "STZ",
+          "MKC",
+          "BG"
         ]
       },
       {
@@ -337,11 +337,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "BKR",
-          "COP",
-          "EQT",
-          "EOG",
-          "HAL"
+          "VLO",
+          "XOM",
+          "TPL",
+          "TRGP",
+          "BKR"
         ]
       },
       {
@@ -350,11 +350,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "COIN",
-          "SCHW",
           "CB",
-          "BNY",
-          "TRV"
+          "HOOD",
+          "CINF",
+          "CBOE",
+          "CFG"
         ]
       },
       {
@@ -363,11 +363,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "VEEV",
-          "JNJ",
-          "ABT",
-          "INCY",
-          "MRK"
+          "MRNA",
+          "IQV",
+          "PFE",
+          "MDT",
+          "AMGN"
         ]
       },
       {
@@ -376,11 +376,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "IEX",
-          "HWM",
-          "GWW",
-          "UNP",
-          "ETN"
+          "FDXF",
+          "WM",
+          "JCI",
+          "VLTO",
+          "CARR"
         ]
       },
       {
@@ -389,11 +389,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NVDA",
-          "GDDY",
-          "KLAC",
-          "CTSH",
-          "SNPS"
+          "TRMB",
+          "TXN",
+          "SNPS",
+          "STX",
+          "NTAP"
         ]
       },
       {
@@ -402,11 +402,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NEM",
-          "MOS",
-          "MLM",
+          "LYB",
+          "SHW",
+          "PPG",
           "BALL",
-          "APD"
+          "ECL"
         ]
       },
       {
@@ -415,11 +415,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "CBRE",
-          "WELL",
-          "PLD",
-          "DLR",
-          "DOC"
+          "FRT",
+          "INVH",
+          "PSA",
+          "O",
+          "BXP"
         ]
       },
       {
@@ -428,11 +428,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "SO",
-          "XEL",
-          "NI",
-          "DTE",
-          "VST"
+          "FE",
+          "PCG",
+          "CMS",
+          "VST",
+          "CNP"
         ]
       }
     ],
@@ -443,11 +443,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "TTWO",
-          "FOXA",
+          "T",
+          "CHTR",
+          "APP",
           "ECHO",
-          "TTD",
-          "VZ"
+          "NFLX"
         ]
       },
       {
@@ -456,11 +456,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "ORLY",
-          "BBY",
-          "EXPE",
-          "RCL",
-          "BKNG"
+          "MGM",
+          "SBUX",
+          "AZO",
+          "TPR",
+          "ULTA"
         ]
       },
       {
@@ -469,11 +469,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "HRL",
-          "CASY",
-          "KVUE",
-          "TAP",
-          "PM"
+          "DG",
+          "MDLZ",
+          "STZ",
+          "MKC",
+          "BG"
         ]
       },
       {
@@ -482,11 +482,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "BKR",
-          "COP",
-          "EQT",
-          "EOG",
-          "HAL"
+          "VLO",
+          "XOM",
+          "TPL",
+          "TRGP",
+          "BKR"
         ]
       },
       {
@@ -495,11 +495,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "COIN",
-          "SCHW",
           "CB",
-          "BNY",
-          "TRV"
+          "HOOD",
+          "CINF",
+          "CBOE",
+          "CFG"
         ]
       },
       {
@@ -508,11 +508,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "VEEV",
-          "JNJ",
-          "ABT",
-          "INCY",
-          "MRK"
+          "MRNA",
+          "IQV",
+          "PFE",
+          "MDT",
+          "AMGN"
         ]
       },
       {
@@ -521,11 +521,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "IEX",
-          "HWM",
-          "GWW",
-          "UNP",
-          "ETN"
+          "FDXF",
+          "WM",
+          "JCI",
+          "VLTO",
+          "CARR"
         ]
       },
       {
@@ -534,11 +534,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NVDA",
-          "GDDY",
-          "KLAC",
-          "CTSH",
-          "SNPS"
+          "TRMB",
+          "TXN",
+          "SNPS",
+          "STX",
+          "NTAP"
         ]
       },
       {
@@ -547,11 +547,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NEM",
-          "MOS",
-          "MLM",
+          "LYB",
+          "SHW",
+          "PPG",
           "BALL",
-          "APD"
+          "ECL"
         ]
       },
       {
@@ -560,11 +560,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "CBRE",
-          "WELL",
-          "PLD",
-          "DLR",
-          "DOC"
+          "FRT",
+          "INVH",
+          "PSA",
+          "O",
+          "BXP"
         ]
       },
       {
@@ -573,11 +573,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "SO",
-          "XEL",
-          "NI",
-          "DTE",
-          "VST"
+          "FE",
+          "PCG",
+          "CMS",
+          "VST",
+          "CNP"
         ]
       }
     ]
