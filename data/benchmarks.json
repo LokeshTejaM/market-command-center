@@ -47,8 +47,8 @@
       "ticker": "^VIX",
       "name": "VIX",
       "category": "volatility",
-      "price": 15.649999618530273,
-      "day_change_pct": -2.2485984085254818
+      "price": 15.989999771118164,
+      "day_change_pct": 5.684069069215769
     },
     {
       "ticker": "^VIX3M",
