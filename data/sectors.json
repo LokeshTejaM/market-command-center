@@ -8,11 +8,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "FOX",
-          "PSKY",
-          "DIS",
-          "GOOGL",
-          "RDDT"
+          "TTWO",
+          "LYV",
+          "CHTR",
+          "WBD",
+          "FOX"
         ]
       },
       {
@@ -21,11 +21,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "TJX",
           "TSLA",
-          "ROST",
-          "DHI",
-          "TPR"
+          "WSM",
+          "CVNA",
+          "HLT",
+          "HAS"
         ]
       },
       {
@@ -34,11 +34,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "GIS",
-          "DLTR",
-          "CLX",
-          "KDP",
-          "TAP"
+          "PM",
+          "MKC",
+          "EL",
+          "HSY",
+          "DLTR"
         ]
       },
       {
@@ -48,10 +48,10 @@
         "n_constituents": 0,
         "top_5": [
           "EQT",
-          "SLB",
-          "HAL",
-          "KMI",
-          "EOG"
+          "XOM",
+          "TRGP",
+          "PSX",
+          "EXE"
         ]
       },
       {
@@ -60,11 +60,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NDAQ",
-          "BAC",
-          "GL",
-          "AFL",
-          "PNC"
+          "MSCI",
+          "V",
+          "HIG",
+          "MRSH",
+          "ERIE"
         ]
       },
       {
@@ -73,11 +73,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "MRNA",
-          "MTD",
-          "COR",
-          "REGN",
-          "GEHC"
+          "BSX",
+          "AMGN",
+          "MDT",
+          "BIIB",
+          "SYK"
         ]
       },
       {
@@ -86,11 +86,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "DOV",
-          "VRSK",
-          "TDG",
-          "UPS",
-          "HWM"
+          "WAB",
+          "ODFL",
+          "DD",
+          "BLDR",
+          "VRSK"
         ]
       },
       {
@@ -99,11 +99,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "GDDY",
-          "ACN",
-          "ANET",
-          "AMAT",
-          "QCOM"
+          "PTC",
+          "HPQ",
+          "WDAY",
+          "LITE",
+          "GDDY"
         ]
       },
       {
@@ -112,11 +112,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
+          "APD",
+          "CTVA",
           "VMC",
-          "SHW",
-          "ECL",
-          "CF",
-          "AMCR"
+          "MOS",
+          "PPG"
         ]
       },
       {
@@ -125,11 +125,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "REG",
           "PLD",
-          "HST",
-          "PSA",
-          "VMRK"
+          "UDR",
+          "EXR",
+          "REG",
+          "CBRE"
         ]
       },
       {
@@ -138,11 +138,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "SO",
-          "PEG",
-          "NRG",
-          "ED",
-          "DUK"
+          "ETR",
+          "ATO",
+          "VST",
+          "NI",
+          "AEP"
         ]
       }
     ],
@@ -153,11 +153,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "FOX",
-          "PSKY",
-          "DIS",
-          "GOOGL",
-          "RDDT"
+          "TTWO",
+          "LYV",
+          "CHTR",
+          "WBD",
+          "FOX"
         ]
       },
       {
@@ -166,11 +166,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "TJX",
           "TSLA",
-          "ROST",
-          "DHI",
-          "TPR"
+          "WSM",
+          "CVNA",
+          "HLT",
+          "HAS"
         ]
       },
       {
@@ -179,11 +179,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "GIS",
-          "DLTR",
-          "CLX",
-          "KDP",
-          "TAP"
+          "PM",
+          "MKC",
+          "EL",
+          "HSY",
+          "DLTR"
         ]
       },
       {
@@ -193,10 +193,10 @@
         "n_constituents": 0,
         "top_5": [
           "EQT",
-          "SLB",
-          "HAL",
-          "KMI",
-          "EOG"
+          "XOM",
+          "TRGP",
+          "PSX",
+          "EXE"
         ]
       },
       {
@@ -205,11 +205,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NDAQ",
-          "BAC",
-          "GL",
-          "AFL",
-          "PNC"
+          "MSCI",
+          "V",
+          "HIG",
+          "MRSH",
+          "ERIE"
         ]
       },
       {
@@ -218,11 +218,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "MRNA",
-          "MTD",
-          "COR",
-          "REGN",
-          "GEHC"
+          "BSX",
+          "AMGN",
+          "MDT",
+          "BIIB",
+          "SYK"
         ]
       },
       {
@@ -231,11 +231,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "DOV",
-          "VRSK",
-          "TDG",
-          "UPS",
-          "HWM"
+          "WAB",
+          "ODFL",
+          "DD",
+          "BLDR",
+          "VRSK"
         ]
       },
       {
@@ -244,11 +244,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "GDDY",
-          "ACN",
-          "ANET",
-          "AMAT",
-          "QCOM"
+          "PTC",
+          "HPQ",
+          "WDAY",
+          "LITE",
+          "GDDY"
         ]
       },
       {
@@ -257,11 +257,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
+          "APD",
+          "CTVA",
           "VMC",
-          "SHW",
-          "ECL",
-          "CF",
-          "AMCR"
+          "MOS",
+          "PPG"
         ]
       },
       {
@@ -270,11 +270,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "REG",
           "PLD",
-          "HST",
-          "PSA",
-          "VMRK"
+          "UDR",
+          "EXR",
+          "REG",
+          "CBRE"
         ]
       },
       {
@@ -283,11 +283,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "SO",
-          "PEG",
-          "NRG",
-          "ED",
-          "DUK"
+          "ETR",
+          "ATO",
+          "VST",
+          "NI",
+          "AEP"
         ]
       }
     ],
@@ -298,11 +298,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "FOX",
-          "PSKY",
-          "DIS",
-          "GOOGL",
-          "RDDT"
+          "TTWO",
+          "LYV",
+          "CHTR",
+          "WBD",
+          "FOX"
         ]
       },
       {
@@ -311,11 +311,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "TJX",
           "TSLA",
-          "ROST",
-          "DHI",
-          "TPR"
+          "WSM",
+          "CVNA",
+          "HLT",
+          "HAS"
         ]
       },
       {
@@ -324,11 +324,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "GIS",
-          "DLTR",
-          "CLX",
-          "KDP",
-          "TAP"
+          "PM",
+          "MKC",
+          "EL",
+          "HSY",
+          "DLTR"
         ]
       },
       {
@@ -338,10 +338,10 @@
         "n_constituents": 0,
         "top_5": [
           "EQT",
-          "SLB",
-          "HAL",
-          "KMI",
-          "EOG"
+          "XOM",
+          "TRGP",
+          "PSX",
+          "EXE"
         ]
       },
       {
@@ -350,11 +350,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NDAQ",
-          "BAC",
-          "GL",
-          "AFL",
-          "PNC"
+          "MSCI",
+          "V",
+          "HIG",
+          "MRSH",
+          "ERIE"
         ]
       },
       {
@@ -363,11 +363,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "MRNA",
-          "MTD",
-          "COR",
-          "REGN",
-          "GEHC"
+          "BSX",
+          "AMGN",
+          "MDT",
+          "BIIB",
+          "SYK"
         ]
       },
       {
@@ -376,11 +376,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "DOV",
-          "VRSK",
-          "TDG",
-          "UPS",
-          "HWM"
+          "WAB",
+          "ODFL",
+          "DD",
+          "BLDR",
+          "VRSK"
         ]
       },
       {
@@ -389,11 +389,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "GDDY",
-          "ACN",
-          "ANET",
-          "AMAT",
-          "QCOM"
+          "PTC",
+          "HPQ",
+          "WDAY",
+          "LITE",
+          "GDDY"
         ]
       },
       {
@@ -402,11 +402,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
+          "APD",
+          "CTVA",
           "VMC",
-          "SHW",
-          "ECL",
-          "CF",
-          "AMCR"
+          "MOS",
+          "PPG"
         ]
       },
       {
@@ -415,11 +415,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "REG",
           "PLD",
-          "HST",
-          "PSA",
-          "VMRK"
+          "UDR",
+          "EXR",
+          "REG",
+          "CBRE"
         ]
       },
       {
@@ -428,11 +428,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "SO",
-          "PEG",
-          "NRG",
-          "ED",
-          "DUK"
+          "ETR",
+          "ATO",
+          "VST",
+          "NI",
+          "AEP"
         ]
       }
     ],
@@ -443,11 +443,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "FOX",
-          "PSKY",
-          "DIS",
-          "GOOGL",
-          "RDDT"
+          "TTWO",
+          "LYV",
+          "CHTR",
+          "WBD",
+          "FOX"
         ]
       },
       {
@@ -456,11 +456,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "TJX",
           "TSLA",
-          "ROST",
-          "DHI",
-          "TPR"
+          "WSM",
+          "CVNA",
+          "HLT",
+          "HAS"
         ]
       },
       {
@@ -469,11 +469,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "GIS",
-          "DLTR",
-          "CLX",
-          "KDP",
-          "TAP"
+          "PM",
+          "MKC",
+          "EL",
+          "HSY",
+          "DLTR"
         ]
       },
       {
@@ -483,10 +483,10 @@
         "n_constituents": 0,
         "top_5": [
           "EQT",
-          "SLB",
-          "HAL",
-          "KMI",
-          "EOG"
+          "XOM",
+          "TRGP",
+          "PSX",
+          "EXE"
         ]
       },
       {
@@ -495,11 +495,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "NDAQ",
-          "BAC",
-          "GL",
-          "AFL",
-          "PNC"
+          "MSCI",
+          "V",
+          "HIG",
+          "MRSH",
+          "ERIE"
         ]
       },
       {
@@ -508,11 +508,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "MRNA",
-          "MTD",
-          "COR",
-          "REGN",
-          "GEHC"
+          "BSX",
+          "AMGN",
+          "MDT",
+          "BIIB",
+          "SYK"
         ]
       },
       {
@@ -521,11 +521,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "DOV",
-          "VRSK",
-          "TDG",
-          "UPS",
-          "HWM"
+          "WAB",
+          "ODFL",
+          "DD",
+          "BLDR",
+          "VRSK"
         ]
       },
       {
@@ -534,11 +534,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "GDDY",
-          "ACN",
-          "ANET",
-          "AMAT",
-          "QCOM"
+          "PTC",
+          "HPQ",
+          "WDAY",
+          "LITE",
+          "GDDY"
         ]
       },
       {
@@ -547,11 +547,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
+          "APD",
+          "CTVA",
           "VMC",
-          "SHW",
-          "ECL",
-          "CF",
-          "AMCR"
+          "MOS",
+          "PPG"
         ]
       },
       {
@@ -560,11 +560,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "REG",
           "PLD",
-          "HST",
-          "PSA",
-          "VMRK"
+          "UDR",
+          "EXR",
+          "REG",
+          "CBRE"
         ]
       },
       {
@@ -573,11 +573,11 @@
         "rs_trend_median": null,
         "n_constituents": 0,
         "top_5": [
-          "SO",
-          "PEG",
-          "NRG",
-          "ED",
-          "DUK"
+          "ETR",
+          "ATO",
+          "VST",
+          "NI",
+          "AEP"
         ]
       }
     ]
