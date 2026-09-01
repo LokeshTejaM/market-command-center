@@ -5,56 +5,56 @@
       "ticker": "SPY",
       "name": "S&P 500",
       "category": "benchmark",
-      "price": 766.3900146484375,
-      "day_change_pct": -0.3847353001143139
+      "price": 763.4500122070312,
+      "day_change_pct": -0.46932737673273106
     },
     {
       "ticker": "RSP",
       "name": "S&P 500 Equal Weight",
       "category": "benchmark",
-      "price": 219.5449981689453,
-      "day_change_pct": -0.5188292445485576
+      "price": 218.11000061035156,
+      "day_change_pct": -0.58343533563876
     },
     {
       "ticker": "QQQ",
       "name": "Nasdaq 100",
       "category": "benchmark",
-      "price": 715.1300048828125,
-      "day_change_pct": -0.18145356926131395
+      "price": 709.8001098632812,
+      "day_change_pct": -0.9710223516263938
     },
     {
       "ticker": "QQQE",
       "name": "Nasdaq 100 Equal Weight",
       "category": "benchmark",
-      "price": 121.7699966430664,
-      "day_change_pct": -0.40893106545150104
+      "price": 120.18000030517578,
+      "day_change_pct": -1.4433345095889893
     },
     {
       "ticker": "IWM",
       "name": "Russell 2000",
       "category": "benchmark",
-      "price": 293.1600036621094,
-      "day_change_pct": -0.8757384067254903
+      "price": 291.8800048828125,
+      "day_change_pct": -0.6974408342295235
     },
     {
       "ticker": "DIA",
       "name": "Dow Jones",
       "category": "benchmark",
-      "price": 531.97998046875,
-      "day_change_pct": -0.5756395738603981
+      "price": 529.4450073242188,
+      "day_change_pct": -0.39975919835971707
     },
     {
       "ticker": "^VIX",
       "name": "VIX",
       "category": "volatility",
-      "price": 15.109999656677246,
-      "day_change_pct": 4.712400118644222
+      "price": 15.470000267028809,
+      "day_change_pct": 3.686328337281619
     },
     {
       "ticker": "^VIX3M",
       "name": "VIX3M",
       "category": "volatility",
-      "price": 17.670000076293945,
+      "price": 17.850000381469727,
       "day_change_pct": null
     }
   ]

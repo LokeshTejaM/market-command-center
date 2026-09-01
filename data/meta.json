@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "built_at": "2026-08-31T17:58:08.870382Z",
-  "as_of_date": "2026-08-31",
+  "built_at": "2026-09-01T15:26:55.865986Z",
+  "as_of_date": "2026-09-01",
   "windows": [
     21,
     63,
@@ -10,10 +10,8 @@
   ],
   "trend_lookback_days": 21,
   "universe": {
-    "sp500_tickers": 502,
-    "dropped_stocks": [
-      "GL"
-    ],
+    "sp500_tickers": 503,
+    "dropped_stocks": [],
     "dropped_reference": []
   },
   "sources": {
