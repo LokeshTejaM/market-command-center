@@ -5,56 +5,56 @@
       "ticker": "SPY",
       "name": "S&P 500",
       "category": "benchmark",
-      "price": null,
+      "price": 767.739990234375,
       "day_change_pct": null
     },
     {
       "ticker": "RSP",
       "name": "S&P 500 Equal Weight",
       "category": "benchmark",
-      "price": null,
+      "price": 217.6300048828125,
       "day_change_pct": null
     },
     {
       "ticker": "QQQ",
       "name": "Nasdaq 100",
       "category": "benchmark",
-      "price": null,
+      "price": 718.969970703125,
       "day_change_pct": null
     },
     {
       "ticker": "QQQE",
       "name": "Nasdaq 100 Equal Weight",
       "category": "benchmark",
-      "price": null,
+      "price": 120.0999984741211,
       "day_change_pct": null
     },
     {
       "ticker": "IWM",
       "name": "Russell 2000",
       "category": "benchmark",
-      "price": null,
+      "price": 295.29998779296875,
       "day_change_pct": null
     },
     {
       "ticker": "DIA",
       "name": "Dow Jones",
       "category": "benchmark",
-      "price": null,
+      "price": 528.6306762695312,
       "day_change_pct": null
     },
     {
       "ticker": "^VIX",
       "name": "VIX",
       "category": "volatility",
-      "price": 15.300000190734863,
-      "day_change_pct": 5.299383839742289
+      "price": 15.470000267028809,
+      "day_change_pct": 1.1111115959128615
     },
     {
       "ticker": "^VIX3M",
       "name": "VIX3M",
       "category": "volatility",
-      "price": null,
+      "price": 18.170000076293945,
       "day_change_pct": null
     }
   ]
