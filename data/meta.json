@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "built_at": "2026-09-16T15:23:07.124513Z",
-  "as_of_date": "2026-09-16",
+  "built_at": "2026-09-17T15:29:34.247665Z",
+  "as_of_date": "2026-09-17",
   "windows": [
     21,
     63,
@@ -10,10 +10,8 @@
   ],
   "trend_lookback_days": 21,
   "universe": {
-    "sp500_tickers": 502,
-    "dropped_stocks": [
-      "RMD"
-    ],
+    "sp500_tickers": 503,
+    "dropped_stocks": [],
     "dropped_reference": []
   },
   "sources": {
