@@ -5,57 +5,57 @@
       "ticker": "SPY",
       "name": "S&P 500",
       "category": "benchmark",
-      "price": 772.219970703125,
-      "day_change_pct": 1.3824480074528411
+      "price": 773.4500122070312,
+      "day_change_pct": -0.0064625459558875775
     },
     {
       "ticker": "RSP",
       "name": "S&P 500 Equal Weight",
       "category": "benchmark",
-      "price": 213.0,
-      "day_change_pct": 0.334451333704755
+      "price": 212.59500122070312,
+      "day_change_pct": -0.03996212996287829
     },
     {
       "ticker": "QQQ",
       "name": "Nasdaq 100",
       "category": "benchmark",
-      "price": 738.77001953125,
-      "day_change_pct": 2.400721745257739
+      "price": 745.0900268554688,
+      "day_change_pct": 0.48822694045329573
     },
     {
       "ticker": "QQQE",
       "name": "Nasdaq 100 Equal Weight",
       "category": "benchmark",
-      "price": 120.38999938964844,
-      "day_change_pct": 2.1812932451884315
+      "price": 121.27999877929688,
+      "day_change_pct": 0.488852701927045
     },
     {
       "ticker": "IWM",
       "name": "Russell 2000",
       "category": "benchmark",
-      "price": 285.75,
-      "day_change_pct": 0.5807792541486778
+      "price": 286.6050109863281,
+      "day_change_pct": 0.35892725760147126
     },
     {
       "ticker": "DIA",
       "name": "Dow Jones",
       "category": "benchmark",
-      "price": 519.25,
-      "day_change_pct": 0.6532517417404238
+      "price": 517.27001953125,
+      "day_change_pct": -0.4828984616858767
     },
     {
       "ticker": "^VIX",
       "name": "VIX",
       "category": "volatility",
-      "price": 15.119999885559082,
-      "day_change_pct": 2.0931766182246125
+      "price": 14.319999694824219,
+      "day_change_pct": -3.6987235707311106
     },
     {
       "ticker": "^VIX3M",
       "name": "VIX3M",
       "category": "volatility",
-      "price": 18.170000076293945,
-      "day_change_pct": -0.38377026152740523
+      "price": 17.760000228881836,
+      "day_change_pct": -1.7699098239742916
     }
   ]
 }
