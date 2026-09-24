@@ -6,63 +6,63 @@
         "ticker": "XLK",
         "sector": "Information Technology",
         "variant": "CW",
-        "rs_rank": 92,
-        "rs_trend": 32.0,
+        "rs_rank": 91,
+        "rs_trend": 16.0,
         "quadrant": "leading"
       },
       {
         "ticker": "RSPT",
         "sector": "Information Technology",
         "variant": "EW",
-        "rs_rank": 88,
-        "rs_trend": 20.0,
+        "rs_rank": 87,
+        "rs_trend": 9.0,
         "quadrant": "leading"
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
         "variant": "CW",
-        "rs_rank": 42,
-        "rs_trend": -27.0,
+        "rs_rank": 49,
+        "rs_trend": -14.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "RSPD",
         "sector": "Consumer Discretionary",
         "variant": "EW",
-        "rs_rank": 22,
-        "rs_trend": -32.0,
+        "rs_rank": 24,
+        "rs_trend": -22.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
         "variant": "CW",
-        "rs_rank": 77,
-        "rs_trend": 14.0,
+        "rs_rank": 83,
+        "rs_trend": 24.0,
         "quadrant": "leading"
       },
       {
         "ticker": "RSPC",
         "sector": "Communication Services",
         "variant": "EW",
-        "rs_rank": 45,
-        "rs_trend": -25.0,
-        "quadrant": "lagging"
+        "rs_rank": 54,
+        "rs_trend": -8.0,
+        "quadrant": "weakening"
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
         "variant": "CW",
-        "rs_rank": 44,
-        "rs_trend": -9.0,
+        "rs_rank": 47,
+        "rs_trend": -5.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "RSPF",
         "sector": "Financials",
         "variant": "EW",
-        "rs_rank": 38,
+        "rs_rank": 37,
         "rs_trend": -15.0,
         "quadrant": "lagging"
       },
@@ -70,72 +70,72 @@
         "ticker": "XLP",
         "sector": "Consumer Staples",
         "variant": "CW",
-        "rs_rank": 54,
-        "rs_trend": 6.0,
+        "rs_rank": 60,
+        "rs_trend": 16.0,
         "quadrant": "leading"
       },
       {
         "ticker": "RSPS",
         "sector": "Consumer Staples",
         "variant": "EW",
-        "rs_rank": 35,
-        "rs_trend": -16.0,
+        "rs_rank": 44,
+        "rs_trend": -4.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
         "variant": "CW",
-        "rs_rank": 62,
-        "rs_trend": -9.0,
-        "quadrant": "weakening"
+        "rs_rank": 72,
+        "rs_trend": 10.0,
+        "quadrant": "leading"
       },
       {
         "ticker": "RSPH",
         "sector": "Health Care",
         "variant": "EW",
-        "rs_rank": 66,
-        "rs_trend": -15.0,
+        "rs_rank": 70,
+        "rs_trend": -6.0,
         "quadrant": "weakening"
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
         "variant": "CW",
-        "rs_rank": 55,
-        "rs_trend": 24.0,
-        "quadrant": "leading"
+        "rs_rank": 47,
+        "rs_trend": 5.0,
+        "quadrant": "improving"
       },
       {
         "ticker": "RSPN",
         "sector": "Industrials",
         "variant": "EW",
-        "rs_rank": 50,
-        "rs_trend": 17.0,
-        "quadrant": "leading"
+        "rs_rank": 41,
+        "rs_trend": 2.0,
+        "quadrant": "improving"
       },
       {
         "ticker": "XLE",
         "sector": "Energy",
         "variant": "CW",
-        "rs_rank": 79,
-        "rs_trend": 10.0,
+        "rs_rank": 85,
+        "rs_trend": 5.0,
         "quadrant": "leading"
       },
       {
         "ticker": "RSPG",
         "sector": "Energy",
         "variant": "EW",
-        "rs_rank": 78,
-        "rs_trend": 11.0,
-        "quadrant": "leading"
+        "rs_rank": 81,
+        "rs_trend": 0.0,
+        "quadrant": "weakening"
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
         "variant": "CW",
         "rs_rank": 31,
-        "rs_trend": 11.0,
+        "rs_trend": 7.0,
         "quadrant": "improving"
       },
       {
@@ -143,40 +143,40 @@
         "sector": "Utilities",
         "variant": "EW",
         "rs_rank": 30,
-        "rs_trend": 11.0,
+        "rs_trend": 6.0,
         "quadrant": "improving"
       },
       {
         "ticker": "XLB",
         "sector": "Materials",
         "variant": "CW",
-        "rs_rank": 47,
-        "rs_trend": -13.0,
+        "rs_rank": 44,
+        "rs_trend": -14.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "RSPM",
         "sector": "Materials",
         "variant": "EW",
-        "rs_rank": 48,
-        "rs_trend": -12.0,
+        "rs_rank": 42,
+        "rs_trend": -15.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
         "variant": "CW",
-        "rs_rank": 38,
-        "rs_trend": -1.0,
-        "quadrant": "lagging"
+        "rs_rank": 45,
+        "rs_trend": 8.0,
+        "quadrant": "improving"
       },
       {
         "ticker": "RSPR",
         "sector": "Real Estate",
         "variant": "EW",
-        "rs_rank": 34,
-        "rs_trend": -3.0,
-        "quadrant": "lagging"
+        "rs_rank": 37,
+        "rs_trend": 5.0,
+        "quadrant": "improving"
       }
     ],
     "63": [
@@ -184,47 +184,47 @@
         "ticker": "XLK",
         "sector": "Information Technology",
         "variant": "CW",
-        "rs_rank": 69,
-        "rs_trend": 39.0,
+        "rs_rank": 72,
+        "rs_trend": 40.0,
         "quadrant": "leading"
       },
       {
         "ticker": "RSPT",
         "sector": "Information Technology",
         "variant": "EW",
-        "rs_rank": 68,
-        "rs_trend": 30.0,
+        "rs_rank": 72,
+        "rs_trend": 29.0,
         "quadrant": "leading"
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
         "variant": "CW",
-        "rs_rank": 47,
-        "rs_trend": 15.0,
+        "rs_rank": 48,
+        "rs_trend": 24.0,
         "quadrant": "improving"
       },
       {
         "ticker": "RSPD",
         "sector": "Consumer Discretionary",
         "variant": "EW",
-        "rs_rank": 38,
-        "rs_trend": -14.0,
+        "rs_rank": 34,
+        "rs_trend": -12.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
         "variant": "CW",
-        "rs_rank": 70,
-        "rs_trend": 41.0,
+        "rs_rank": 73,
+        "rs_trend": 47.0,
         "quadrant": "leading"
       },
       {
         "ticker": "RSPC",
         "sector": "Communication Services",
         "variant": "EW",
-        "rs_rank": 62,
+        "rs_rank": 59,
         "rs_trend": 26.0,
         "quadrant": "leading"
       },
@@ -233,38 +233,38 @@
         "sector": "Financials",
         "variant": "CW",
         "rs_rank": 62,
-        "rs_trend": -6.0,
+        "rs_trend": -7.0,
         "quadrant": "weakening"
       },
       {
         "ticker": "RSPF",
         "sector": "Financials",
         "variant": "EW",
-        "rs_rank": 66,
-        "rs_trend": -2.0,
+        "rs_rank": 62,
+        "rs_trend": -9.0,
         "quadrant": "weakening"
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
         "variant": "CW",
-        "rs_rank": 49,
-        "rs_trend": 4.0,
-        "quadrant": "improving"
+        "rs_rank": 51,
+        "rs_trend": 10.0,
+        "quadrant": "leading"
       },
       {
         "ticker": "RSPS",
         "sector": "Consumer Staples",
         "variant": "EW",
-        "rs_rank": 47,
-        "rs_trend": -7.0,
+        "rs_rank": 48,
+        "rs_trend": -3.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
         "variant": "CW",
-        "rs_rank": 73,
+        "rs_rank": 71,
         "rs_trend": -6.0,
         "quadrant": "weakening"
       },
@@ -272,15 +272,15 @@
         "ticker": "RSPH",
         "sector": "Health Care",
         "variant": "EW",
-        "rs_rank": 78,
-        "rs_trend": -9.0,
+        "rs_rank": 79,
+        "rs_trend": -7.0,
         "quadrant": "weakening"
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
         "variant": "CW",
-        "rs_rank": 34,
+        "rs_rank": 38,
         "rs_trend": -6.0,
         "quadrant": "lagging"
       },
@@ -289,30 +289,30 @@
         "sector": "Industrials",
         "variant": "EW",
         "rs_rank": 36,
-        "rs_trend": -5.0,
+        "rs_trend": -9.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "XLE",
         "sector": "Energy",
         "variant": "CW",
-        "rs_rank": 84,
-        "rs_trend": 29.0,
+        "rs_rank": 88,
+        "rs_trend": 27.0,
         "quadrant": "leading"
       },
       {
         "ticker": "RSPG",
         "sector": "Energy",
         "variant": "EW",
-        "rs_rank": 77,
-        "rs_trend": 27.0,
+        "rs_rank": 83,
+        "rs_trend": 25.0,
         "quadrant": "leading"
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
         "variant": "CW",
-        "rs_rank": 18,
+        "rs_rank": 19,
         "rs_trend": -6.0,
         "quadrant": "lagging"
       },
@@ -320,7 +320,7 @@
         "ticker": "RSPU",
         "sector": "Utilities",
         "variant": "EW",
-        "rs_rank": 16,
+        "rs_rank": 18,
         "rs_trend": -8.0,
         "quadrant": "lagging"
       },
@@ -328,32 +328,32 @@
         "ticker": "XLB",
         "sector": "Materials",
         "variant": "CW",
-        "rs_rank": 47,
-        "rs_trend": -1.0,
-        "quadrant": "lagging"
+        "rs_rank": 50,
+        "rs_trend": 2.0,
+        "quadrant": "leading"
       },
       {
         "ticker": "RSPM",
         "sector": "Materials",
         "variant": "EW",
-        "rs_rank": 50,
-        "rs_trend": -1.0,
-        "quadrant": "weakening"
+        "rs_rank": 51,
+        "rs_trend": 1.0,
+        "quadrant": "leading"
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
         "variant": "CW",
-        "rs_rank": 39,
-        "rs_trend": -1.0,
+        "rs_rank": 37,
+        "rs_trend": -3.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "RSPR",
         "sector": "Real Estate",
         "variant": "EW",
-        "rs_rank": 38,
-        "rs_trend": -2.0,
+        "rs_rank": 29,
+        "rs_trend": -10.0,
         "quadrant": "lagging"
       }
     ],
@@ -363,7 +363,7 @@
         "sector": "Information Technology",
         "variant": "CW",
         "rs_rank": 91,
-        "rs_trend": 5.0,
+        "rs_trend": 4.0,
         "quadrant": "leading"
       },
       {
@@ -371,95 +371,95 @@
         "sector": "Information Technology",
         "variant": "EW",
         "rs_rank": 91,
-        "rs_trend": 2.0,
+        "rs_trend": 1.0,
         "quadrant": "leading"
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
         "variant": "CW",
-        "rs_rank": 39,
-        "rs_trend": 0.0,
-        "quadrant": "lagging"
+        "rs_rank": 45,
+        "rs_trend": 6.0,
+        "quadrant": "improving"
       },
       {
         "ticker": "RSPD",
         "sector": "Consumer Discretionary",
         "variant": "EW",
-        "rs_rank": 31,
-        "rs_trend": -4.0,
-        "quadrant": "lagging"
+        "rs_rank": 35,
+        "rs_trend": 4.0,
+        "quadrant": "improving"
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
         "variant": "CW",
-        "rs_rank": 47,
-        "rs_trend": 15.0,
-        "quadrant": "improving"
+        "rs_rank": 50,
+        "rs_trend": 20.0,
+        "quadrant": "leading"
       },
       {
         "ticker": "RSPC",
         "sector": "Communication Services",
         "variant": "EW",
-        "rs_rank": 29,
-        "rs_trend": -7.0,
+        "rs_rank": 31,
+        "rs_trend": -1.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
         "variant": "CW",
-        "rs_rank": 61,
-        "rs_trend": -7.0,
+        "rs_rank": 63,
+        "rs_trend": -2.0,
         "quadrant": "weakening"
       },
       {
         "ticker": "RSPF",
         "sector": "Financials",
         "variant": "EW",
-        "rs_rank": 62,
-        "rs_trend": -8.0,
+        "rs_rank": 63,
+        "rs_trend": -5.0,
         "quadrant": "weakening"
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
         "variant": "CW",
-        "rs_rank": 41,
-        "rs_trend": 9.0,
+        "rs_rank": 39,
+        "rs_trend": 6.0,
         "quadrant": "improving"
       },
       {
         "ticker": "RSPS",
         "sector": "Consumer Staples",
         "variant": "EW",
-        "rs_rank": 39,
-        "rs_trend": 7.0,
+        "rs_rank": 37,
+        "rs_trend": 5.0,
         "quadrant": "improving"
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
         "variant": "CW",
-        "rs_rank": 69,
-        "rs_trend": 4.0,
+        "rs_rank": 71,
+        "rs_trend": 8.0,
         "quadrant": "leading"
       },
       {
         "ticker": "RSPH",
         "sector": "Health Care",
         "variant": "EW",
-        "rs_rank": 78,
-        "rs_trend": 7.0,
+        "rs_rank": 79,
+        "rs_trend": 8.0,
         "quadrant": "leading"
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
         "variant": "CW",
-        "rs_rank": 51,
-        "rs_trend": 9.0,
+        "rs_rank": 50,
+        "rs_trend": 6.0,
         "quadrant": "leading"
       },
       {
@@ -483,15 +483,15 @@
         "sector": "Energy",
         "variant": "EW",
         "rs_rank": 36,
-        "rs_trend": -34.0,
+        "rs_trend": -35.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
         "variant": "CW",
-        "rs_rank": 16,
-        "rs_trend": -5.0,
+        "rs_rank": 15,
+        "rs_trend": -8.0,
         "quadrant": "lagging"
       },
       {
@@ -499,40 +499,40 @@
         "sector": "Utilities",
         "variant": "EW",
         "rs_rank": 16,
-        "rs_trend": -6.0,
+        "rs_trend": -8.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "XLB",
         "sector": "Materials",
         "variant": "CW",
-        "rs_rank": 43,
-        "rs_trend": 2.0,
-        "quadrant": "improving"
+        "rs_rank": 42,
+        "rs_trend": -1.0,
+        "quadrant": "lagging"
       },
       {
         "ticker": "RSPM",
         "sector": "Materials",
         "variant": "EW",
-        "rs_rank": 41,
-        "rs_trend": -3.0,
+        "rs_rank": 38,
+        "rs_trend": -9.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
         "variant": "CW",
-        "rs_rank": 50,
-        "rs_trend": -1.0,
-        "quadrant": "weakening"
+        "rs_rank": 49,
+        "rs_trend": -2.0,
+        "quadrant": "lagging"
       },
       {
         "ticker": "RSPR",
         "sector": "Real Estate",
         "variant": "EW",
-        "rs_rank": 50,
-        "rs_trend": -1.0,
-        "quadrant": "weakening"
+        "rs_rank": 47,
+        "rs_trend": -2.0,
+        "quadrant": "lagging"
       }
     ],
     "252": [
@@ -540,24 +540,24 @@
         "ticker": "XLK",
         "sector": "Information Technology",
         "variant": "CW",
-        "rs_rank": 82,
-        "rs_trend": 4.0,
+        "rs_rank": 81,
+        "rs_trend": 3.0,
         "quadrant": "leading"
       },
       {
         "ticker": "RSPT",
         "sector": "Information Technology",
         "variant": "EW",
-        "rs_rank": 87,
-        "rs_trend": 3.0,
+        "rs_rank": 86,
+        "rs_trend": 1.0,
         "quadrant": "leading"
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
         "variant": "CW",
-        "rs_rank": 28,
-        "rs_trend": -6.0,
+        "rs_rank": 30,
+        "rs_trend": -2.0,
         "quadrant": "lagging"
       },
       {
@@ -565,23 +565,23 @@
         "sector": "Consumer Discretionary",
         "variant": "EW",
         "rs_rank": 26,
-        "rs_trend": -5.0,
+        "rs_trend": -4.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
         "variant": "CW",
-        "rs_rank": 36,
-        "rs_trend": 0.0,
-        "quadrant": "lagging"
+        "rs_rank": 37,
+        "rs_trend": 1.0,
+        "quadrant": "improving"
       },
       {
         "ticker": "RSPC",
         "sector": "Communication Services",
         "variant": "EW",
-        "rs_rank": 23,
-        "rs_trend": -6.0,
+        "rs_rank": 25,
+        "rs_trend": -4.0,
         "quadrant": "lagging"
       },
       {
@@ -589,7 +589,7 @@
         "sector": "Financials",
         "variant": "CW",
         "rs_rank": 44,
-        "rs_trend": -6.0,
+        "rs_trend": -4.0,
         "quadrant": "lagging"
       },
       {
@@ -597,39 +597,39 @@
         "sector": "Financials",
         "variant": "EW",
         "rs_rank": 44,
-        "rs_trend": -6.0,
+        "rs_trend": -5.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
         "variant": "CW",
-        "rs_rank": 49,
-        "rs_trend": 2.0,
-        "quadrant": "improving"
+        "rs_rank": 51,
+        "rs_trend": 4.0,
+        "quadrant": "leading"
       },
       {
         "ticker": "RSPS",
         "sector": "Consumer Staples",
         "variant": "EW",
-        "rs_rank": 44,
-        "rs_trend": 2.0,
+        "rs_rank": 46,
+        "rs_trend": 4.0,
         "quadrant": "improving"
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
         "variant": "CW",
-        "rs_rank": 71,
-        "rs_trend": 0.0,
-        "quadrant": "weakening"
+        "rs_rank": 73,
+        "rs_trend": 5.0,
+        "quadrant": "leading"
       },
       {
         "ticker": "RSPH",
         "sector": "Health Care",
         "variant": "EW",
         "rs_rank": 74,
-        "rs_trend": 3.0,
+        "rs_trend": 6.0,
         "quadrant": "leading"
       },
       {
@@ -637,39 +637,39 @@
         "sector": "Industrials",
         "variant": "CW",
         "rs_rank": 57,
-        "rs_trend": -1.0,
+        "rs_trend": -2.0,
         "quadrant": "weakening"
       },
       {
         "ticker": "RSPN",
         "sector": "Industrials",
         "variant": "EW",
-        "rs_rank": 50,
-        "rs_trend": -1.0,
-        "quadrant": "weakening"
+        "rs_rank": 49,
+        "rs_trend": -3.0,
+        "quadrant": "lagging"
       },
       {
         "ticker": "XLE",
         "sector": "Energy",
         "variant": "CW",
-        "rs_rank": 83,
-        "rs_trend": 2.0,
-        "quadrant": "leading"
+        "rs_rank": 82,
+        "rs_trend": 0.0,
+        "quadrant": "weakening"
       },
       {
         "ticker": "RSPG",
         "sector": "Energy",
         "variant": "EW",
-        "rs_rank": 83,
-        "rs_trend": 1.0,
-        "quadrant": "leading"
+        "rs_rank": 82,
+        "rs_trend": -1.0,
+        "quadrant": "weakening"
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
         "variant": "CW",
-        "rs_rank": 31,
-        "rs_trend": -8.0,
+        "rs_rank": 32,
+        "rs_trend": -7.0,
         "quadrant": "lagging"
       },
       {
@@ -684,8 +684,8 @@
         "ticker": "XLB",
         "sector": "Materials",
         "variant": "CW",
-        "rs_rank": 59,
-        "rs_trend": 1.0,
+        "rs_rank": 60,
+        "rs_trend": 2.0,
         "quadrant": "leading"
       },
       {
@@ -693,7 +693,7 @@
         "sector": "Materials",
         "variant": "EW",
         "rs_rank": 67,
-        "rs_trend": 2.0,
+        "rs_trend": 3.0,
         "quadrant": "leading"
       },
       {
@@ -701,15 +701,15 @@
         "sector": "Real Estate",
         "variant": "CW",
         "rs_rank": 45,
-        "rs_trend": -5.0,
+        "rs_trend": -4.0,
         "quadrant": "lagging"
       },
       {
         "ticker": "RSPR",
         "sector": "Real Estate",
         "variant": "EW",
-        "rs_rank": 42,
-        "rs_trend": -1.0,
+        "rs_rank": 39,
+        "rs_trend": -3.0,
         "quadrant": "lagging"
       }
     ]
