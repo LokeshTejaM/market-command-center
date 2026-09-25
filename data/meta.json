@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "built_at": "2026-09-24T15:47:00.852580Z",
-  "as_of_date": "2026-09-24",
+  "built_at": "2026-09-25T15:46:42.287295Z",
+  "as_of_date": "2026-09-25",
   "windows": [
     21,
     63,
@@ -10,10 +10,8 @@
   ],
   "trend_lookback_days": 21,
   "universe": {
-    "sp500_tickers": 502,
-    "dropped_stocks": [
-      "BMY"
-    ],
+    "sp500_tickers": 503,
+    "dropped_stocks": [],
     "dropped_reference": []
   },
   "sources": {
