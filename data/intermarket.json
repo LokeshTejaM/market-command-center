@@ -5,43 +5,43 @@
       "ticker": "TLT",
       "name": "20+ Year Treasury",
       "category": "bonds",
-      "price": 81.41999816894531,
-      "day_change_pct": -0.39148483384785493
+      "price": 81.68000030517578,
+      "day_change_pct": 0.4180034209403827
     },
     {
       "ticker": "HYG",
       "name": "High Yield Corp Bonds",
       "category": "bonds",
-      "price": 76.95500183105469,
-      "day_change_pct": -0.18806309459924453
+      "price": 77.20500183105469,
+      "day_change_pct": 0.20116648041241803
     },
     {
       "ticker": "LQD",
       "name": "Investment Grade Bonds",
       "category": "bonds",
-      "price": 103.91999816894531,
-      "day_change_pct": -0.34522498519921063
+      "price": 104.03500366210938,
+      "day_change_pct": 0.1781465485860112
     },
     {
       "ticker": "UUP",
       "name": "US Dollar Index",
       "category": "fx",
-      "price": 28.939899444580078,
-      "day_change_pct": 0.13806168365559923
+      "price": 28.999900817871094,
+      "day_change_pct": 0.13778223294154124
     },
     {
       "ticker": "GLD",
       "name": "Gold",
       "category": "commodity",
-      "price": 366.2539978027344,
-      "day_change_pct": -0.7441740371993522
+      "price": 369.260009765625,
+      "day_change_pct": 0.722845672498873
     },
     {
       "ticker": "USO",
       "name": "Crude Oil",
       "category": "commodity",
-      "price": 168.3000030517578,
-      "day_change_pct": 3.5628630488190094
+      "price": 167.1602020263672,
+      "day_change_pct": -1.3978627794451914
     }
   ]
 }
