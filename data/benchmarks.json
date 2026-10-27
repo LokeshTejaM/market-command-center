@@ -5,57 +5,57 @@
       "ticker": "SPY",
       "name": "S&P 500",
       "category": "benchmark",
-      "price": 766.1787719726562,
-      "day_change_pct": 0.8169798161612674
+      "price": 770.25,
+      "day_change_pct": 0.6376007570123354
     },
     {
       "ticker": "RSP",
       "name": "S&P 500 Equal Weight",
       "category": "benchmark",
-      "price": 217.25999450683594,
-      "day_change_pct": 0.33250265217830144
+      "price": 217.16119384765625,
+      "day_change_pct": -0.05927536585035309
     },
     {
       "ticker": "QQQ",
       "name": "Nasdaq 100",
       "category": "benchmark",
-      "price": 713.9450073242188,
-      "day_change_pct": 1.3550514734998798
+      "price": 721.9400024414062,
+      "day_change_pct": 1.3675919780163692
     },
     {
       "ticker": "QQQE",
       "name": "Nasdaq 100 Equal Weight",
       "category": "benchmark",
-      "price": 118.16999816894531,
-      "day_change_pct": 0.8534607968143204
+      "price": 119.1500015258789,
+      "day_change_pct": 0.9232627391375203
     },
     {
       "ticker": "IWM",
       "name": "Russell 2000",
       "category": "benchmark",
-      "price": 277.9750061035156,
-      "day_change_pct": 0.8068925126076598
+      "price": 279.885009765625,
+      "day_change_pct": 1.0451711734421831
     },
     {
       "ticker": "DIA",
       "name": "Dow Jones",
       "category": "benchmark",
-      "price": 522.989990234375,
-      "day_change_pct": 0.3107189006577471
+      "price": 523.361328125,
+      "day_change_pct": 0.07483363171862933
     },
     {
       "ticker": "^VIX",
       "name": "VIX",
       "category": "volatility",
-      "price": 18.3799991607666,
-      "day_change_pct": -5.501293368644289
+      "price": 17.549999237060547,
+      "day_change_pct": -4.567700818199693
     },
     {
       "ticker": "^VIX3M",
       "name": "VIX3M",
       "category": "volatility",
-      "price": 19.920000076293945,
-      "day_change_pct": -2.7343724534147795
+      "price": 19.459999084472656,
+      "day_change_pct": -2.407228870255629
     }
   ]
 }
