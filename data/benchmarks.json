@@ -5,57 +5,57 @@
       "ticker": "SPY",
       "name": "S&P 500",
       "category": "benchmark",
-      "price": 770.25,
-      "day_change_pct": 0.6376007570123354
+      "price": 771.780029296875,
+      "day_change_pct": 0.2754536063090285
     },
     {
       "ticker": "RSP",
       "name": "S&P 500 Equal Weight",
       "category": "benchmark",
-      "price": 217.16119384765625,
-      "day_change_pct": -0.05927536585035309
+      "price": 217.3000030517578,
+      "day_change_pct": -0.10114068425061129
     },
     {
       "ticker": "QQQ",
       "name": "Nasdaq 100",
       "category": "benchmark",
-      "price": 721.9400024414062,
-      "day_change_pct": 1.3675919780163692
+      "price": 723.0599975585938,
+      "day_change_pct": 0.2509528677426376
     },
     {
       "ticker": "QQQE",
       "name": "Nasdaq 100 Equal Weight",
       "category": "benchmark",
-      "price": 119.1500015258789,
-      "day_change_pct": 0.9232627391375203
+      "price": 119.37000274658203,
+      "day_change_pct": 0.05029351204102195
     },
     {
       "ticker": "IWM",
       "name": "Russell 2000",
       "category": "benchmark",
-      "price": 279.885009765625,
-      "day_change_pct": 1.0451711734421831
+      "price": 280.2900085449219,
+      "day_change_pct": 0.0392661403442629
     },
     {
       "ticker": "DIA",
       "name": "Dow Jones",
       "category": "benchmark",
-      "price": 523.361328125,
-      "day_change_pct": 0.07483363171862933
+      "price": 524.844970703125,
+      "day_change_pct": 0.29906385083198206
     },
     {
       "ticker": "^VIX",
       "name": "VIX",
       "category": "volatility",
-      "price": 17.549999237060547,
-      "day_change_pct": -4.567700818199693
+      "price": 17.360000610351562,
+      "day_change_pct": -0.91324111433575
     },
     {
       "ticker": "^VIX3M",
       "name": "VIX3M",
       "category": "volatility",
-      "price": 19.459999084472656,
-      "day_change_pct": -2.407228870255629
+      "price": 19.350000381469727,
+      "day_change_pct": -1.1241661562860217
     }
   ]
 }
