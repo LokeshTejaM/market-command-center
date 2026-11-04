@@ -5,57 +5,57 @@
       "ticker": "SPY",
       "name": "S&P 500",
       "category": "benchmark",
-      "price": 756.2747192382812,
-      "day_change_pct": 0.5550782858477543
+      "price": 767.9963989257812,
+      "day_change_pct": 1.8090307922717042
     },
     {
       "ticker": "RSP",
       "name": "S&P 500 Equal Weight",
       "category": "benchmark",
-      "price": 219.88499450683594,
-      "day_change_pct": -0.04318629991283407
+      "price": 223.08999633789062,
+      "day_change_pct": 1.7467855181102276
     },
     {
       "ticker": "QQQ",
       "name": "Nasdaq 100",
       "category": "benchmark",
-      "price": 687.0,
-      "day_change_pct": 0.8677227549222843
+      "price": 694.6409912109375,
+      "day_change_pct": 1.3660053574984898
     },
     {
       "ticker": "QQQE",
       "name": "Nasdaq 100 Equal Weight",
       "category": "benchmark",
-      "price": 116.37999725341797,
-      "day_change_pct": 0.42281289701455727
+      "price": 117.61000061035156,
+      "day_change_pct": 1.4316547699870785
     },
     {
       "ticker": "IWM",
       "name": "Russell 2000",
       "category": "benchmark",
-      "price": 281.0090026855469,
-      "day_change_pct": 0.6695521741887367
+      "price": 284.010009765625,
+      "day_change_pct": 1.5082744529190562
     },
     {
       "ticker": "DIA",
       "name": "Dow Jones",
       "category": "benchmark",
-      "price": 518.0900268554688,
-      "day_change_pct": -0.24069009422759136
+      "price": 532.1400146484375,
+      "day_change_pct": 2.916492701243034
     },
     {
       "ticker": "^VIX",
       "name": "VIX",
       "category": "volatility",
-      "price": 20.610000610351562,
-      "day_change_pct": -2.5531868459496287
+      "price": 16.889999389648438,
+      "day_change_pct": -18.915029037391452
     },
     {
       "ticker": "^VIX3M",
       "name": "VIX3M",
       "category": "volatility",
-      "price": 21.209999084472656,
-      "day_change_pct": -1.8055615282842608
+      "price": 19.0,
+      "day_change_pct": -10.672310338080448
     }
   ]
 }
