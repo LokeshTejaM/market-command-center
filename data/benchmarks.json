@@ -5,57 +5,57 @@
       "ticker": "SPY",
       "name": "S&P 500",
       "category": "benchmark",
-      "price": 767.9963989257812,
-      "day_change_pct": 1.8090307922717042
+      "price": 735.9000244140625,
+      "day_change_pct": -4.030982022005958
     },
     {
       "ticker": "RSP",
       "name": "S&P 500 Equal Weight",
       "category": "benchmark",
-      "price": 223.08999633789062,
-      "day_change_pct": 1.7467855181102276
+      "price": 216.97999572753906,
+      "day_change_pct": -2.8433287294374776
     },
     {
       "ticker": "QQQ",
       "name": "Nasdaq 100",
       "category": "benchmark",
-      "price": 694.6409912109375,
-      "day_change_pct": 1.3660053574984898
+      "price": 650.8900146484375,
+      "day_change_pct": -5.933954308004063
     },
     {
       "ticker": "QQQE",
       "name": "Nasdaq 100 Equal Weight",
       "category": "benchmark",
-      "price": 117.61000061035156,
-      "day_change_pct": 1.4316547699870785
+      "price": 111.8499984741211,
+      "day_change_pct": -4.711193481592835
     },
     {
       "ticker": "IWM",
       "name": "Russell 2000",
       "category": "benchmark",
-      "price": 284.010009765625,
-      "day_change_pct": 1.5082744529190562
+      "price": 271.5,
+      "day_change_pct": -4.408136574172317
     },
     {
       "ticker": "DIA",
       "name": "Dow Jones",
       "category": "benchmark",
-      "price": 532.1400146484375,
-      "day_change_pct": 2.916492701243034
+      "price": 516.3800048828125,
+      "day_change_pct": -3.138185539278038
     },
     {
       "ticker": "^VIX",
       "name": "VIX",
       "category": "volatility",
-      "price": 16.889999389648438,
-      "day_change_pct": -18.915029037391452
+      "price": 27.100000381469727,
+      "day_change_pct": 63.154722369971886
     },
     {
       "ticker": "^VIX3M",
       "name": "VIX3M",
       "category": "volatility",
-      "price": 19.0,
-      "day_change_pct": -10.672310338080448
+      "price": 25.190000534057617,
+      "day_change_pct": 33.98936998040099
     }
   ]
 }
