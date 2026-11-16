@@ -5,57 +5,57 @@
       "ticker": "SPY",
       "name": "S&P 500",
       "category": "benchmark",
-      "price": 752.3800048828125,
-      "day_change_pct": -0.6260553498711019
+      "price": 739.6599731445312,
+      "day_change_pct": -1.949974424734524
     },
     {
       "ticker": "RSP",
       "name": "S&P 500 Equal Weight",
       "category": "benchmark",
-      "price": 220.77999877929688,
-      "day_change_pct": 0.02718265597223546
+      "price": 218.9250030517578,
+      "day_change_pct": -1.010580834392738
     },
     {
       "ticker": "QQQ",
       "name": "Nasdaq 100",
       "category": "benchmark",
-      "price": 678.0700073242188,
-      "day_change_pct": -1.467657095885877
+      "price": 661.969970703125,
+      "day_change_pct": -2.6357268909999676
     },
     {
       "ticker": "QQQE",
       "name": "Nasdaq 100 Equal Weight",
       "category": "benchmark",
-      "price": 115.44999694824219,
-      "day_change_pct": -0.969295646821211
+      "price": 113.54499816894531,
+      "day_change_pct": -1.9811794211828992
     },
     {
       "ticker": "IWM",
       "name": "Russell 2000",
       "category": "benchmark",
-      "price": 276.9599914550781,
-      "day_change_pct": -0.5315367667544701
+      "price": 272.7699890136719,
+      "day_change_pct": -1.718678166891363
     },
     {
       "ticker": "DIA",
       "name": "Dow Jones",
       "category": "benchmark",
-      "price": 522.27001953125,
-      "day_change_pct": -0.03827036635347669
+      "price": 515.5549926757812,
+      "day_change_pct": -1.451788470580273
     },
     {
       "ticker": "^VIX",
       "name": "VIX",
       "category": "volatility",
-      "price": 19.81999969482422,
-      "day_change_pct": 5.989298856631242
+      "price": 23.979999542236328,
+      "day_change_pct": 24.24870720299863
     },
     {
       "ticker": "^VIX3M",
       "name": "VIX3M",
       "category": "volatility",
-      "price": 20.899999618530273,
-      "day_change_pct": 4.187438559078882
+      "price": 23.68000030517578,
+      "day_change_pct": 14.839958008731813
     }
   ]
 }
