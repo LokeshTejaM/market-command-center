@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "built_at": "2026-11-17T19:42:41.799105Z",
-  "as_of_date": "2026-11-17",
+  "built_at": "2026-11-18T19:18:59.646930Z",
+  "as_of_date": "2026-11-18",
   "windows": [
     21,
     63,
@@ -10,10 +10,8 @@
   ],
   "trend_lookback_days": 21,
   "universe": {
-    "sp500_tickers": 502,
-    "dropped_stocks": [
-      "FTNT"
-    ],
+    "sp500_tickers": 503,
+    "dropped_stocks": [],
     "dropped_reference": []
   },
   "sources": {
