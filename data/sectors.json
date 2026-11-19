@@ -3,469 +3,469 @@
   "by_window": {
     "21": [
       {
-        "sector": "Consumer Discretionary",
-        "rs_rank_median": 73.0,
-        "rs_trend_median": 5.0,
-        "n_constituents": 47,
-        "top_5": [
-          "CMG",
-          "CVNA",
-          "TSCO",
-          "MGM",
-          "NCLH"
-        ]
-      },
-      {
         "sector": "Utilities",
-        "rs_rank_median": 69.0,
-        "rs_trend_median": 8.0,
+        "rs_rank_median": 73.0,
+        "rs_trend_median": 6.0,
         "n_constituents": 31,
         "top_5": [
-          "EIX",
           "AWK",
-          "ES",
+          "EIX",
           "WEC",
+          "ES",
           "DUK"
         ]
       },
       {
         "sector": "Consumer Staples",
-        "rs_rank_median": 64.0,
-        "rs_trend_median": -6.5,
+        "rs_rank_median": 69.0,
+        "rs_trend_median": 4.5,
         "n_constituents": 33,
         "top_5": [
           "CLX",
           "TSN",
-          "DLTR",
           "HRL",
-          "COST"
+          "DLTR",
+          "TGT"
         ]
       },
       {
-        "sector": "Industrials",
-        "rs_rank_median": 56.0,
-        "rs_trend_median": 8.0,
-        "n_constituents": 83,
+        "sector": "Consumer Discretionary",
+        "rs_rank_median": 64.0,
+        "rs_trend_median": 5.0,
+        "n_constituents": 47,
         "top_5": [
-          "PNR",
-          "ALLE",
-          "LUV",
-          "SWK",
-          "FDXF"
+          "CMG",
+          "TSCO",
+          "CVNA",
+          "MGM",
+          "DPZ"
         ]
       },
       {
         "sector": "Real Estate",
-        "rs_rank_median": 55.5,
-        "rs_trend_median": 15.0,
+        "rs_rank_median": 61.0,
+        "rs_trend_median": 29.0,
         "n_constituents": 30,
         "top_5": [
-          "SPG",
           "KIM",
           "EXR",
+          "SPG",
           "PSA",
           "BXP"
         ]
       },
       {
-        "sector": "Financials",
-        "rs_rank_median": 54.5,
-        "rs_trend_median": 10.0,
-        "n_constituents": 76,
+        "sector": "Industrials",
+        "rs_rank_median": 55.0,
+        "rs_trend_median": 5.0,
+        "n_constituents": 83,
         "top_5": [
-          "FISV",
-          "CBOE",
-          "JKHY",
-          "AON",
-          "ERIE"
-        ]
-      },
-      {
-        "sector": "Communication Services",
-        "rs_rank_median": 50.0,
-        "rs_trend_median": 8.5,
-        "n_constituents": 22,
-        "top_5": [
-          "APP",
-          "CHTR",
-          "ECHO",
-          "CMCSA",
-          "DIS"
+          "PNR",
+          "FDXF",
+          "LUV",
+          "ALLE",
+          "CPRT"
         ]
       },
       {
         "sector": "Health Care",
-        "rs_rank_median": 50.0,
-        "rs_trend_median": -12.5,
+        "rs_rank_median": 52.0,
+        "rs_trend_median": -12.0,
         "n_constituents": 60,
         "top_5": [
+          "GEHC",
           "IDXX",
           "EW",
-          "GEHC",
           "REGN",
           "STE"
         ]
       },
       {
+        "sector": "Financials",
+        "rs_rank_median": 51.5,
+        "rs_trend_median": 4.0,
+        "n_constituents": 76,
+        "top_5": [
+          "FISV",
+          "CBOE",
+          "AON",
+          "JKHY",
+          "AIZ"
+        ]
+      },
+      {
+        "sector": "Communication Services",
+        "rs_rank_median": 51.0,
+        "rs_trend_median": 9.0,
+        "n_constituents": 22,
+        "top_5": [
+          "APP",
+          "CHTR",
+          "CMCSA",
+          "DIS",
+          "OMC"
+        ]
+      },
+      {
         "sector": "Materials",
-        "rs_rank_median": 43.5,
-        "rs_trend_median": -5.0,
+        "rs_rank_median": 47.0,
+        "rs_trend_median": 1.5,
         "n_constituents": 24,
         "top_5": [
-          "PPG",
           "MOS",
+          "PPG",
           "CRH",
           "VMC",
-          "AVY"
+          "ECL"
         ]
       },
       {
         "sector": "Energy",
-        "rs_rank_median": 19.0,
-        "rs_trend_median": -61.0,
+        "rs_rank_median": 21.0,
+        "rs_trend_median": -60.0,
         "n_constituents": 21,
         "top_5": [
           "TRGP",
-          "SLB",
+          "EOG",
           "OKE",
-          "WMB",
-          "EOG"
+          "SLB",
+          "HAL"
         ]
       },
       {
         "sector": "Information Technology",
-        "rs_rank_median": 15.5,
-        "rs_trend_median": -2.5,
-        "n_constituents": 76,
+        "rs_rank_median": 17.0,
+        "rs_trend_median": -5.0,
+        "n_constituents": 75,
         "top_5": [
           "GEN",
           "ROP",
           "MSI",
-          "CDW",
-          "TYL"
+          "TYL",
+          "CDW"
         ]
       }
     ],
     "63": [
       {
         "sector": "Health Care",
-        "rs_rank_median": 71.5,
-        "rs_trend_median": -3.5,
+        "rs_rank_median": 72.0,
+        "rs_trend_median": 0.5,
         "n_constituents": 60,
         "top_5": [
           "MRNA",
-          "VTRS",
           "IDXX",
-          "MTD",
-          "MCK"
+          "RVTY",
+          "MCK",
+          "MTD"
         ]
       },
       {
         "sector": "Utilities",
-        "rs_rank_median": 67.0,
-        "rs_trend_median": 38.0,
+        "rs_rank_median": 69.0,
+        "rs_trend_median": 39.0,
         "n_constituents": 31,
         "top_5": [
           "ED",
+          "NI",
           "WEC",
           "AWK",
-          "NI",
-          "DUK"
+          "EVRG"
         ]
       },
       {
         "sector": "Consumer Staples",
-        "rs_rank_median": 66.5,
-        "rs_trend_median": 3.0,
+        "rs_rank_median": 64.0,
+        "rs_trend_median": 4.5,
         "n_constituents": 32,
         "top_5": [
           "WMT",
-          "KR",
           "PG",
-          "MO",
-          "COST"
-        ]
-      },
-      {
-        "sector": "Consumer Discretionary",
-        "rs_rank_median": 59.0,
-        "rs_trend_median": 8.0,
-        "n_constituents": 47,
-        "top_5": [
-          "HAS",
-          "ULTA",
-          "BBY",
-          "MAR",
-          "EBAY"
+          "KR",
+          "COST",
+          "TSN"
         ]
       },
       {
         "sector": "Industrials",
-        "rs_rank_median": 49.0,
+        "rs_rank_median": 51.0,
         "rs_trend_median": 9.0,
         "n_constituents": 83,
         "top_5": [
-          "LUV",
           "VLTO",
           "ALLE",
+          "LUV",
           "MAS",
           "RSG"
         ]
       },
       {
-        "sector": "Materials",
-        "rs_rank_median": 45.5,
-        "rs_trend_median": -5.5,
-        "n_constituents": 24,
+        "sector": "Consumer Discretionary",
+        "rs_rank_median": 48.0,
+        "rs_trend_median": 9.0,
+        "n_constituents": 47,
         "top_5": [
-          "PPG",
-          "ECL",
-          "LIN",
-          "NUE",
-          "AVY"
+          "HAS",
+          "ULTA",
+          "MAR",
+          "BBY",
+          "EBAY"
         ]
       },
       {
-        "sector": "Financials",
-        "rs_rank_median": 44.5,
-        "rs_trend_median": 5.0,
-        "n_constituents": 76,
+        "sector": "Materials",
+        "rs_rank_median": 46.5,
+        "rs_trend_median": -1.5,
+        "n_constituents": 24,
         "top_5": [
-          "CBOE",
-          "FISV",
-          "BRK-B",
-          "EG",
-          "CINF"
+          "PPG",
+          "LIN",
+          "ECL",
+          "NUE",
+          "APD"
         ]
       },
       {
         "sector": "Energy",
-        "rs_rank_median": 42.0,
-        "rs_trend_median": -31.0,
+        "rs_rank_median": 43.0,
+        "rs_trend_median": -22.0,
         "n_constituents": 21,
         "top_5": [
           "APA",
           "MPC",
+          "CVX",
           "KMI",
-          "COP",
-          "CVX"
+          "COP"
+        ]
+      },
+      {
+        "sector": "Financials",
+        "rs_rank_median": 42.5,
+        "rs_trend_median": 3.0,
+        "n_constituents": 76,
+        "top_5": [
+          "CBOE",
+          "BRK-B",
+          "EG",
+          "CME",
+          "WRB"
         ]
       },
       {
         "sector": "Real Estate",
-        "rs_rank_median": 39.5,
-        "rs_trend_median": 12.5,
+        "rs_rank_median": 39.0,
+        "rs_trend_median": 18.5,
         "n_constituents": 30,
         "top_5": [
           "CCI",
-          "HST",
           "EXR",
+          "HST",
           "KIM",
           "SPG"
         ]
       },
       {
         "sector": "Communication Services",
-        "rs_rank_median": 36.0,
-        "rs_trend_median": -12.0,
+        "rs_rank_median": 36.5,
+        "rs_trend_median": -5.5,
         "n_constituents": 22,
         "top_5": [
           "APP",
-          "DIS",
           "ECHO",
+          "DIS",
           "META",
           "OMC"
         ]
       },
       {
         "sector": "Information Technology",
-        "rs_rank_median": 25.0,
-        "rs_trend_median": -6.5,
-        "n_constituents": 76,
+        "rs_rank_median": 26.0,
+        "rs_trend_median": -8.0,
+        "n_constituents": 75,
         "top_5": [
+          "CDW",
           "OKTA",
           "PTC",
-          "ACN",
-          "CDW",
-          "CRWD"
+          "CRWD",
+          "SWKS"
         ]
       }
     ],
     "126": [
       {
-        "sector": "Health Care",
-        "rs_rank_median": 84.5,
-        "rs_trend_median": 5.0,
-        "n_constituents": 60,
+        "sector": "Communication Services",
+        "rs_rank_median": null,
+        "rs_trend_median": null,
+        "n_constituents": 0,
         "top_5": [
-          "CRL",
-          "MRNA",
-          "VEEV",
-          "TMO",
-          "RVTY"
-        ]
-      },
-      {
-        "sector": "Consumer Staples",
-        "rs_rank_median": 60.0,
-        "rs_trend_median": 4.0,
-        "n_constituents": 32,
-        "top_5": [
-          "DLTR",
-          "TGT",
-          "SJM",
-          "DG",
-          "KO"
-        ]
-      },
-      {
-        "sector": "Financials",
-        "rs_rank_median": 57.5,
-        "rs_trend_median": 2.0,
-        "n_constituents": 76,
-        "top_5": [
-          "AJG",
-          "FDS",
-          "PYPL",
-          "CPAY",
-          "WTW"
-        ]
-      },
-      {
-        "sector": "Materials",
-        "rs_rank_median": 55.5,
-        "rs_trend_median": 6.0,
-        "n_constituents": 24,
-        "top_5": [
-          "AVY",
-          "ECL",
-          "AMCR",
-          "BALL",
-          "PKG"
+          "T",
+          "TMUS",
+          "TKO",
+          "LYV",
+          "CMCSA"
         ]
       },
       {
         "sector": "Consumer Discretionary",
-        "rs_rank_median": 52.0,
-        "rs_trend_median": 12.0,
-        "n_constituents": 47,
+        "rs_rank_median": null,
+        "rs_trend_median": null,
+        "n_constituents": 0,
         "top_5": [
-          "BBY",
-          "ABNB",
-          "WSM",
+          "WYNN",
           "HAS",
-          "GPC"
+          "F",
+          "BBY",
+          "ORLY"
         ]
       },
       {
-        "sector": "Industrials",
-        "rs_rank_median": 50.0,
-        "rs_trend_median": 7.0,
-        "n_constituents": 81,
+        "sector": "Consumer Staples",
+        "rs_rank_median": null,
+        "rs_trend_median": null,
+        "n_constituents": 0,
         "top_5": [
-          "SWK",
-          "ALLE",
-          "J",
-          "ADP",
-          "VLTO"
-        ]
-      },
-      {
-        "sector": "Utilities",
-        "rs_rank_median": 37.0,
-        "rs_trend_median": 8.0,
-        "n_constituents": 31,
-        "top_5": [
-          "AWK",
-          "ED",
-          "DUK",
-          "FE",
-          "WEC"
-        ]
-      },
-      {
-        "sector": "Communication Services",
-        "rs_rank_median": 35.0,
-        "rs_trend_median": 0.0,
-        "n_constituents": 22,
-        "top_5": [
-          "OMC",
-          "DIS",
-          "LYV",
-          "FOX",
-          "FOXA"
-        ]
-      },
-      {
-        "sector": "Real Estate",
-        "rs_rank_median": 32.5,
-        "rs_trend_median": -3.5,
-        "n_constituents": 30,
-        "top_5": [
-          "HST",
-          "SPG",
-          "WELL",
-          "EXR",
-          "PSA"
+          "MDLZ",
+          "BF-B",
+          "KMB",
+          "CASY",
+          "VYLR"
         ]
       },
       {
         "sector": "Energy",
-        "rs_rank_median": 29.0,
-        "rs_trend_median": -17.0,
-        "n_constituents": 21,
+        "rs_rank_median": null,
+        "rs_trend_median": null,
+        "n_constituents": 0,
         "top_5": [
-          "MPC",
-          "VLO",
-          "PSX",
           "APA",
-          "COP"
+          "PSX",
+          "DVN",
+          "KMI",
+          "MPC"
+        ]
+      },
+      {
+        "sector": "Financials",
+        "rs_rank_median": null,
+        "rs_trend_median": null,
+        "n_constituents": 0,
+        "top_5": [
+          "COIN",
+          "KEY",
+          "BX",
+          "SYF",
+          "AMP"
+        ]
+      },
+      {
+        "sector": "Health Care",
+        "rs_rank_median": null,
+        "rs_trend_median": null,
+        "n_constituents": 0,
+        "top_5": [
+          "HSIC",
+          "REGN",
+          "DXCM",
+          "CNC",
+          "DGX"
+        ]
+      },
+      {
+        "sector": "Industrials",
+        "rs_rank_median": null,
+        "rs_trend_median": null,
+        "n_constituents": 0,
+        "top_5": [
+          "FDX",
+          "OTIS",
+          "XYL",
+          "FDXF",
+          "MMM"
         ]
       },
       {
         "sector": "Information Technology",
-        "rs_rank_median": 28.0,
-        "rs_trend_median": -15.5,
-        "n_constituents": 76,
+        "rs_rank_median": null,
+        "rs_trend_median": null,
+        "n_constituents": 0,
         "top_5": [
-          "OKTA",
-          "CDW",
-          "ROP",
-          "CRWD",
-          "WDAY"
+          "LITE",
+          "AAPL",
+          "PANW",
+          "COHR",
+          "TYL"
+        ]
+      },
+      {
+        "sector": "Materials",
+        "rs_rank_median": null,
+        "rs_trend_median": null,
+        "n_constituents": 0,
+        "top_5": [
+          "NUE",
+          "SHW",
+          "SW",
+          "MOS",
+          "IP"
+        ]
+      },
+      {
+        "sector": "Real Estate",
+        "rs_rank_median": null,
+        "rs_trend_median": null,
+        "n_constituents": 0,
+        "top_5": [
+          "EXR",
+          "KIM",
+          "INVH",
+          "VMRK",
+          "CCI"
+        ]
+      },
+      {
+        "sector": "Utilities",
+        "rs_rank_median": null,
+        "rs_trend_median": null,
+        "n_constituents": 0,
+        "top_5": [
+          "CEG",
+          "WEC",
+          "EXC",
+          "CMS",
+          "ETR"
         ]
       }
     ],
     "252": [
       {
         "sector": "Energy",
-        "rs_rank_median": 73.0,
-        "rs_trend_median": -9.0,
+        "rs_rank_median": 74.0,
+        "rs_trend_median": -8.0,
         "n_constituents": 21,
         "top_5": [
           "VLO",
-          "MPC",
           "APA",
+          "MPC",
           "PSX",
           "TRGP"
         ]
       },
       {
         "sector": "Information Technology",
-        "rs_rank_median": 67.0,
-        "rs_trend_median": -3.0,
-        "n_constituents": 76,
+        "rs_rank_median": 73.0,
+        "rs_trend_median": -1.0,
+        "n_constituents": 75,
         "top_5": [
-          "SNDK",
+          "DELL",
           "MU",
-          "OKTA",
+          "STX",
           "HPE",
-          "DELL"
+          "LITE"
         ]
       },
       {
         "sector": "Materials",
-        "rs_rank_median": 64.5,
+        "rs_rank_median": 65.0,
         "rs_trend_median": 1.0,
         "n_constituents": 24,
         "top_5": [
@@ -477,8 +477,21 @@
         ]
       },
       {
+        "sector": "Health Care",
+        "rs_rank_median": 61.0,
+        "rs_trend_median": -2.0,
+        "n_constituents": 60,
+        "top_5": [
+          "MRNA",
+          "CRL",
+          "VTRS",
+          "CNC",
+          "HUM"
+        ]
+      },
+      {
         "sector": "Consumer Staples",
-        "rs_rank_median": 62.5,
+        "rs_rank_median": 58.0,
         "rs_trend_median": 5.0,
         "n_constituents": 32,
         "top_5": [
@@ -486,20 +499,7 @@
           "DLTR",
           "KO",
           "MO",
-          "CHD"
-        ]
-      },
-      {
-        "sector": "Health Care",
-        "rs_rank_median": 62.5,
-        "rs_trend_median": -1.5,
-        "n_constituents": 60,
-        "top_5": [
-          "MRNA",
-          "CRL",
-          "VTRS",
-          "CNC",
-          "ILMN"
+          "DG"
         ]
       },
       {
@@ -517,38 +517,38 @@
       },
       {
         "sector": "Industrials",
-        "rs_rank_median": 46.0,
-        "rs_trend_median": 1.0,
+        "rs_rank_median": 48.0,
+        "rs_trend_median": 0.0,
         "n_constituents": 81,
         "top_5": [
           "SWK",
-          "GWW",
-          "CSX",
           "BE",
-          "FDX"
+          "GWW",
+          "DAL",
+          "CSX"
         ]
       },
       {
         "sector": "Real Estate",
-        "rs_rank_median": 41.0,
-        "rs_trend_median": 3.0,
+        "rs_rank_median": 40.5,
+        "rs_trend_median": 4.5,
         "n_constituents": 30,
         "top_5": [
           "HST",
           "EQIX",
-          "SPG",
+          "IRM",
           "KIM",
-          "IRM"
+          "SPG"
         ]
       },
       {
         "sector": "Utilities",
-        "rs_rank_median": 37.0,
-        "rs_trend_median": 1.0,
+        "rs_rank_median": 38.0,
+        "rs_trend_median": 2.0,
         "n_constituents": 31,
         "top_5": [
-          "PNW",
           "ED",
+          "PNW",
           "AWK",
           "EVRG",
           "ETR"
@@ -556,25 +556,25 @@
       },
       {
         "sector": "Consumer Discretionary",
-        "rs_rank_median": 36.0,
+        "rs_rank_median": 35.0,
         "rs_trend_median": 3.0,
         "n_constituents": 47,
         "top_5": [
-          "ABNB",
           "HAS",
-          "WSM",
+          "ABNB",
+          "GRMN",
           "EBAY",
           "MAR"
         ]
       },
       {
         "sector": "Communication Services",
-        "rs_rank_median": 31.0,
-        "rs_trend_median": -0.5,
+        "rs_rank_median": 27.0,
+        "rs_trend_median": 0.5,
         "n_constituents": 22,
         "top_5": [
-          "ECHO",
           "LYV",
+          "ECHO",
           "OMC",
           "VZ",
           "DIS"
