@@ -5,57 +5,57 @@
       "ticker": "SPY",
       "name": "S&P 500",
       "category": "benchmark",
-      "price": 701.697998046875,
-      "day_change_pct": -1.9796886539423353
+      "price": 722.2899780273438,
+      "day_change_pct": 4.708540117380822
     },
     {
       "ticker": "RSP",
       "name": "S&P 500 Equal Weight",
       "category": "benchmark",
-      "price": 210.34140014648438,
-      "day_change_pct": -0.6088951030557621
+      "price": 212.82000732421875,
+      "day_change_pct": 2.5935233414452696
     },
     {
       "ticker": "QQQ",
       "name": "Nasdaq 100",
       "category": "benchmark",
-      "price": 621.739990234375,
-      "day_change_pct": -3.612177320268517
+      "price": 651.030029296875,
+      "day_change_pct": 6.998112619867203
     },
     {
       "ticker": "QQQE",
       "name": "Nasdaq 100 Equal Weight",
       "category": "benchmark",
-      "price": 107.29000091552734,
-      "day_change_pct": -2.3660009905924317
+      "price": 110.62000274658203,
+      "day_change_pct": 4.942604025679809
     },
     {
       "ticker": "IWM",
       "name": "Russell 2000",
       "category": "benchmark",
-      "price": 260.1099853515625,
-      "day_change_pct": -1.5555279124033983
+      "price": 265.739990234375,
+      "day_change_pct": 3.5579304797138445
     },
     {
       "ticker": "DIA",
       "name": "Dow Jones",
       "category": "benchmark",
-      "price": 487.8999938964844,
-      "day_change_pct": -0.5888495279286032
+      "price": 495.79998779296875,
+      "day_change_pct": 3.05978249595964
     },
     {
       "ticker": "^VIX",
       "name": "VIX",
       "category": "volatility",
-      "price": 31.940000534057617,
-      "day_change_pct": 12.30661017677781
+      "price": 26.6200008392334,
+      "day_change_pct": -25.828918105495248
     },
     {
       "ticker": "^VIX3M",
       "name": "VIX3M",
       "category": "volatility",
-      "price": 28.93000030517578,
-      "day_change_pct": 7.029225195206856
+      "price": 25.5,
+      "day_change_pct": -17.58241900503351
     }
   ]
 }
