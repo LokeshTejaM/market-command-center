@@ -5,57 +5,57 @@
       "ticker": "SPY",
       "name": "S&P 500",
       "category": "benchmark",
-      "price": 722.2899780273438,
-      "day_change_pct": 4.708540117380822
+      "price": 718.5800170898438,
+      "day_change_pct": -0.5136387116476904
     },
     {
       "ticker": "RSP",
       "name": "S&P 500 Equal Weight",
       "category": "benchmark",
-      "price": 212.82000732421875,
-      "day_change_pct": 2.5935233414452696
+      "price": 213.97000122070312,
+      "day_change_pct": 0.5403598613416216
     },
     {
       "ticker": "QQQ",
       "name": "Nasdaq 100",
       "category": "benchmark",
-      "price": 651.030029296875,
-      "day_change_pct": 6.998112619867203
+      "price": 638.0999755859375,
+      "day_change_pct": -1.9860917513900511
     },
     {
       "ticker": "QQQE",
       "name": "Nasdaq 100 Equal Weight",
       "category": "benchmark",
-      "price": 110.62000274658203,
-      "day_change_pct": 4.942604025679809
+      "price": 109.58000183105469,
+      "day_change_pct": -0.9401562915432815
     },
     {
       "ticker": "IWM",
       "name": "Russell 2000",
       "category": "benchmark",
-      "price": 265.739990234375,
-      "day_change_pct": 3.5579304797138445
+      "price": 267.1400146484375,
+      "day_change_pct": 0.5268399433701054
     },
     {
       "ticker": "DIA",
       "name": "Dow Jones",
       "category": "benchmark",
-      "price": 495.79998779296875,
-      "day_change_pct": 3.05978249595964
+      "price": 499.6400146484375,
+      "day_change_pct": 0.7745112847949986
     },
     {
       "ticker": "^VIX",
       "name": "VIX",
       "category": "volatility",
-      "price": 26.6200008392334,
-      "day_change_pct": -25.828918105495248
+      "price": 26.700000762939453,
+      "day_change_pct": 0.30052562428228846
     },
     {
       "ticker": "^VIX3M",
       "name": "VIX3M",
       "category": "volatility",
-      "price": 25.5,
-      "day_change_pct": -17.58241900503351
+      "price": 25.690000534057617,
+      "day_change_pct": 0.7451001335592844
     }
   ]
 }
