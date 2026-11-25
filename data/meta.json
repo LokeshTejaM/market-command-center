@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "built_at": "2026-11-24T21:04:02.702660Z",
-  "as_of_date": "2026-11-24",
+  "built_at": "2026-11-25T20:25:25.928852Z",
+  "as_of_date": "2026-11-25",
   "windows": [
     21,
     63,
@@ -12,7 +12,9 @@
   "universe": {
     "sp500_tickers": 503,
     "dropped_stocks": [],
-    "dropped_reference": []
+    "dropped_reference": [
+      "KCE"
+    ]
   },
   "sources": {
     "prices": "yfinance (Yahoo Finance)",
